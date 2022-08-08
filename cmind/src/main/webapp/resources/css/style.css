@@ -1095,13 +1095,13 @@ h3{
  .fileInput {
  	padding-top : 2%;
  	padding-bottom : 2%;
+ 	text-align: center;
  }
 
 /*클릭버튼css임포트*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600);
 
 .testGoContent {
-  padding: 2em 1em 5em;
   z-index: 1;
   max-width: 1000px;
   margin: 0 auto;
@@ -1111,12 +1111,11 @@ h3{
 }
 .testGoContent p {
   margin: 1em 0;
-  padding: 0 0 2em;
+  padding: 0 0 2em; 
   font-size: 0.85em;
 }
 
 .confirmBox {
-padding: 4.5em 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1125,15 +1124,13 @@ padding: 4.5em 0;
   flex-wrap: wrap;
   -webkit-justify-content: center;
   justify-content: center;
-  background: #8bc7a8;
   color: #37474f; 
   
 }
   
   #confirmBtn {
   float: left;
-  min-width: 150px;
-  max-width: 250px;
+  width : 800px;
   display: block;
   margin : auto;
   padding: 1em 2em;
@@ -1164,7 +1161,6 @@ padding: 4.5em 0;
 	}
 	
 	.button--text-upper {
-	  letter-spacing: 2px;
 	  text-transform: uppercase;
 	}
 	.button--text-thick {
@@ -1177,7 +1173,6 @@ padding: 4.5em 0;
 	/* Nina */
 	.button--nina {
 	  padding: 0 2em;
-	  background: #7986cb;
 	  color: #fff;
 	  overflow: hidden;
 	  -webkit-transition: background-color 0.3s;
@@ -1185,13 +1180,13 @@ padding: 4.5em 0;
 	}
 	.button--nina.button--inverted {
 	  background: #fff;
-	  color: #7986cb;
 	}
 	.button--nina > span {
+	  font-size : 40px;
 	  display: inline-block;
-	  padding: 1em 0;
+	  padding: 2em 0;
 	  opacity: 0;
-	  color: #fff;
+	  color: ##F5A037;
 	  -webkit-transform: translate3d(0, -10px, 0);
 	  transform: translate3d(0, -10px, 0);
 	  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -1200,13 +1195,16 @@ padding: 4.5em 0;
 	  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 	}
 	.button--nina::before {
+	  font-size : 40px;
+	  font-weight : bolder;
+	  margin-top : 12px;
 	  content: attr(data-text);
 	  position: absolute;
-	  top: 0;
 	  left: 0;
 	  width: 100%;
 	  height: 100%;
-	  padding: 1em 0;
+	  padding: 2em 0;
+	  padding-top : 50px;
 	  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 	  transition: transform 0.3s, opacity 0.3s;
 	  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
@@ -1265,7 +1263,23 @@ padding: 4.5em 0;
 	  -webkit-transition-delay: 0.45s;
 	  transition-delay: 0.45s;
 	}
-  
-  .confText {
-  	letter-spacing : 0px;
-  	}
+	.button--nina:hover > span:nth-child(11) {
+	  -webkit-transition-delay: 0.495s;
+	  transition-delay: 0.495s;
+	}
+	
+	.confText {
+	  letter-spacing: -3.5px !important;
+	  }
+	  
+	  /*나무업로드 페이지의 제출 버튼*/
+	  .button {
+	  text-align: center;
+	  }
+	  
+	  /*나무 업로드 후 미리보기 이미지*/
+	  #image-show {
+	  margin : auto;
+	  text-align : center;
+	  }
+	  

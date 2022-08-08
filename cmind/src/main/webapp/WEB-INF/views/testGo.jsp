@@ -8,32 +8,41 @@
 
 <head>
 <meta charset="UTF-8">
-	<title>마음체</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+<title>마음체</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="keywords">
+<meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="${cpath}/resources/img/favicon.ico" rel="icon">
+<!-- Favicon -->
+<link href="${cpath}/resources/img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap"
+	rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Icon Font Stylesheet -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+	rel="stylesheet">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+	rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="${cpath}/resources/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="${cpath}/resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<!-- Libraries Stylesheet -->
+<link href="${cpath}/resources/lib/animate/animate.min.css"
+	rel="stylesheet">
+<link
+	href="${cpath}/resources/lib/owlcarousel/assets/owl.carousel.min.css"
+	rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="${cpath}/resources/css/bootstrap.min.css" rel="stylesheet">
+<!-- Customized Bootstrap Stylesheet -->
+<link href="${cpath}/resources/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="${cpath}/resources/css/style.css" rel="stylesheet">
+<!-- Template Stylesheet -->
+<link href="${cpath}/resources/css/style.css?wte" rel="stylesheet">
 </head>
 
 <body>
@@ -54,11 +63,12 @@
 
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<div class="navbar-nav mx-auto p-4 p-lg-0">
-				<a href="${cpath}/index.do" class="nav-item nav-link ">홈</a> 
-				<a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a> 
-				<a href="${cpath}/testMain.do" class="nav-item nav-link" style="color: #E48B77 !important;">심리검사</a> 
-				<a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a> 
-				<a href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
+				<a href="${cpath}/index.do" class="nav-item nav-link ">홈</a> <a
+					href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a> <a
+					href="${cpath}/testMain.do" class="nav-item nav-link"
+					style="color: #E48B77 !important;">심리검사</a> <a
+					href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a> <a
+					href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
 				<div class="nav-item dropdown">
 					<a href="#" class="nav-link dropdown-toggle"
 						data-bs-toggle="dropdown">마이페이지</a>
@@ -96,59 +106,74 @@
 	<div class="container">
 		<div class="image-upload" id="image-upload">
 
-			<form method="post" enctype="multipart/form-data" action="http://172.30.1.49:5000/upload">
+			<form method="post" enctype="multipart/form-data"
+				action="http://172.30.1.49:5000/upload">
 				<input type="hidden" name="userid" value="${mvo.userid}">
 				<div class="button">
 					<label for="chooseFile">
-						<h4> <span class="emphasis" style="font-size:30px;">업로드&nbsp;</span>클릭하여 나무 그림 업로드 </h4>
+						<h4>
+							나무 그림을 업로드해주세요 <br>
+							<span id="uploadbtn11" class="emphasis" style="font-size: 30px;">[업로드하기]&nbsp;</span>
+						</h4>
 					</label>
 				</div>
-				<input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
-			
+				
+				<input type="file" id="chooseFile" name="chooseFile"
+					accept="image/*" onchange="loadFile(this)">
+					
 				<div class="image-show" id="image-show"></div>
+				
 				<div class="fileContainer">
 					<div class="fileInput">
 						<h4>파일명:</h4>
 						<h4 id="fileName"></h4>
 					</div>
-					<div class="buttonContainer" onclick="location.href='${cpath}/testLoading.do'">
-						<button type="submit" class="submitButton" id="submitButton">그림 제출하기</button>
+				</div>
+				<section class="testGoContent">
+					<div class="confirmBox bg-1"><div class="buttonContainer"
+						 onclick="location.href='${cpath}/testLoading.do'">
+						<button type="submit"
+								class="button button--nina button--text-thick button--text-upper button--size-s"
+								data-text="결과 보시려면 클릭!" id="confirmBtn">
+							<span class="confText">결</span>
+							<span class="confText">과</span>&nbsp;
+							<span class="confText">페</span>
+							<span class="confText">이</span> 
+							<span class="confText">지</span>
+							<span class="confText">로</span>&nbsp; 
+							<span class="confText">이</span>
+							<span class="confText">동</span> 
+							<span class="confText">합</span>
+							<span class="confText">니</span>
+							<span class="confText">당</span>
+					</button>
 					</div>
 				</div>
+				</section>
 			</form>
-		
-		<section class="testGoContent">
-        	<div class="confirmBox bg-1">
-          		<button class="button button--nina button--text-thick button--text-upper button--size-s" data-text="in test" id="confirmBtn">
-            		<span class="confText">i</span>
-            		<span class="confText">n</span>&nbsp;
-            		<span class="confText">t</span>
-            		<span class="confText">e</span>
-            		<span class="confText">s</span>
-            		<span class="confText">t</span>
-          		</button>
-        	</div>
-    	</section>
 		</div>
 	</div>
 	<!-- 그림 업로드 페이지 끝 -->
 
 	<!-- Copyright Start -->
-    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s" id="copy">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="https://github.com/2022-SMHRD-KDT-BigData-6/cmind">캐치 마인드</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a href="https://htmlcodex.com">(주) 미리</a>
-                    <br>Distributed By: <a class="border-bottom" href="https://smhrd.or.kr/" target="_blank">스마트인재개발원</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright End -->
+	<div class="container-fluid copyright text-light py-4 wow fadeIn"
+		data-wow-delay="0.1s" id="copy">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+					&copy; <a href="https://github.com/2022-SMHRD-KDT-BigData-6/cmind">캐치
+						마인드</a>, All Right Reserved.
+				</div>
+				<div class="col-md-6 text-center text-md-end">
+					<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+					Designed By <a href="https://htmlcodex.com">(주) 미리</a> <br>Distributed
+					By: <a class="border-bottom" href="https://smhrd.or.kr/"
+						target="_blank">스마트인재개발원</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Copyright End -->
 
 	<!-- JavaScript Libraries -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -167,16 +192,23 @@
 
 		function showImage() {
 			var newImage = document.getElementById('image-show').lastElementChild;
+			
 			newImage.style.visibility = "visible";
 
 			document.getElementById('image-upload').style.visibility = 'hidden';
+			uploadBtn.style.visibility = "hidden";
+			
 
 			document.getElementById('fileName').textContent = null; //기존 파일 이름 지우기
 		}
 
+		
+		//이미지 미리보기 뜨는거
 		function loadFile(input) {
-			var file = input.files[0];
 
+			var file = input.files[0];
+			$('#image-show').empty();
+	
 			var name = document.getElementById('fileName');
 			name.textContent = file.name;
 
@@ -186,14 +218,15 @@
 			newImage.src = URL.createObjectURL(file);
 
 			newImage.style.width = "40%";
-			newImage.style.height = "40%";
+			newImage.style.maxHeight = "400px";
+			
 
 			newImage.style.objectFit = "contain";
 
 			var container = document.getElementById('image-show');
 			container.appendChild(newImage);
+			
 		}
-		
 		
 		
 	</script>
