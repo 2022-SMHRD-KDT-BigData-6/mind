@@ -161,7 +161,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-					&copy; <a href="https://github.com/2022-SMHRD-KDT-BigData-6/cmind">캐치
+					&copy; <a href="https://github.com/2022-SMHRD-KDT-BigData-6/mind">캐치
 						마인드</a>, All Right Reserved.
 				</div>
 				<div class="col-md-6 text-center text-md-end">
