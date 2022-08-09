@@ -16,5 +16,4 @@ public class MemberVO {
 	private String facilityid;
 	private String joindate;
 	
-
 }

@@ -131,9 +131,7 @@
         <input class="pass" type="password" align="center" placeholder="비밀번호확인">
         <input name = "username" class="un" type="text" align="center" placeholder="이름"> 
         <input name = "email" class="un" type="text" align="center" placeholder="이메일"> 
-        <input name = "procheck" class="un" type="text" align="center" placeholder="전문가 인증 여부">
         <input name = "facilityid" class="un" type="text" align="center" placeholder="병원식별번호">
-            
         <div style="text-align:center">
             <a class="loginBtn signin"><button type="submit">회원가입</button></a>
         </div>
