@@ -42,7 +42,7 @@
 <link href="${cpath}/resources/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Template Stylesheet -->
-<link href="${cpath}/resources/css/style.css?wte" rel="stylesheet">
+<link href="${cpath}/resources/css/style.css?w" rel="stylesheet">
 </head>
 
 <body>
@@ -104,7 +104,7 @@
 
 	<!-- 그림 업로드 페이지 -->
 	<div class="container">
-		<div class="image-upload" id="image-upload">
+		<div class="image-upload" id="image-upload" style="animation: fadeIn 1s;">
 
 			<form method="post" enctype="multipart/form-data"
 				action="http://172.30.1.49:5000/upload">

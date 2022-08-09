@@ -1286,7 +1286,7 @@ h3{
 	  
 	  
 	 /*페이드인 애니메이션 효과*/
-	@keyframes fadein {
+	@keyframes fadeIn {
     from {
         opacity:0;
     }
