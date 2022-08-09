@@ -1182,7 +1182,7 @@ h3{
 	  background: #fff;
 	}
 	.button--nina > span {
-	  font-size : 40px;
+	  font-size : 30px;
 	  display: inline-block;
 	  padding: 2em 0;
 	  opacity: 0;
@@ -1195,7 +1195,7 @@ h3{
 	  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 	}
 	.button--nina::before {
-	  font-size : 40px;
+	  font-size : 30px;
 	  font-weight : bolder;
 	  margin-top : 12px;
 	  content: attr(data-text);
@@ -1281,5 +1281,16 @@ h3{
 	  #image-show {
 	  margin : auto;
 	  text-align : center;
+	  max-height:400px;
 	  }
 	  
+	  
+	 /*페이드인 애니메이션 효과*/
+	@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}	  

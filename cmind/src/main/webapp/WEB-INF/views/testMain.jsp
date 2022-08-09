@@ -33,7 +33,7 @@
     <link href="${cpath}/resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="${cpath}/resources/css/style.css" rel="stylesheet">
+    <link href="${cpath}/resources/css/style.css?s" rel="stylesheet">
 </head>
 
 <body>
@@ -91,7 +91,7 @@
 
 
 	<!-- 심리 검사 설명-->
-	<div id="info">
+	<div id="info" style="animation: fadeInUp 1s;">
 		<h4 style="text-align: center;" id="slideInfo">
 			현재 마음:체는 HTP 검사의 '집 - 나무 - 사람' 중, <span class="emphasis">나무를
 				통한 심리 검사 분석</span>만 실시하고 있습니다.
@@ -101,7 +101,7 @@
 
 	<!-- 넘어가기 자바스크립트 실험중-->
 	<div id="slide">
-		<div id="s1" style="display: block;">
+		<div id="s1" style="display: block; animation: fadeIn 1s;">
 			<h4 class="slideEx">첫 번째.</h4>
 			<p class="slideEx1">
 				<span class="emphasis">A4용지</span>와 연하지 않은 <span class="emphasis">펜</span>을
@@ -114,7 +114,7 @@
 			</p>
 		</div>
 
-		<div id="s2" style="display: none;">
+		<div id="s2" style="display: none; animation: fadeIn 1s;">
 			<h4 class="slideEx">두 번째.</h4>
 			<p class="slideEx1">
 				준비한 종이에 <span class="emphasis">나무</span>를 그려주세요. 정해진 형식은 아무것도 없습니다.
@@ -126,8 +126,8 @@
 			</p>
 		</div>
 
-		<div id="s3" style="display: none;">
-			<h4 class="slideEx" style="visibility: hidden;">3페이지.</h4>
+		<div id="s3" style="display: none; animation: fadeIn 1s;">
+			<h4 class="slideEx" style=" animation: fadeIn 1s;">잠시만요!</h4>
 			<p class="slideEx1">
 				그림 실력을 보는 검사가 아닙니다. 마음이 가는 대로 <span class="emphasis">자유롭게</span>
 				그려주세요!
@@ -140,7 +140,7 @@
 			</p>
 		</div>
 
-		<div id="s4" style="display: none;">
+		<div id="s4" style="display: none; animation: fadeIn 1s;">
 			<h4 class="slideEx">마지막으로,</h4>
 			<p class="slideEx1">
 				<span class="emphasis">밝은 곳</span>에서 나무를 <span class="emphasis">정면</span>으로
@@ -148,7 +148,7 @@
 			<p class="butDiv">
 				<button type="button" class="btn btn-outline-success btn-lg" 
                         style="--bs-btn-padding-y: .30rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .9rem;"><span class="befB" onclick="changeB(4)"><-이전</span></button> 
-                        <button type="button" class="btn btn-outline-success btn-lg" 
+                        <button type="button" class="btn btn-outline-primary btn-lg" 
                         style="--bs-btn-padding-y: .30rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .9rem;"><a href="testGo.do"><span class="nexB">검사하러 가기</span></a></button>
 			</p>
 			</p>
