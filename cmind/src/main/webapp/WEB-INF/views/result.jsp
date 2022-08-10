@@ -8,7 +8,7 @@
 <head>
 
 <meta charset="UTF-8">
-	<title>마음체</title>
+   <title>마음체</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -34,6 +34,9 @@
 
     <!-- Template Stylesheet -->
     <link href="${cpath}/resources/css/style.css" rel="stylesheet">
+    
+    <!-- 애니메이션 가져옴 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -72,8 +75,8 @@
                 </c:if>
                 <c:if test="${!empty mvo}">
                 <p class="nav-item nav-link">${mvo.username}님</p>
-				<a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
-				</c:if>
+            <a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
+            </c:if>
             </div>
         </div>
     </nav>
@@ -82,30 +85,81 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center pt-5 pb-3">
-            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">심리검사 결과</h1>
+            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">내 심리검사 결과</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
-    <c:forEach var="vo" items="${tvo}">
-    <div class="container-xxl">내 나무 이름 : <h3>${vo.treename}</h3> 
-    	<div class="container"><img src="https://t1.daumcdn.net/cfile/blog/223EC74A534FF8AC34" class="img-fluid" alt="">
-    	</div>
-    </div>
-    </c:forEach>
     
-    <div>
+    
+    <h3 style="color:#E47665; font-size:45px; padding-top:50px;">미리님의 그림 분석 결과</h3>
+    
+    <!-- 결과 페이지  시작, -->
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                   <div id="explainPhoto" float:left; style="text-align:center;">
+                       <img src="${cpath}/resources/img/upload.jpg" alt="" style="width:400px;">
+                    </div>
+               </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="1s">
+                    <div class="h-100" float:left;> 
+                        <p class="emphasis" style="font-size:25px">
+                           생각이 많음, 혼란스러움. 현재에 만족감, 안정감. 적극적, 공격성. 불안감, 욕구불만, 회피. 통제력 약함, 상실감, 감수성이 강함
+                        </p>
+                        <p class="aboutEx">어디로 가야할지 방향을 잡지 못하고 있거나 또는 어떤 결정을 내리지 못하는 갈등상황에 있으며 주어진 상황 안에서 만족하고 안정적인 것을 추구하고자 합니다. </p>
+                   <p class="aboutEx">평소 에너지가 많고 환경에 적극적이나 과하면 즉흥적이고 공격적으로 보일 때가 있습니다.</p>
+                   <p class="aboutEx"> 때로는 감정에 대한 적절한 조절이 어려울 때가 있습니다. 평소 에너지가 많고 환경에 적극적이나 과하면 즉흥적이고 공격적으로 보일 때가 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- About End -->
+   <!-- 결과 페이지  끝 -->
+   
+   <!-- 그래프시작 -->
+    <div style="text-align:center; transform: translate(0, 100px); animation: fadeIn 3s;"> 
+         <div style="width:40%; margin:auto; margin-bottom: 200px;">
+         <canvas id="myChart"></canvas>
+       </div>
+    </div>
+   <!-- 그래프끝 -->
+   
+   <!-- 버튼 시작 -->
+   <section class="testGoContent">
+               <div class="confirmBox bg-1">
+                  <div class="buttonContainer"
+                      onclick="location.href='${cpath}/testLoading.do'">
+                     <button type="submit"
+                           class="button button--nina button--text-thick button--text-upper button--size-s"
+                           data-text="심리케어하러가기" id="confirmBtn">
+                        <span class="confText">결</span>
+                        <span class="confText">과</span>&nbsp;
+                        <span class="confText">페</span>
+                        <span class="confText">이</span> 
+                        <span class="confText">지</span>
+                        <span class="confText">로</span>&nbsp; 
+                        <span class="confText">이</span>
+                        <span class="confText">동</span> 
+                        <span class="confText">합</span>
+                        <span class="confText">니</span>
+                        <span class="confText">당</span>
+                     </button>
+                  </div>
+               </div>
+            </section>
+   <!-- 버튼 끝 -->
+    
 
   <!-- Copyright Start -->
     <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s" id="copy">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="https://github.com/2022-SMHRD-KDT-BigData-6/mind">캐치 마인드</a>, All Right Reserved.
+                    &copy; <a href="https://github.com/2022-SMHRD-KDT-BigData-6/cmind">캐치 마인드</a>, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
@@ -118,14 +172,61 @@
     <!-- Copyright End -->
 
     <!-- JavaScript Libraries -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="${cpath}/resources/lib/wow/wow.min.js"></script>
-	<script src="${cpath}/resources/lib/easing/easing.min.js"></script>
-	<script src="${cpath}/resources/lib/waypoints/waypoints.min.js"></script>
-	<script src="${cpath}/resources/lib/counterup/counterup.min.js"></script>
-	<script src="${cpath}/resources/lib/owlcarousel/owl.carousel.min.js"></script>
-	<script src="${cpath}/resources/js/main.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="${cpath}/resources/lib/wow/wow.min.js"></script>
+   <script src="${cpath}/resources/lib/easing/easing.min.js"></script>
+   <script src="${cpath}/resources/lib/waypoints/waypoints.min.js"></script>
+   <script src="${cpath}/resources/lib/counterup/counterup.min.js"></script>
+   <script src="${cpath}/resources/lib/owlcarousel/owl.carousel.min.js"></script>
+   <script src="${cpath}/resources/js/main.js"></script>
+   <!-- 그래프 부트스트랩 -->;
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+   <script>
+   //그래프 구현하는 자바스크립트
+     const labels = [
+       '공격성',
+       '현실성',
+       '성취욕',
+       '행동조절',
+       '외로움',
+       '배고픔',
+     ];
+   
+     const data = {
+       labels: labels,
+       datasets: [{
+         label: 'ㅇㅇ님의 감정 그래프',
+         backgroundColor: 'rgb(255, 255, 132)', //그래프 점 색
+         borderColor: 'rgb(255, 99, 132)', //그래프 선 색
+         data: [0, 10, 5, 2, 20, 30, 50, 100], //라벨 데이터
+       }]
+     };
+   
+     const config = {
+       type: 'line',   //그래프 타입 지정
+       data: data,      //가져올 데이터
+       options: {
+          plugins: {
+             legend: {
+                labels: {
+                   usePointStyle:true,
+                },
+             }
+          }
+       }
+     };
+   </script>
+   
+   <script>
+   //차트 렌더링
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+    config
+     );
+   </script>
+   
 </body>
 
 </html>
