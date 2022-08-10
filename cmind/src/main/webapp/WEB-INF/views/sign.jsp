@@ -81,7 +81,7 @@
                 <a href="${cpath}/login.do" class="nav-item nav-link" style = "color: #E48B77 !important;">로그인/회원가입</a>
                 </c:if>
                 <c:if test="${!empty mvo}">
-                <p class="nav-item nav-link">${mvo.username}님</p>
+                <p class="nav-item nav-link">${mvo.nickname}님</p>
 				<a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
 				</c:if>
             </div>
@@ -116,7 +116,7 @@
         <input name = "userid" class="un" type="text" align="center" placeholder="아이디">
         <input name = "userpw" class="pass" type="password" align="center" placeholder="비밀번호">
         <input class="pass" type="password" align="center" placeholder="비밀번호확인">
-        <input name = "username" class="un" type="text" align="center" placeholder="닉네임"> 
+        <input name = "nickname" class="un" type="text" align="center" placeholder="닉네임"> 
 		<input name = "email" class="un" type="text" align="center" placeholder="이메일"> 
 		
         <div style="text-align:center">

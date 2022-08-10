@@ -67,14 +67,12 @@ public class BoardController {
 	public String myPage(HttpSession session, Model model) {
 		MemberVO mvo = (MemberVO) session.getAttribute("mvo");
 		if (mvo != null) {
-			List<MemberVO> mvolist = mapper.MemberList(mvo.getUserid());
-			model.addAttribute("mvolist", mvolist);
 		} else {
 			return "login";
 		}
 		return "myPage";
 	}
-	
+
 	// 내나무 페이지
 	@RequestMapping("/myTree")
 	public String myTree(HttpSession session, Model model) {

@@ -71,7 +71,7 @@
 					<a href="${cpath}/login.do" class="nav-item nav-link">로그인/회원가입</a>
 				</c:if>
 				<c:if test="${!empty mvo}">
-					<p class="nav-item nav-link">${mvo.username}님</p>
+					<p class="nav-item nav-link">${mvo.nickname}님</p>
 					<a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
 				</c:if>
 			</div>

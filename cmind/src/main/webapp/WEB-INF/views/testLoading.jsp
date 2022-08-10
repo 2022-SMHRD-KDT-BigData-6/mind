@@ -69,7 +69,7 @@
                 <a href="${cpath}/testLogin.do" class="nav-item nav-link">로그인/회원가입</a>
                 </c:if>
                 <c:if test="${!empty mvo}">
-                <p class="nav-item nav-link">${mvo.username}님환영합니다</p>
+                <p class="nav-item nav-link">${mvo.nickname}님</p>
 					<button onclick='location.href="${cpath}/logout.do"'class="btn btn-default">로그아웃</button>
 				</c:if>
                 </div>

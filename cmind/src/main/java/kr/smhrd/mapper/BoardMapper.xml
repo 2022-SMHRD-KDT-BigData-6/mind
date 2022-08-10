@@ -8,7 +8,7 @@
     
     <!-- 회원가입 -->
     <insert id="BoardSign" parameterType="kr.smhrd.model.MemberVO">
-		insert into memberinfo(userid, userpw, username, email) values(#{userid}, #{userpw}, #{username}, #{email})    
+		insert into memberinfo(userid, userpw, nickname, email) values(#{userid}, #{userpw}, #{nickname}, #{email})    
 	</insert>
     
     <select id="boardContent" resultType="kr.smhrd.model.BoardVO">
