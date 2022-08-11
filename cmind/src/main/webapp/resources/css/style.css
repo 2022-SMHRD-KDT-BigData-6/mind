@@ -210,7 +210,6 @@ h6,
 
 .page-header {
     margin-bottom: 3rem;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/explainHeader1.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -608,8 +607,6 @@ h4{
 
 /* 검사 안내 문구*/
 #slideInfo {
-    padding-top: 50px;
-    padding-bottom: 20px;
     word-spacing: 2;
     letter-spacing: 7px; 
 }

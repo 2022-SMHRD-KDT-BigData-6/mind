@@ -46,13 +46,10 @@
 	
 	<!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="${cpath}/index.do" class="navbar-brand ms-4 ms-lg-0">
+        <a href="index.do" class="navbar-brand ms-4 ms-lg-0">
             <h1 class="text-primary m-0" id="title">마음:체</h1>
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+       <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
                 <a href="${cpath}/index.do" class="nav-item nav-link">홈</a>
                 <a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a>
@@ -62,8 +59,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
                     <div class="dropdown-menu m-0">
-                        <a href="${cpath}/myPage.do" class="dropdown-item">내 정보</a>
-                        <a href="${cpath}/myTree.do" class="dropdown-item">내 나무</a>
+                        <a href="${cpath}/myPage.do" class="dropdown-item">감정 일기 통계</a>
                         <a href="${cpath}/result.do" class="dropdown-item">심리검사 결과</a>
                     </div>
                 </div>
@@ -80,14 +76,16 @@
     <!-- Navbar End -->
 
 	<!-- Page Header Start -->
-	<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s" id="TMheader">
-		<div class="container text-center pt-5 pb-3">
-			<h1 class="display-4 animated slideInDown mb-3" id="ATtypo">심리검사페이지
-			</h1>
-			<nav aria-label="breadcrumb animated slideInDown"></nav>
-		</div>
-	</div>
-	<!-- Page Header End -->
+    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s" id = "TMheader"
+    style = "background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/explainHeader1.jpg) center center no-repeat;
+    background-size:cover;">
+        <div class="container text-center pt-5 pb-3">
+            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">검사 준비하기</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
 
 
 	<!-- 심리 검사 설명-->

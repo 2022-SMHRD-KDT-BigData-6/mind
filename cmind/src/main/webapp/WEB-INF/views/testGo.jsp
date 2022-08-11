@@ -54,68 +54,62 @@
    <!-- Spinner End -->
 
    <!-- Navbar Start -->
-   <nav
-      class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn"
-      data-wow-delay="0.1s">
-      <a href="index.do" class="navbar-brand ms-4 ms-lg-0">
-         <h1 class="text-primary m-0" id="title">마음:체</h1>
-      </a>
-
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-         <div class="navbar-nav mx-auto p-4 p-lg-0">
-            <a href="${cpath}/index.do" class="nav-item nav-link ">홈</a> <a
-               href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a> <a
-               href="${cpath}/testMain.do" class="nav-item nav-link"
-               style="color: #E48B77 !important;">심리검사</a> <a
-               href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a> <a
-               href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
-            <div class="nav-item dropdown">
-               <a href="#" class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown">마이페이지</a>
-               <div class="dropdown-menu m-0">
-                  <a href="${cpath}/myPage.do" class="dropdown-item">내 정보</a> <a
-                     href="${cpath}/myTree.do" class="dropdown-item">내 나무</a> <a
-                     href="${cpath}/result.do" class="dropdown-item">심리검사 결과</a>
-               </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.do" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0" id="title">마음:체</h1>
+        </a>
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="${cpath}/index.do" class="nav-item nav-link">홈</a>
+                <a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a>
+                <a href="${cpath}/testMain.do" class="nav-item nav-link" style = "color: #E48B77 !important;">심리검사</a>
+                <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
+                <a href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="${cpath}/myPage.do" class="dropdown-item">감정 일기 통계</a>
+                        <a href="${cpath}/result.do" class="dropdown-item">심리검사 결과</a>
+                    </div>
+                </div>
+                <c:if test="${empty mvo}">
+                <a href="${cpath}/login.do" class="nav-item nav-link">로그인/회원가입</a>
+                </c:if>
+                <c:if test="${!empty mvo}">
+                <p class="nav-item nav-link">${mvo.nickname}님</p>
+				<a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
+				</c:if>
             </div>
-            <c:if test="${empty mvo}">
-               <a href="${cpath}/login.do" class="nav-item nav-link">로그인/회원가입</a>
-            </c:if>
-            <c:if test="${!empty mvo}">
-               <p class="nav-item nav-link">${mvo.nickname}님</p>
-               <a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
-            </c:if>
-         </div>
-      </div>
-   </nav>
-   <!-- Navbar End -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
 
    <!-- Page Header Start -->
-   <div class="container-fluid page-header py-6 wow fadeIn"
-      data-wow-delay="0.1s" id="TMheader">
-      <div class="container text-center pt-5 pb-3">
-         <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">심리검사페이지
-         </h1>
-         <nav aria-label="breadcrumb animated slideInDown"></nav>
-      </div>
-   </div>
-   <!-- Page Header End -->
-
+    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s" id = "TMheader"
+    style = "background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/explainHeader1.jpg) center center no-repeat;
+    background-size:cover;">
+        <div class="container text-center pt-5 pb-3">
+            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">그림 제출</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
 
    <!-- 그림 업로드 페이지 -->
    <div class="container">
       <div class="image-upload" id="image-upload" style="animation: fadeIn 1s;">
          <form method="post" enctype="multipart/form-data"
-            action="http://172.30.1.49:5000/upload">
+            action="${cpath}/testLoading.do">
             <input type="hidden" name="userid" value="${mvo.userid}">
             <div class="button">
                <h4>[ 나무 그림을 업로드해주세요 ]</h4> <br>
-               <h4 style="font-size:15px; color:gray; font-weight:lighter;"> 다시 업로드하려면 그림을 한번 더 클릭해주세요! </h4>
+               <h4 style="font-size:20px; color:gray; font-weight:lighter;"> 다시 업로드하려면 그림을 한번 더 클릭해주세요! </h4>
             </div>
             <div class="image-show" id="image-show">
                <div id = "previewImg">
                   <label for="chooseFile">
-                     <img src="${cpath}/resources/img/preview1.jpg" id=prevIMG alt="">
+                     <img src="${cpath}/resources/img/preview1.jpg" id=prevIMG alt="" style = "cursor:pointer;">
                   </label>
                </div>
                <input type="file" id="chooseFile" name="chooseFile"

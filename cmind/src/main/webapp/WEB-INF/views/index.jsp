@@ -47,15 +47,12 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="${cpath}/index.do" class="navbar-brand ms-4 ms-lg-0">
+        <a href="index.do" class="navbar-brand ms-4 ms-lg-0">
             <h1 class="text-primary m-0" id="title">마음:체</h1>
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+       <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
-                <a href="${cpath}/index.do" class="nav-item nav-link active">홈</a>
+                <a href="${cpath}/index.do" class="nav-item nav-link"  style = "color: #E48B77 !important;">홈</a>
                 <a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a>
                 <a href="${cpath}/testMain.do" class="nav-item nav-link">심리검사</a>
                 <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
@@ -63,8 +60,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
                     <div class="dropdown-menu m-0">
-                        <a href="${cpath}/myPage.do" class="dropdown-item">내 정보</a>
-                        <a href="${cpath}/myTree.do" class="dropdown-item">내 나무</a>
+                        <a href="${cpath}/myPage.do" class="dropdown-item">감정 일기 통계</a>
                         <a href="${cpath}/result.do" class="dropdown-item">심리검사 결과</a>
                     </div>
                 </div>
@@ -80,9 +76,11 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Carousel Start -->
+    <!-- 슬라이드 -->
     <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.2s">
         <div class="owl-carousel header-carousel position-relative">
+        
+        	<!-- 첫번째 슬라이드 -->
             <div class="owl-carousel-item position-relative" style="text-align: right;">
                 <img class="img-fluid" src="${cpath}/resources/img/drawHand.png" alt="">
                 <div class="owl-carousel-inner">
@@ -90,7 +88,7 @@
                         <div class="row justify-content-start">
                             <div class="col-lg-8" id="titleDv">
                                 <!--<p class="text-primary text-uppercase fw-bold mb-2">// The Best Bakery</p>-->
-                                <h1 class="display-1 text-light mb-4 animated slideInDown" id="mainTypo">그림에 담긴 마음을 알아보세요</h1>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown" id="mainTypo">그림에 담긴 마음을 알아보세요1</h1>
                                 <h2 class="display-1 text-light mb-4 animated slideInDown" id="subTypo">마음:체는 딥러닝 기반의 그림분석 서비스입니다.</h1>
                                 <p class="text-light fs-5 mb-4 pb-3" id="indexP">당신이 직접 그린 그림으로 당신의 심리 상태를 분석합니다.<br>
                                     마음:체만의 다채로운 심리 케어 컨텐츠와 함께하면서<br>
@@ -101,10 +99,51 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- 두번째 슬라이드 -->
+            <div class="owl-carousel-item position-relative" style="text-align: right;">
+                <img class="img-fluid" src="${cpath}/resources/img/drawHand.png" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container" id="mainDv">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8" id="titleDv">
+                                <!--<p class="text-primary text-uppercase fw-bold mb-2">// The Best Bakery</p>-->
+                                <h1 class="display-1 text-light mb-4 animated slideInDown" id="mainTypo">그림에 담긴 마음을 알아보세요2</h1>
+                                <h2 class="display-1 text-light mb-4 animated slideInDown" id="subTypo">마음:체는 딥러닝 기반의 그림분석 서비스입니다.</h1>
+                                <p class="text-light fs-5 mb-4 pb-3" id="indexP">당신이 직접 그린 그림으로 당신의 심리 상태를 분석합니다.<br>
+                                    마음:체만의 다채로운 심리 케어 컨텐츠와 함께하면서<br>
+                                    마음의 나무에 영양제를 주는 시간을 가져보세요!</p>
+                                <!--<a href="" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 세번째 슬라이드 -->
+            <div class="owl-carousel-item position-relative" style="text-align: right;">
+                <img class="img-fluid" src="${cpath}/resources/img/drawHand.png" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container" id="mainDv">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8" id="titleDv">
+                                <!--<p class="text-primary text-uppercase fw-bold mb-2">// The Best Bakery</p>-->
+                                <h1 class="display-1 text-light mb-4 animated slideInDown" id="mainTypo">그림에 담긴 마음을 알아보세요3</h1>
+                                <h2 class="display-1 text-light mb-4 animated slideInDown" id="subTypo">마음:체는 딥러닝 기반의 그림분석 서비스입니다.</h1>
+                                <p class="text-light fs-5 mb-4 pb-3" id="indexP">당신이 직접 그린 그림으로 당신의 심리 상태를 분석합니다.<br>
+                                    마음:체만의 다채로운 심리 케어 컨텐츠와 함께하면서<br>
+                                    마음의 나무에 영양제를 주는 시간을 가져보세요!</p>
+                                <!--<a href="" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
         </div>
     </div>
-    <!-- Carousel End -->
-
+    
   <!-- Copyright Start -->
     <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s" id="copy">
         <div class="container">
@@ -120,8 +159,8 @@
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
-    
+    <!-- Copyright Start -->
+
     <!-- JavaScript Libraries -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

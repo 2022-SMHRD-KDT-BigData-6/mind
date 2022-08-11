@@ -73,26 +73,17 @@ public class BoardController {
 		return "myPage";
 	}
 
-	// 내나무 페이지
-	@RequestMapping("/myTree")
-	public String myTree(HttpSession session, Model model) {
+	// 심리검사 결과 페이지
+	@RequestMapping("/result")
+	public String result(HttpSession session, Model model) {
 		MemberVO mvo = (MemberVO) session.getAttribute("mvo");
 		if (mvo != null) {
-			List<TreeVO> tvolist = mapper.TreeList(mvo.getUserid());
-			model.addAttribute("tvolist", tvolist);
 		} else {
 			return "login";
 		}
-		return "myTree";
-
-	}
-
-	// 심리검사 결과 페이지
-	@RequestMapping("/result")
-	public String result() {
 		return "result";
 	}
-
+	
 	// 회원가입 페이지
 	@RequestMapping("/sign.do")
 	public String sign() {
