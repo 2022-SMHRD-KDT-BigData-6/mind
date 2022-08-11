@@ -64,19 +64,19 @@
        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
                 <a href="${cpath}/index.do" class="nav-item nav-link">홈</a>
-                <a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a>
+                <a href="${cpath}/aboutTest.do" class="nav-item nav-link" style = "color: #E48B77 !important;">HTP란?</a>
                 <a href="${cpath}/testMain.do" class="nav-item nav-link">심리검사</a>
+                <a href="${cpath}/care.do" class="nav-item nav-link">심리케어</a>
                 <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
-                <a href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style = "color: #E48B77 !important;">마이페이지</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
                     <div class="dropdown-menu m-0">
                         <a href="${cpath}/myPage.do" class="dropdown-item">감정 일기 통계</a>
                         <a href="${cpath}/result.do" class="dropdown-item">심리검사 결과</a>
                     </div>
                 </div>
                 <c:if test="${empty mvo}">
-                <a href="${cpath}/login.do" class="nav-item nav-link">로그인/회원가입</a>
+                <a href="${cpath}/login.do" class="nav-item nav-link">로그인</a>
                 </c:if>
                 <c:if test="${!empty mvo}">
                 <p class="nav-item nav-link">${mvo.nickname}님</p>
@@ -86,7 +86,6 @@
         </div>
     </nav>
     <!-- Navbar End -->
-
 	<!-- Page Header Start -->
 	<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s" id = "TMheader"
     style = "background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/explainHeader1.jpg) center center no-repeat;

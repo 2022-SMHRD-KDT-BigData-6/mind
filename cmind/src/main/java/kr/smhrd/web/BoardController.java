@@ -33,31 +33,37 @@ public class BoardController {
 	}
 
 	// HTP 설명 페이지
-	@RequestMapping("/aboutTest.do")
+	@RequestMapping("/aboutTest")
 	public String aboutTest() {
 		return "aboutTest";
 	}
 
+	// 케어페이지
+	@RequestMapping("/care")
+	public String care() {
+		return "care";
+	}
+
 	// 감정일기 페이지
-	@RequestMapping("/diary.do")
+	@RequestMapping("/diary")
 	public String diary() {
 		return "diary";
 	}
 
 	// 병원 안내 페이지
-	@RequestMapping("/treeList.do")
+	@RequestMapping("/treeList")
 	public String treeList() {
 		return "treeList";
 	}
 
 	// 홈 페이지
-	@RequestMapping("/index.do")
+	@RequestMapping("/index")
 	public String index() {
 		return "index";
 	}
 
 	// 로그인 페이지
-	@RequestMapping("/login.do")
+	@RequestMapping("/login")
 	public String login() {
 		return "login";
 	}
@@ -83,9 +89,9 @@ public class BoardController {
 		}
 		return "result";
 	}
-	
+
 	// 회원가입 페이지
-	@RequestMapping("/sign.do")
+	@RequestMapping("/sign")
 	public String sign() {
 		return "sign";
 	}
@@ -96,6 +102,12 @@ public class BoardController {
 		return "testGo";
 	}
 
+	// 로딩 페이지
+	@RequestMapping("/testLoading")
+	public String testLoading() {
+		return "testLoading";
+	}
+
 	// 심리검사 설명 페이지
 	@RequestMapping("/testMain")
 	public String testMain() {
@@ -103,14 +115,14 @@ public class BoardController {
 	}
 
 	// 회원가입 기능
-	@RequestMapping("/insert.do")
+	@RequestMapping("/insert")
 	public String insert(MemberVO vo) {
 		mapper.BoardSign(vo);
 		return "index";
 	}
 
 	// 로그인 기능
-	@RequestMapping("/select.do")
+	@RequestMapping("/select")
 	public String select(MemberVO vo, HttpSession session) {
 		MemberVO mvo = mapper.boardLogin(vo);
 		session.setAttribute("mvo", mvo);
@@ -118,7 +130,7 @@ public class BoardController {
 	}
 
 	// 로그아웃 기능
-	@RequestMapping("/logout.do")
+	@RequestMapping("/logout")
 	public String logout(HttpSession session) {
 		session.invalidate();
 		return "index";

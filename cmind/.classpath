@@ -35,6 +35,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/GITCT/Documents/카카오톡 받은 파일/mysql-connector-java-8.0.26.jar"/>
+	<classpathentry kind="lib" path="C:/eGovFrame-3.10.0/mysql-connector-java-8.0.26.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -45,45 +45,44 @@
     <!-- Spinner End -->
 
     
-    <!-- Navbar Start -->
+   <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.do" class="navbar-brand ms-4 ms-lg-0">
             <h1 class="text-primary m-0" id="title">마음:체</h1>
         </a>
        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
-                <a href="${cpath}/index.do" class="nav-item nav-link ">홈</a>
-                <a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTPasdsadasd란?</a>
+                <a href="${cpath}/index.do" class="nav-item nav-link">홈</a>
+                <a href="${cpath}/aboutTest.do" class="nav-item nav-link" style = "color: #E48B77 !important;">HTP란?</a>
                 <a href="${cpath}/testMain.do" class="nav-item nav-link">심리검사</a>
-                <a href="${cpath}/Diary.do" class="nav-item nav-link">감정일기</a>
-                <a href="${cpath}/Help.do" class="nav-item nav-link">병원안내</a>
+                <a href="${cpath}/care.do" class="nav-item nav-link">심리케어</a>
+                <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style = "color: #E48B77 !important;">마이페이지</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
                     <div class="dropdown-menu m-0">
-                        <a href="${cpath}/myPage.do" class="dropdown-item">내 정보</a>
-                        <a href="${cpath}/myTree.do" class="dropdown-item">내 나무</a>
+                        <a href="${cpath}/myPage.do" class="dropdown-item">감정 일기 통계</a>
                         <a href="${cpath}/result.do" class="dropdown-item">심리검사 결과</a>
                     </div>
                 </div>
                 <c:if test="${empty mvo}">
-                <a href="${cpath}/testLogin.do" class="nav-item nav-link">로그인/회원가입</a>
+                <a href="${cpath}/login.do" class="nav-item nav-link">로그인</a>
                 </c:if>
                 <c:if test="${!empty mvo}">
-                <p class="nav-item nav-link">${mvo.username}님환영합니다</p>
-					<button onclick='location.href="${cpath}/logout.do"'class="btn btn-default">로그아웃</button>
+                <p class="nav-item nav-link">${mvo.nickname}님</p>
+				<a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
 				</c:if>
-                </div>
+            </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s" id="TMheader" 
-		 style=" background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/testheader1.jpg) center center no-repeat;
-		 background-size:cover;">
-            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">" 내 나무 "</h1>
+    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s" id = "TMheader"
+    style = "background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/explainHeader1.jpg) center center no-repeat;
+    background-size:cover;">
+        <div class="container text-center pt-5 pb-3">
+            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">로딩페이지</h1>
             <nav aria-label="breadcrumb animated slideInDown">
-               
             </nav>
         </div>
     </div>
@@ -92,7 +91,7 @@
      <!--로딩텍스트-->
     <div class="loadMes">
         <span>딥</span><span>러</span><span>닝</span><span>으</span><span>로</span>&nbsp;
-        <span>이름</span><span>님</span><span>의</span>&nbsp;
+        <span>${mvo.nickname}</span><span>님</span><span>의</span>&nbsp;
         <span>나</span><span>무</span><span>를</span>&nbsp;
         <span>해</span><span>석</span><span>하</span><span>고</span>&nbsp;
         <span>있</span><span>습</span><span>니</span><span>다.</span>&nbsp;
@@ -123,17 +122,17 @@
   
 
 
-    <!-- Copyright Start -->
+   <!-- Copyright Start -->
     <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s" id="copy">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                    &copy; <a href="https://github.com/2022-SMHRD-KDT-BigData-6/mind">캐치 마인드</a>, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                    <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    Designed By <a href="https://htmlcodex.com">(주) 미리</a>
+                    <br>Distributed By: <a class="border-bottom" href="https://smhrd.or.kr/" target="_blank">스마트인재개발원</a>
                 </div>
             </div>
         </div>
