@@ -56,4 +56,44 @@
     <servlet-name>aa</servlet-name>
     <url-pattern>/aa</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>result</display-name>
+    <servlet-name>result</servlet-name>
+    <servlet-class>result.result</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>result</servlet-name>
+    <url-pattern>/result</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>test</display-name>
+    <servlet-name>test</servlet-name>
+    <servlet-class>kr.smhrd.web.test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>resultGo</display-name>
+    <servlet-name>resultGo</servlet-name>
+    <servlet-class>kr.smhrd.web.resultGo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>resultGo</servlet-name>
+    <url-pattern>/resultGo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResultGo</display-name>
+    <servlet-name>ResultGo</servlet-name>
+    <servlet-class>kr.smhrd.web.ResultGo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResultGo</servlet-name>
+    <url-pattern>/ResultGo</url-pattern>
+  </servlet-mapping>
 </web-app>

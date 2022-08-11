@@ -14,9 +14,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.smhrd.mapper.BoardMapper;
-import kr.smhrd.model.BoardVO;
-
-import kr.smhrd.model.TreeVO;
 
 import kr.smhrd.model.MemberVO;
 
@@ -98,7 +95,12 @@ public class BoardController {
 
 	// 심리검사 실행 페이지
 	@RequestMapping("/testGo")
-	public String testGo() {
+	public String testGo(HttpSession session, Model model) {
+		MemberVO mvo = (MemberVO) session.getAttribute("mvo");
+		if (mvo != null) {
+		} else {
+			return "login";
+		}
 		return "testGo";
 	}
 
@@ -120,6 +122,7 @@ public class BoardController {
 		mapper.BoardSign(vo);
 		return "index";
 	}
+
 
 	// 로그인 기능
 	@RequestMapping("/select")

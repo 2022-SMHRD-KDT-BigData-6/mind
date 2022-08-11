@@ -104,19 +104,15 @@
 			<div class="row g-5">
 				<div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
 					<div id="explainPhoto"float:left;>
-						<img src="${cpath}/resources/img/result.jpg" alt="" style="width: 400px;">
+						<img src="${cpath}/resources/img/result.jpg" alt="" style="width: 500px;">
 					</div>
 				</div>
 				<div class="col-lg-6 wow fadeIn" data-wow-delay="1s">
 					<div class="h-100"float:left;>
-						<p class="emphasis" style="font-size: 25px">생각이 많음, 혼란스러움. 현재에
-							만족감, 안정감. 적극적, 공격성. 불안감, 욕구불만, 회피. 통제력 약함, 상실감, 감수성이 강함</p>
-						<p class="aboutEx">어디로 가야할지 방향을 잡지 못하고 있거나 또는 어떤 결정을 내리지 못하는
-							갈등상황에 있으며 주어진 상황 안에서 만족하고 안정적인 것을 추구하고자 합니다.</p>
-						<p class="aboutEx">평소 에너지가 많고 환경에 적극적이나 과하면 즉흥적이고 공격적으로 보일 때가
-							있습니다.</p>
-						<p class="aboutEx">때로는 감정에 대한 적절한 조절이 어려울 때가 있습니다. 평소 에너지가 많고
-							환경에 적극적이나 과하면 즉흥적이고 공격적으로 보일 때가 있습니다.</p>
+						<p class="emphasis" style="font-size: 25px"><%=request.getParameter("result") %></p>
+						<p class="aboutEx">해석</p>
+						<p class="aboutEx">해석</p>
+						<p class="aboutEx">해석</p>
 					</div>
 				</div>
 			</div>

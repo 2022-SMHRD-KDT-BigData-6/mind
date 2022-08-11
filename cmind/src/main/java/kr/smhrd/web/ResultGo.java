@@ -1,9 +1,17 @@
+package kr.smhrd.web;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
-public class test {
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
-	public static void main(String[] args) {
+public class ResultGo extends HttpServlet {
+	private static final long serialVersionUID = 1L;
 
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int score1 = 0;
 		int score2 = 0;
 		int score3 = 0;
@@ -14,13 +22,12 @@ public class test {
 		int bird = 0;
 		double h = 0;
 		String Tree_h = "정상크기나무";
-		
+
 		double wcrown = 0;
 		String Tree_crown = "정상크기수관";
-		
+
 		double wtrunk = 0;
-		String Tree_trunk  = "정상크기기둥";
-		
+		String Tree_trunk = "정상크기기둥";
 
 		String ap = "사과 없거나 8개 이하";
 		String bi = "새가 없거나 4개 이하";
@@ -30,18 +37,12 @@ public class test {
 		String trunk = "견고한 내면상태를 가지고 있습니다.";
 		int knot = 0;
 
-		String test ="7 0.507212 0.43149 0.725962 0.310096\r\n" + 
-				"9 0.477163 0.807692 0.497596 0.0961538\r\n" + 
-				"4 0.515625 0.450721 0.53125 0.175481\r\n" + 
-				"0 0.247596 0.448317 0.0576923 0.0360577\r\n" + 
-				"0 0.71875 0.388221 0.0721154 0.0360577\r\n" + 
-				"0 0.78726 0.633413 0.0841346 0.0504808\r\n" + 
-				"0 0.155048 0.701923 0.0985577 0.0528846\r\n" + 
-				"0 0.56851 0.450721 0.0600962 0.0360577\r\n" + 
-				"13 0.508413 0.651442 0.415865 0.211538\r\n" + 
-				"0 0.358173 0.33774 0.0721154 0.0360577\r\n" + 
-				"0 0.548077 0.33774 0.0721154 0.0408654\r\n" + 
-				"";
+		String test = "7 0.507212 0.43149 0.725962 0.310096\r\n" + "9 0.477163 0.807692 0.497596 0.0961538\r\n"
+				+ "4 0.515625 0.450721 0.53125 0.175481\r\n" + "0 0.247596 0.448317 0.0576923 0.0360577\r\n"
+				+ "0 0.71875 0.388221 0.0721154 0.0360577\r\n" + "0 0.78726 0.633413 0.0841346 0.0504808\r\n"
+				+ "0 0.155048 0.701923 0.0985577 0.0528846\r\n" + "0 0.56851 0.450721 0.0600962 0.0360577\r\n"
+				+ "13 0.508413 0.651442 0.415865 0.211538\r\n" + "0 0.358173 0.33774 0.0721154 0.0360577\r\n"
+				+ "0 0.548077 0.33774 0.0721154 0.0408654\r\n" + "";
 
 		String[] str = test.split("\\r\\n");
 
@@ -171,11 +172,11 @@ public class test {
 			}
 
 		}
-		
+
 		// 지나치게 큰나무
 		if (h > 0.8) {
 			score1 = +5;
-			Tree_h="지나치게 큰나무";
+			Tree_h = "지나치게 큰나무";
 		}
 
 		// 지나치게 작은나무
@@ -185,7 +186,7 @@ public class test {
 			score3 = +10;
 			score4 = +7;
 			score5 = +0;
-			Tree_h="지나치게 작은나무";
+			Tree_h = "지나치게 작은나무";
 		}
 
 		// 큰 수관
@@ -201,24 +202,25 @@ public class test {
 		}
 
 		// 두꺼운 기둥
-		if (wtrunk>=0.7) {
+		if (wtrunk >= 0.7) {
 			Tree_trunk = "지나치게 큰 기둥";
 			score1 = +5;
 		}
 
 		// 얇은 기둥
-		if (wtrunk<=0.2) {
+		if (wtrunk <= 0.2) {
 			Tree_trunk = "지나치게 작은 기둥";
 			score1 = +5;
 		}
 
-		System.out.println("OOO님의 수관의 모양으로 보아 " + crown + "\n" + "사과의 의미는 " + ap + "\n" + bi + "\n" + "가지의 모양으로 보아"
-				+ branch + "\n" + "기둥의 모양으로 보아" + trunk + "\n" + "뿌리의 모양으로 보아" + root+"\n");
-		System.out.println(Tree_h+"  " + Tree_crown+"  " + Tree_trunk+"\n");
-		System.out.println(score1+"  "+score2+"  "+score3+"  "+score4+"  "+score5);
-		System.out.println("전체 높이 : " + h);
-		System.out.println("기둥 넓이: " + wtrunk);
-		System.out.println("수관 넓이: " + wcrown);
-	}
-}
+//		System.out.println(score1+"  "+score2+"  "+score3+"  "+score4+"  "+score5);
+//		System.out.println("전체 높이 : " + h);
+//		System.out.println("기둥 넓이: " + wtrunk);
+//		System.out.println("수관 넓이: " + wcrown);
 
+		String result = "님의 수관의 모양으로 보아 " + crown + "\n" + "사과의 의미는 " + ap + "\n" + bi + "\n" + "가지의 모양으로 보아" + branch
+				+ "\n" + "기둥의 모양으로 보아" + trunk + "\n" + "뿌리의 모양으로 보아" + root + "\n";
+		request.setAttribute("result", result);
+	}
+
+}

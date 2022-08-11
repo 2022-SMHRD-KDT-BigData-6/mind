@@ -100,7 +100,7 @@
    <div class="container">
       <div class="image-upload" id="image-upload" style="animation: fadeIn 1s;">
          <form method="post" enctype="multipart/form-data"
-            action="${cpath}/testLoading.do">
+            action="http://172.30.1.49:5000/upload">
             <input type="hidden" name="userid" value="${mvo.userid}">
             <div class="button">
                <h4>[ 나무 그림을 업로드해주세요 ]</h4> <br>
