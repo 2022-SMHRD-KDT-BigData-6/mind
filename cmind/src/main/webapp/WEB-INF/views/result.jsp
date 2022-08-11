@@ -64,8 +64,8 @@
        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
                 <a href="${cpath}/index.do" class="nav-item nav-link">홈</a>
-                <a href="${cpath}/aboutTest.do" class="nav-item nav-link" style = "color: #E48B77 !important;">HTP란?</a>
-                <a href="${cpath}/testMain.do" class="nav-item nav-link">심리검사</a>
+                <a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a>
+                <a href="${cpath}/testMain.do" class="nav-item nav-link" style = "color: #E48B77 !important;">심리검사</a>
                 <a href="${cpath}/care.do" class="nav-item nav-link">심리케어</a>
                 <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
                 <div class="nav-item dropdown">
@@ -141,12 +141,12 @@
 				<button type="submit"
 					class="button button--nina button--text-thick button--text-upper button--size-s"
 					data-text="심리케어하러가기" id="confirmBtn">
-					<span class="confText">결</span> <span class="confText">과</span>&nbsp;
+					<span class="confText">케</span> <span class="confText">어</span>&nbsp;
 					<span class="confText">페</span> <span class="confText">이</span> <span
 						class="confText">지</span> <span class="confText">로</span>&nbsp; <span
 						class="confText">이</span> <span class="confText">동</span> <span
 						class="confText">합</span> <span class="confText">니</span> <span
-						class="confText">당</span>
+						class="confText">다.</span>
 				</button>
 			</div>
 		</div>

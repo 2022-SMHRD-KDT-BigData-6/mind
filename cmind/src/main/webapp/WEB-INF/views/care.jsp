@@ -52,9 +52,9 @@
        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
                 <a href="${cpath}/index.do" class="nav-item nav-link">홈</a>
-                <a href="${cpath}/aboutTest.do" class="nav-item nav-link" style = "color: #E48B77 !important;">HTP란?</a>
+                <a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a>
                 <a href="${cpath}/testMain.do" class="nav-item nav-link">심리검사</a>
-                <a href="${cpath}/care.do" class="nav-item nav-link">심리케어</a>
+                <a href="${cpath}/care.do" class="nav-item nav-link" style = "color: #E48B77 !important;">심리케어</a>
                 <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
@@ -80,7 +80,7 @@
     style = "background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/explainHeader1.jpg) center center no-repeat;
     background-size:cover;">
         <div class="container text-center pt-5 pb-3">
-            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">감정 일기</h1>
+            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">심리 케어</h1>
             <nav aria-label="breadcrumb animated slideInDown">
             </nav>
         </div>
