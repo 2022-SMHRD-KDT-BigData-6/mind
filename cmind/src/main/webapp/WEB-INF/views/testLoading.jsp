@@ -52,76 +52,88 @@
         </a>
        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
-                <a href="${cpath}/index.do" class="nav-item nav-link">홈</a>
-                <a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a>
-                <a href="${cpath}/testMain.do" class="nav-item nav-link" style = "color: #E48B77 !important;">심리검사</a>
-                <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
-                <a href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
+                <a href="${cpath}/index.do" class="nav-item nav-link ">홈</a>
+                <a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTPasdsadasd란?</a>
+                <a href="${cpath}/testMain.do" class="nav-item nav-link">심리검사</a>
+                <a href="${cpath}/Diary.do" class="nav-item nav-link">감정일기</a>
+                <a href="${cpath}/Help.do" class="nav-item nav-link">병원안내</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style = "color: #E48B77 !important;">마이페이지</a>
                     <div class="dropdown-menu m-0">
-                        <a href="${cpath}/myPage.do" class="dropdown-item">감정 일기 통계</a>
+                        <a href="${cpath}/myPage.do" class="dropdown-item">내 정보</a>
+                        <a href="${cpath}/myTree.do" class="dropdown-item">내 나무</a>
                         <a href="${cpath}/result.do" class="dropdown-item">심리검사 결과</a>
                     </div>
                 </div>
                 <c:if test="${empty mvo}">
-                <a href="${cpath}/login.do" class="nav-item nav-link">로그인/회원가입</a>
+                <a href="${cpath}/testLogin.do" class="nav-item nav-link">로그인/회원가입</a>
                 </c:if>
                 <c:if test="${!empty mvo}">
-                <p class="nav-item nav-link">${mvo.nickname}님</p>
-				<a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
+                <p class="nav-item nav-link">${mvo.username}님환영합니다</p>
+					<button onclick='location.href="${cpath}/logout.do"'class="btn btn-default">로그아웃</button>
 				</c:if>
-            </div>
+                </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s" id = "TMheader"
-    style = "background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/explainHeader1.jpg) center center no-repeat;
-    background-size:cover;">
-        <div class="container text-center pt-5 pb-3">
-            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">로딩중</h1>
+    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s" id="TMheader" 
+		 style=" background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/testheader1.jpg) center center no-repeat;
+		 background-size:cover;">
+            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">" 내 나무 "</h1>
             <nav aria-label="breadcrumb animated slideInDown">
+               
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
     
-
-   
-    <!-- 내가 키우고 있는 나무 출력 시작-->
-
-    
-    <div >
-        <h4 style="text-align: center;" id=slideInfo>음... 일기를 쓸 때마다 나무에 물을 줄 수 있습니다<br>나무는 일정 포인트..가 쌓이면 한 단계씩 성장하게 됩니다 <br> 나무를 멋지게 키워보세요!</h4>
+     <!--로딩텍스트-->
+    <div class="loadMes">
+        <span>딥</span><span>러</span><span>닝</span><span>으</span><span>로</span>&nbsp;
+        <span>이름</span><span>님</span><span>의</span>&nbsp;
+        <span>나</span><span>무</span><span>를</span>&nbsp;
+        <span>해</span><span>석</span><span>하</span><span>고</span>&nbsp;
+        <span>있</span><span>습</span><span>니</span><span>다.</span>&nbsp;
+        <span>곧</span>&nbsp;<span>검</span><span>사</span><span>결</span><span>과</span><span>가</span>&nbsp;
+        <span>나</span><span>옵</span><span>니</span><span>다</span><span>!</span>
     </div>
 
-   
-    <div style="margin: auto; margin-top: 120px;">
-    <c:forEach var="vo" items="${tvo}">
-        <h3>이름 : ${vo.treename}</h3>
-        <h3>만난 날짜 : 2022.08.04</h3>
-        <div id="growTree" style="background-image:url('./img/tree3.png')"></div>
+    <!--로딩바-->
+    <div class="loadBox">
+        <div class="loader4">
+        <div id="loadMes"><span id="loadMesIn">간식먹는중</span></div> 
+        </div>
+        
+      </div>
+      
+    <div id="loadInfo">
+        <span style="color:#E48B77";> I N F O R M A T I O N <br><br></span>
+        해당 그림상담은 기본적인 내용만을 담고 있으며,<br>
+        간단한 그림을 통해 사람의 심리를 어느 정도 파악할 수 있다는 것을 알립니다. <br>
+        따라서 그림을 그린 사람의 환경이나 현재의 심리상태에 따라<br>
+        분석 내용은 달라질 수 있으며, 그림에 대한 보다 정확한 해석은 <br>
+        정신의학이나 심리학에 대한 전반적인 이해를 가진 <br>
+        전문가가 직접 해야 한다는 점을 알려드립니다. <br>
+        인천우리병원 최성환 진료부장 (정신건강의학과 전문의)
+    </div>
+
     
-    <p style="font-size: 25px; text-align: center;"> [ 오늘은 ${vo.treename}의 기분이 좋아요!]</p>	
-	</c:forEach>
-	</div>
-    <div style="height: 150px;"> </div>
-    <!-- 내가 키우고 있는 나무 출력 끝-->
+  
 
 
     <!-- Copyright Start -->
-      <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s" id="copy">
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s" id="copy">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="https://github.com/2022-SMHRD-KDT-BigData-6/mind">캐치 마인드</a>, All Right Reserved.
+                    &copy; <a href="#">Your Site Name</a>, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a href="https://htmlcodex.com">(주) 미리</a>
-                    <br>Distributed By: <a class="border-bottom" href="https://smhrd.or.kr/" target="_blank">스마트인재개발원</a>
+                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                    <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
                 </div>
             </div>
         </div>
