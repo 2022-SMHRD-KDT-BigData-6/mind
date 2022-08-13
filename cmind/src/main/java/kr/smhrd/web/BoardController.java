@@ -1,5 +1,6 @@
 package kr.smhrd.web;
 
+import java.io.File;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import kr.smhrd.mapper.BoardMapper;
 
 import kr.smhrd.model.MemberVO;
+import kr.smhrd.model.TestVO;
 
 @Controller // front controller
 public class BoardController {
@@ -78,13 +80,15 @@ public class BoardController {
 
 	// 심리검사 결과 페이지
 	@RequestMapping("/result")
-	public String result(HttpSession session, Model model) {
+	public String result(HttpSession session, Model model,TestVO vo) {
 		MemberVO mvo = (MemberVO) session.getAttribute("mvo");
 		if (mvo != null) {
+			TestVO tvo = mapper.selectReuslt(vo);
+			session.setAttribute("tvo", tvo);
+			return "result";
 		} else {
 			return "login";
 		}
-		return "result";
 	}
 
 	// 회원가입 페이지
@@ -123,6 +127,12 @@ public class BoardController {
 		return "index";
 	}
 
+	// 결과 DB저장
+	@RequestMapping("/insertResult")
+	public String insertResult(TestVO tvo) {
+		mapper.insertResult(tvo);
+		return "testLoading";
+	}
 
 	// 로그인 기능
 	@RequestMapping("/select")

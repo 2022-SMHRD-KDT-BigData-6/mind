@@ -11,5 +11,13 @@
 	    select * from memberinfo where userid=#{userid}
 	</select>
 	
+	<!-- 결과 입력 -->
+    <insert id="insertResult" parameterType="kr.smhrd.model.TestVO">
+		insert into test_log(imgname, userid, AggAmx, SocialAnx, SadAnx, CompleAnx, RegAnx, diagnosis_result) values(#{imgname}, #{userid}, #{AggAmx}, #{SadAnx}, #{CompleAnx}, #{RegAnx}, #{diagnosis_result})    
+	</insert>
+	
+    <select id="selectReuslt" resultType="kr.smhrd.model.TestVO">
+	    select * from test_log where userid=#{userid}
+	</select>
 	
 </mapper>

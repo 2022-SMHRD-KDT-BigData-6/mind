@@ -1,1 +1,3 @@
-SELECT * FROM test_log
+SELECT * FROM testdata
+
+drop table

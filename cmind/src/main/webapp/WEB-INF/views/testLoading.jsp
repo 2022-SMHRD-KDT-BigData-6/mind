@@ -118,10 +118,6 @@
         인천우리병원 최성환 진료부장 (정신건강의학과 전문의)
     </div>
 
-    
-  
-
-
    <!-- Copyright Start -->
     <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s" id="copy">
         <div class="container">
@@ -139,11 +135,6 @@
     </div>
     <!-- Copyright End -->
 
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
      <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -155,6 +146,30 @@
 
     <!-- Template Javascript -->
     <script src="${cpath}/resources/js/main.js"></script>
+     <script>
+    //일정 시간마다 텍스트 갱신
+    setTimeout(function() {
+        $("#loadMesIn").html("코드 치는척 하면서 조는중");
+      }, 2000);
+
+    setTimeout(function() {
+        $("#loadMesIn").html("회수 코드 구경하는중");
+      }, 4000);
+
+    setTimeout(function() {
+        $("#loadMesIn").html("결과 페이지로 안내합니다!");
+      }, 6000);
+
+    //결과 페이지로 이동
+    setTimeout(function() {
+        location.href="result.do";
+    }, 7500);
+    
+
+</script>
+
+    
+    </script>
 </body>
 
 </html>

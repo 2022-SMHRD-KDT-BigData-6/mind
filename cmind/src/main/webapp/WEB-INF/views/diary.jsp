@@ -153,8 +153,6 @@
 	<script src="${cpath}/resources/lib/owlcarousel/owl.carousel.min.js"></script>
 	<script src="${cpath}/resources/js/main.js"></script>
 
-
-
 	<script>
 		var num = 1;
 
