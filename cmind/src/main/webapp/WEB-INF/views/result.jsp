@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!-- 프로젝트의 contextpath 값을 동적으로 가져오는 방법 -->
 <c:set var="cpath" value="${ pageContext.request.contextPath }" />
 <!DOCTYPE html>
@@ -42,7 +43,7 @@
 <link href="${cpath}/resources/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Template Stylesheet -->
-<link href="${cpath}/resources/css/style.css" rel="stylesheet">
+<link href="${cpath}/resources/css/style.css?aas" rel="stylesheet">
 
 <!-- 애니메이션 가져옴 -->
 <link rel="stylesheet"
@@ -104,15 +105,16 @@
 			<div class="row g-5">
 				<div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
 					<div id="explainPhoto"float:left;>
-						<img src="${cpath}/resources/img/result.jpg" alt="" style="width: 500px;">
+						<img src="data:image/jpeg;base64,${img}" alt="" style="width: 500px;" class="img-thumbnail">
 					</div>
 				</div>
 				<div class="col-lg-6 wow fadeIn" data-wow-delay="1s">
 					<div class="h-100"float:left;>
-						<p class="emphasis" style="font-size: 25px"><%=request.getParameter("result") %></p>
-						<p class="aboutEx">해석</p>
-						<p class="aboutEx">해석</p>
-						<p class="aboutEx">해석</p>
+						<p class="emphasis" style="font-size: 25px"></p>
+						<p class="aboutEx">${mvo.nickname}님의 그림 해석결과입니다.</p>
+						<p class="aboutEx">${result.diagnosis_result}</p>
+						
+						
 					</div>
 				</div>
 			</div>
@@ -133,7 +135,7 @@
 	<section class="testGoContent">
 		<div class="confirmBox bg-1">
 			<div class="buttonContainer"
-				onclick="location.href='${cpath}/testLoading.do'">
+				onclick="location.href='${cpath}/care.do'">
 				<button type="submit"
 					class="button button--nina button--text-thick button--text-upper button--size-s"
 					data-text="심리케어하러가기" id="confirmBtn">
@@ -190,10 +192,10 @@
 		const data = {
 			labels : labels,
 			datasets : [ {
-				label : 'ㅇㅇ님의 감정 그래프',
-				backgroundColor : 'rgb(255, 255, 132)', //그래프 점 색
+				label : '감정 그래프',
+				backgroundColor : 'rgb(255, 99, 132)', //그래프 점 색
 				borderColor : 'rgb(255, 99, 132)', //그래프 선 색
-				data : [ 0, 10, 5, 2, 20, 30, 100 ], //라벨 데이터
+				data : [${result.agganx},${result.socialanx},${result.sadanx},${result.complexanx},${result.reganx}] //라벨 데이터
 			} ]
 		};
 

@@ -13,11 +13,19 @@
 	
 	<!-- 결과 입력 -->
     <insert id="insertResult" parameterType="kr.smhrd.model.TestVO">
-		insert into test_log(imgname, userid, AggAmx, SocialAnx, SadAnx, CompleAnx, RegAnx, diagnosis_result) values(#{imgname}, #{userid}, #{AggAmx}, #{SadAnx}, #{CompleAnx}, #{RegAnx}, #{diagnosis_result})    
+		insert into test_log(userid, agganx, socialanx, sadanx, complexanx, reganx, diagnosis_result) values(#{userid}, #{agganx}, #{socialanx}, #{sadanx}, #{complexanx}, #{reganx}, #{diagnosis_result})    
 	</insert>
 	
-    <select id="selectReuslt" resultType="kr.smhrd.model.TestVO">
-	    select * from test_log where userid=#{userid}
+    <select id="selectResult" resultType="kr.smhrd.model.TestVO">
+	    select * from (SELECT row_number()over(order by testidx desc) as recent ,tl.* FROM test_log as tl where userid = #{userid}) tmp where recent = 1;
+	</select>
+	
+    <select id="selectbox" resultType="String">
+	    select rawdata from (SELECT row_number()over(order by idx desc) as recent,idx, rawdata FROM testdata where userid =#{userid}) as tmp where recent = 1;
+	</select>
+	
+    <select id="selectimg" resultType="String">
+	    select image from (SELECT row_number()over(order by idx desc) as recent,idx, image FROM testdata where userid =#{userid}) as tmp where recent = 1;
 	</select>
 	
 </mapper>

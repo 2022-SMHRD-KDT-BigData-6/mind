@@ -96,22 +96,22 @@
 		style="background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/explainHeader1.jpg) center center no-repeat;
     background-size:cover;">
 		<div class="container text-center pt-5 pb-3">
-			<h1 class="display-4 animated slideInDown mb-3" id="ATtypo">업로드
-				페이지</h1>
+			<h1 class="display-4 animated slideInDown mb-3" id="ATtypo">그림
+				제출</h1>
 			<nav aria-label="breadcrumb animated slideInDown"></nav>
 		</div>
 	</div>
 	<!-- Page Header End -->
 
-
 	<!-- 그림 업로드 페이지 -->
 	<div class="container">
 		<div class="image-upload" id="image-upload"
 			style="animation: fadeIn 1s;">
-			<form method="post" enctype="multipart/form-data"
-				action="testLoading.do" id="uploadForm">
+
+			<form method="post" enctype="multipart/form-data" id="form">
 				<input type="hidden" name="userid" value="${mvo.userid}">
-				<div class="button" id="submit">
+
+				<div class="button">
 					<label for="chooseFile">
 						<h4>
 							나무 그림을 업로드해주세요 <br> <span id="uploadbtn11" class="emphasis"
@@ -136,7 +136,7 @@
 						<div class="buttonContainer">
 							<button type="button"
 								class="button button--nina button--text-thick button--text-upper button--size-s"
-								data-text="결과 보시려면 클릭" id="uploadBtn">
+								data-text="결과 보시려면 클릭!" id="confirmBtn" onclick="location.href='${cpath}/testLoading.do'">
 								<span class="confText">결</span> <span class="confText">과</span>&nbsp;
 								<span class="confText">페</span> <span class="confText">이</span>
 								<span class="confText">지</span> <span class="confText">로</span>&nbsp;
@@ -205,13 +205,12 @@
 
 			var container = document.getElementById('image-show');
 			container.appendChild(newImage);
-
 		}
 	</script>
-
 	<script>
 		$(function() {
-			$('#uploadBtn').on('click', function() {
+
+			$('#confirmBtn').on('click', function() {
 				uploadFile();
 			});
 
@@ -219,24 +218,22 @@
 
 		function uploadFile() {
 
-			var form = $('#uploadForm')[0];
+			var form = $('#form')[0];
 			var formData = new FormData(form);
-			
+
 			$.ajax({
-				url : 'http://172.30.1.11:5000/upload',
+				url : 'http://172.30.1.72:5000/upload',
 				type : 'POST',
 				data : formData,
 				contentType : false,
 				processData : false,
 				success : function(res) {
-					console.log('성공');
 					console.log(res);
-					location.href = 'http://localhost:8081/web/testLoading.do'
 				},
 				error : function() {
-					console.log('실패');
 				}
-			})
+
+			});
 		}
 	</script>
 

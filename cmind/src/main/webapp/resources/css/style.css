@@ -209,7 +209,6 @@ h6,
 
 
 .page-header {
-    margin-bottom: 3rem;
     background-size: cover;
 }
 
@@ -1016,8 +1015,8 @@ h3{
     opacity: 1;
     -webkit-transform-origin:  100% 0%;
         transform-origin:  100% 0% ;
-    -webkit-animation: loader4 10s ease-in-out infinite;
-        animation: loader4 10s ease-in-out infinite;
+    -webkit-animation: loader4 15s ease-in-out infinite;
+        animation: loader4 15s ease-in-out infinite;
   }
   
   .loader4:after{
@@ -1322,4 +1321,271 @@ h3{
 }     
 
 
+   /*케어페이지*/
+   #mindInfo{
+   margin:auto;
+   }
+   
+   #mindInfo >  * {
+   text-align : left;
+   }
+   
+   #careTypo {
+   width:1100px; 
+   height:700px; 
+   margin:auto; 
+   padding-top:230px;
+   opacity:0; 
+   }
 
+   #careTypo > * {
+   float:left; text-align:center;
+   }
+
+   #CareImgCon {
+   width:350px;
+   float:left; 
+   text-align:center;
+   }
+   
+   
+   #mindInfo > h3 {
+   font-size:50px;
+   color:#444E54;
+   }
+   
+   #mindInfo > p {
+   font-size:30px; 
+   color:#698086;
+   }
+   
+   #careTypo > div > img{
+   margin:auto;
+   }
+   
+   
+   #careTypo > div:nth-child(1) {
+   width:350px;
+   }
+   
+   #careTypo > div:nth-child(2) {
+   width:740px; 
+   height:200px;
+   }
+   
+   #careMsg {
+   width:1200px;
+   height:200px;
+   margin:auto;
+   opacity:0; 
+   text-align : center;
+   }
+   
+   #careMsg > p {
+   font-size:30px;
+   text-align:center;
+   letter-spacing:4px;
+   }
+   
+   /* 케어페이지 전문가연결버튼 */
+   .custom-btn.btn-12 {
+   width: 230px;
+   height: 40px;
+     color: #fff;
+     border-radius: 5px;
+     padding: 10px 25px;
+     font-weight: 500;
+     background: transparent;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     position: relative;
+     display: inline-block;
+      box-shadow:inset 2px 2px 2px 0px 
+    rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+     outline: none;
+     position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+   }
+   
+   
+   .btn-12 span {
+   background: rgb(0,172,238);
+   background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+   display: block;
+   position: absolute;
+   width: 240px;
+   height: 40px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+   border-radius: 5px;
+   margin:0;
+   text-align: center;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-transition: all .3s;
+   transition: all .3s;
+   }
+   
+   .btn-12 span:nth-child(1) {
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+  }
+  
+  .btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+  }
+  
+  .btn-12:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  }
+  
+  .btn-12:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  }
+
+  /* 케어페이지 슬라이드 */
+  .swiper-container {
+     width:1300px;
+   height:360px;
+  }
+  .swiper-slide {
+   text-align:center;
+   align-items:center; /* 위아래 기준 중앙정렬 */
+   justify-content:center; /* 좌우 기준 중앙정렬 */
+  }
+  .swiper-slide img {
+   box-shadow:0 0 5px #555;
+   width:100%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+   /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+   height: 70%;
+   margin-bottom:10px;
+  }
+  
+  .careCon {
+  text-align:center;
+  color:black;
+  font-size:30px;
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+   top: 40% !important;
+  }
+  
+  .careTit {
+  text-shadow:1px 1px 1px #000;
+  color:#EBD6AF;
+  text-align:left;
+  margin-top:50px;
+  font-size:35px;
+  font-weight:bolder;
+  margin-left:320px;
+  }
+  
+  
+  /* 감정일기통계 */
+  #statTit {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #ABAE90;
+  font-family : 'KyoboHand';
+  font-weight : lighter;
+  letter-spacing: 4px;
+  margin-top : 80px;
+  }
+
+  .chartBef {
+  display:inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: 0.3s;
+  }
+  .chartNow {
+  display:inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: 0.3s;
+  }
+  
+  .chartT {
+  padding:40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top : 10px;
+  }
+   
+  #expT {
+  width:400px; 
+  text-align:center; 
+  margin:auto; 
+  margin-top:50px; 
+  margin-bottom:80px;  
+  opacity: 0;
+  }
+  
+  #mainT {
+  text-align:center; 
+  margin:auto;  
+  margin-top:50px;
+  opacity: 0;
+  }
+  
+  #allD {
+  opacity: 0;
+  width:500px; 
+  font-size:20px; 
+  margin:auto; 
+  margin-top:30px;
+  }
+  
+  #linkB {
+  opacity: 0;
+  }
+  
+  .chartI {
+  text-align:center; 
+  margin:auto; 
+  margin-left:100px;
+  }
+  
+  .chartI > div {
+  line-height:45px; width:50px; height:50px;
+   float:left; margin:10px; border-radius:40%; 
+  }
+  
+  .emphasis02 {
+  color: #F5A037;
+  font-weight:bolder;
+  }

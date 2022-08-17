@@ -25,7 +25,11 @@ public interface BoardMapper {
 
 	public void insertResult(TestVO tvo);
 	
-	public TestVO selectReuslt(TestVO tvo);
+	public TestVO selectResult(String userid);
+
+	public String selectbox(String userid);
+	
+	public String selectimg(String userid);
 
 	
 

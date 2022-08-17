@@ -8,14 +8,13 @@ import lombok.NoArgsConstructor;
 public class TestVO {
 	
 	private int testidx;
-	private String imgname;
 	private String userid;
 	private char testopen;
 	private String resultdate;
-	private int AggAnx;
-	private int SocialAnx;
-	private int SadAnx;
-	private int ComplexAnx;
-	private int RegAnx;
+	private int agganx;
+	private int socialanx;
+	private int sadanx;
+	private int complexanx;
+	private int reganx;
 	private String diagnosis_result;
 }

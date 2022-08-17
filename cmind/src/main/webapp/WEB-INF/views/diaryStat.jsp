@@ -33,7 +33,7 @@
     <link href="${cpath}/resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="${cpath}/resources/css/style.css?was" rel="stylesheet">
+    <link href="${cpath}/resources/css/style.css?ss" rel="stylesheet">
     
     <!-- 슬라이드 기능에 필요한 링크-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
@@ -57,10 +57,10 @@
                 <a href="${cpath}/index.do" class="nav-item nav-link">홈</a>
                 <a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a>
                 <a href="${cpath}/testMain.do" class="nav-item nav-link">심리검사</a>
-                <a href="${cpath}/care.do" class="nav-item nav-link"  style = "color: #E48B77 !important;">심리케어</a>
+                <a href="${cpath}/care.do" class="nav-item nav-link">심리케어</a>
                 <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style = "color: #E48B77 !important;">마이페이지</a>
                     <div class="dropdown-menu m-0">
                         <a href="${cpath}/myPage.do" class="dropdown-item">감정 일기 통계</a>
                         <a href="${cpath}/result.do" class="dropdown-item">심리검사 결과</a>
@@ -83,117 +83,107 @@
     style = "background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/explainHeader1.jpg) center center no-repeat;
     background-size:cover;">
         <div class="container text-center pt-5 pb-3">
-            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">심리 케어</h1>
+            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">감정일기 통계페이지</h1>
             <nav aria-label="breadcrumb animated slideInDown">
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 	
-	<!-- 배경에 이미지 깔려고 만든 div -->
-	<div style="width:100%; background-image:url('${cpath}/resources/img/bk01.png');">
-		<div>
-			<h1> ${mvo.nickname} 님이 가장 신경써줬으면 하는 ${mvo.nickname}님의 감정 </h1>
-					</div>
-		<!-- 심리상태 아이콘과 설명 시작 -->
-		<div id="careTypo">
-			
+	
+	<h2 class="fadeIn" id="statTit">그동안 ${mvo.nickname}님이 <span style="color:#F59F36;">마음:체</span>에 쌓아주신 감정을 모아왔어요.</h2>
+	
+	
+				<!-- 퍼센트를 어떻게 해줘야 할까 고민하는데... 달별 일수 / 감정 카운트로 나눈 수치를 여기 변수에 넣을 수 있었으면 좋겠어요
+		    		예를 들어서 8월 20일이고 기쁨10일 슬픔5일 화남5일이면... 기쁨은 20/10 해서 50퍼센트 이렇게 들어갈 수 있게.... -->
+	
+	
+	
+	<div style="margin:auto; width:800px; text-align:center;">
 		
-			<div>
-				<img src="${cpath}/resources/img/emot01.png">
-			</div>
-			<div>
-				<div id="mindInfo">
-					<h3>자존감</h3>
-					<br>
-					<p>자신이 사랑받을 만한 가치가 있는 소중한 존재이고 어떤 성과를 이루어낼 만한 유능한 사람이라고 믿는 마음</p>
+		<table id="expT">
+			<tr style="border-bottom: 1px solid #444444;">
+				<td colspan="3" style="margin-bottom: 10px; font-weight:bolder; font-size:20px;">감정 분류</td>
+			</tr>
+			<tr>
+				<td>기쁨, 행복, 설렘</td>
+				<td>우울, 슬픔, 후회</td>
+				<td>짜증, 분노, 피곤</td>
+			</tr>
+			<tr>
+				<td><div style="width:50px; height:50px; border-radius:50%; background:#A0D59B; margin:auto;"></div></td>
+				<td><div style="width:50px; height:50px; border-radius:50%; background:#9BB2D5; margin:auto;"></div></td>
+				<td><div style="width:50px; height:50px; border-radius:50%; background:#E08585; margin:auto;"></div></td>
+			</tr>
+		</table>
+		
+		
+		<table id="mainT">
+			<tr style="font-size:30px;">
+				<td class="chartT">- 저번 달의 기록 -</td>
+				<td class="chartT">- 이번 달의 기록 -</td>
+			</tr>
+			<tr>
+				<td>
+				<div class="chartI">
+				<div style="border:3px solid #A0D59B; background: rgba(160, 213, 155, 0.5);">20%</div>
+				<div style="border:3px solid #9BB2D5; background: rgba(155, 178, 213, 0.5);">30%</div>
+				<div style="border:3px solid #E08585; background: rgba(224, 133, 133, 0.5);">50%</div>
 				</div>
-					
-			</div>
-		</div>
-		<!-- 심리상태 아이콘과 설명 끝 -->
-	</div>	
-		<!-- 케어 안내 문구 시작-->
-		<div id="careMsg">
-			<p>
-				부쩍 힘든 일이 생겼을 때 이름이름이름님의 감정을 건강하고 시원하게 해소할 수 있도록 <br>
-				마음:체가 이름이름이름님에게 맞춤 컨텐츠를 추천해 드릴게요
-			</p>
-			<button class="custom-btn btn-12">
-			<span>심리상담사 추천받기</span>
-			<span>지금 나와 맞는 상담사를 찾고 있나요?</span>
-			</button>
-		</div>
-		<!-- 케어 안내 문구 끝-->
-	
-	
-	<!--  케어콘텐츠 안내 -->
-	<div class="careTit">ASMR</div>
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<!-- 슬라이드 항목 하나 시작 -->
-			<div class="swiper-slide">
-				<a href="http://www.naver.com"> <!-- 링크 달 거면 a태그 살려주기! 아니면 그냥 빼면 돼요! 아래 div에는 a태그 없음 -->
-					<img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-					<p class="careCon">크로플</p>
-				</a>
-			</div>
-			<!-- 슬라이드 항목 하나 끝 -->
-			
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">개맛있겠지..</p>
-			</div>
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">주말에 먹을까</p>
-			</div>
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">플레인으로</p>
-			</div>
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">먹을까</p>
-			</div>
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">ㅠㅠㅠ</p>
-			</div>
-		</div>
-	
-		<!-- 이전다음 버튼-->
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
-		<!-- 페이징 넘기는거 -->
-		<div class="swiper-pagination"></div>
-	</div>
+				</td>
 
-	<!--  케어콘텐츠 안내 -->
-	<div class="careTit">아로마</div>
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/ikD7ZefHP9g/maxresdefault.jpg">
-				<p class="careCon">크로플도</p>
-			</div>
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">좋지만..</p>
-			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/ikD7ZefHP9g/maxresdefault.jpg">
-				<p class="careCon">당근케이크도</p>
-			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/ikD7ZefHP9g/maxresdefault.jpg">
-				<p class="careCon">진짜진짜</p>
-			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/ikD7ZefHP9g/maxresdefault.jpg">
-				<p class="careCon">최고라고</p>
-			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/ikD7ZefHP9g/maxresdefault.jpg">
-				<p class="careCon">생각해...</p>
-			</div>
+
+				<td>
+				<div class="chartI">
+				<div style="border:3px solid #A0D59B; background: rgba(160, 213, 155, 0.5);">40%</div>
+				<div style="border:3px solid #9BB2D5; background: rgba(155, 178, 213, 0.5);">30%</div>
+				<div style="border:3px solid #E08585; background: rgba(224, 133, 133, 0.5);">30%</div>
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="chartT"><div class="chartBef"></div></td> <!-- 저번달 그래프 -->
+				<td class="chartT"><div class="chartNow"></div></td> <!-- 이번달 그래프 -->
+			</tr>
+		</table>
+		
+
+		
+		<table id="allD">
+			<tr style="border-bottom: 1px solid #444444;">
+				<td colspan="9" style=" font-weight:bolder; font-size:20px;">상세 통계</td>
+			</tr>
+			<tr>
+				<td>기쁨</td>
+				<td>행복</td>
+				<td>설렘</td>
+				<td>우울</td>
+				<td>슬픔</td>
+				<td>후회</td>
+				<td>짜증</td>
+				<td>분노</td>
+				<td>피곤</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>5</td>
+				<td>3</td>
+				<td>8</td>
+				<td>2</td>
+				<td>0</td>
+				<td>6</td>
+				<td>2</td>
+				<td>1</td>
+			</tr>
+		</table>
+		<div class="d-grid gap-2 col-6 mx-auto" id="linkB">
+		<button type="button" class="btn btn-outline-info btn-lg" style="margin: 70px 0px;">감정일기 쓰러 가기</button>
 		</div>
-	
-		<!-- 이전다음 버튼-->
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
-		<!-- 페이징 넘기는거 -->
-		<div class="swiper-pagination"></div>
 	</div>
+	
+
+	
+	
 	
 
   <!-- Copyright Start -->
@@ -230,43 +220,130 @@
 	<script>
 	$(document).ready(function() {
 	    $(window).scroll( function(){
-	        $('#careTypo').each( function(i){
+	        $('#expT').each( function(i){
 	            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            if( bottom_of_window > bottom_of_element ){
-	                $(this).animate({'opacity':'1'},700);	}	}); 	});	});
+	                $(this).animate({'opacity':'1'},1500);	}	}); 	});	});
 	
 	$(document).ready(function() {
 	    $(window).scroll( function(){
-	        $('#careMsg').each( function(i){
+	        $('#mainT').each( function(i){
 	            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            if( bottom_of_window > bottom_of_element ){
 	                $(this).animate({'opacity':'1'},800);	}	});	});	});
 	
-	//슬라이드 기능에 필요
-	new Swiper('.swiper-container', {
-
-	slidesPerView : 3, // 동시에 보여줄 슬라이드 갯수
-	spaceBetween : 30, // 슬라이드간 간격
-	slidesPerGroup : 1,
-
-	// 그룹수가 맞지 않을 경우 빈칸으로 메우는 기능
-	loopFillGroupWithBlank : true,
-
-	loop : true, // 무한 반복
-
-	pagination : { // 페이징
-		el : '.swiper-pagination',
-		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
-	},
-	navigation : { // 네비게이션
-		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
-	},
+	
+	$(document).ready(function() {
+	    $(window).scroll( function(){
+	        $('#allD').each( function(i){
+	            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+	            var bottom_of_window = $(window).scrollTop() + $(window).height();
+	            if( bottom_of_window > bottom_of_element ){
+	                $(this).animate({'opacity':'1'},1500);	}	});	});	});
+	
+	$(document).ready(function() {
+	    $(window).scroll( function(){
+	        $('#linkB').each( function(i){
+	            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+	            var bottom_of_window = $(window).scrollTop() + $(window).height();
+	            if( bottom_of_window > bottom_of_element ){
+	                $(this).animate({'opacity':'1'},1700);	}	});	});	});
+	
+	
+	
+	
+	//차트그리기
+	
+	//저번달 그래프
+	$(window).ready(function(){
+	    var i=1;
+	    var func1 = setInterval(function(){
+	        if(i<26){
+	            color1(i);
+	            i++;
+	        } else if(i<70){
+	            color2(i);
+	            i++;
+	        } else if(i<101){
+	            color3(i);
+	            i++;
+	        } else {
+	            clearInterval(func1);
+	        }
+	    },10);
 	});
+
+
+	function color1(i){
+	    $(".chartBef").css({
+	        "background":"conic-gradient(#DAA1A1 0% "+i+"%, #ffffff "+i+"% 100%)"
+	        });
+	    
+	}
+	function color2(i){
+	    $(".chartBef").css({
+	        "background":"conic-gradient(#DAA1A1 0% 25%, #9BB2D5 25% "+i+"%, #ffffff "+i+"% 100%)"
+	        });
+	     
+	}
+	function color3(i){
+	    $(".chartBef").css({
+	        "background":"conic-gradient(#DAA1A1 0% 25%, #9BB2D5 25% 70%, #E08585 70% "+i+"%, #ffffff "+i+"% 100%)"
+	        });
+	     
+	}
+
+	//이번달 그래프
+	$(window).ready(function(){
+	    var i=1;
+	    var func1 = setInterval(function(){
+	        if(i<10){
+	            color4(i);
+	            i++;
+	        } else if(i<40){
+	            color5(i);
+	            i++;
+	        } else if(i<101){
+	            color6(i);
+	            i++;
+	        } else {
+	            clearInterval(func1);
+	        }
+	    },10);
+	});
+
+
+	function color4(i){
+	    $(".chartNow").css({
+	        "background":"conic-gradient(#A0D59B 0% "+i+"%, #ffffff "+i+"% 100%)"
+	        });
+	    
+	}
+	function color5(i){
+	    $(".chartNow").css({
+	        "background":"conic-gradient(#A0D59B 0% 10%, #9BB2D5 10% "+i+"%, #ffffff "+i+"% 100%)"
+	        });
+	     
+	}
+	function color6(i){
+	    $(".chartNow").css({
+	        "background":"conic-gradient(#A0D59B 0% 10%, #9BB2D5 10% 40%, #E08585 40% "+i+"%, #ffffff "+i+"% 100%)"
+	        });
+	     
+	}
+	
+
+	
 	
 	</script>
+	
+	
+	
+	
+	
+	
 	
 	
 </body>
