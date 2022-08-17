@@ -112,8 +112,8 @@
 			</tr>
 			<tr>
 				<td><div style="width:50px; height:50px; border-radius:50%; background:#A0D59B; margin:auto;"></div></td>
-				<td><div style="width:50px; height:50px; border-radius:50%; background:#9BB2D5; margin:auto;"></div></td>
-				<td><div style="width:50px; height:50px; border-radius:50%; background:#E08585; margin:auto;"></div></td>
+				<td><div style="width:50px; height:50px; border-radius:50%; background:#A1AEDA; margin:auto;"></div></td>
+				<td><div style="width:50px; height:50px; border-radius:50%; background:#DAA1A1; margin:auto;"></div></td>
 			</tr>
 		</table>
 		
@@ -126,18 +126,17 @@
 			<tr>
 				<td>
 				<div class="chartI">
-				<div style="border:3px solid #A0D59B; background: rgba(160, 213, 155, 0.5);">20%</div>
-				<div style="border:3px solid #9BB2D5; background: rgba(155, 178, 213, 0.5);">30%</div>
-				<div style="border:3px solid #E08585; background: rgba(224, 133, 133, 0.5);">50%</div>
+				<div style="border:2px solid #A0D59B; background: rgba(160, 213, 195, 0.4);">20%</div>
+				<div style="border:2px solid #A1AEDA; background: rgba(161, 174, 218, 0.4);">30%</div>
+				<div style="border:2px solid #DAA1A1; background: rgba(218, 161, 161, 0.4);">50%</div>
 				</div>
 				</td>
 
-
 				<td>
 				<div class="chartI">
-				<div style="border:3px solid #A0D59B; background: rgba(160, 213, 155, 0.5);">40%</div>
-				<div style="border:3px solid #9BB2D5; background: rgba(155, 178, 213, 0.5);">30%</div>
-				<div style="border:3px solid #E08585; background: rgba(224, 133, 133, 0.5);">30%</div>
+				<div style="border:2px solid #A0D59B; background: rgba(160, 213, 195, 0.4);">40%</div>
+				<div style="border:2px solid #A1AEDA; background: rgba(161, 174, 218, 0.4);">30%</div>
+				<div style="border:2px solid #DAA1A1; background: rgba(218, 161, 161, 0.4);">30%</div>
 				</div>
 				</td>
 			</tr>
@@ -146,8 +145,6 @@
 				<td class="chartT"><div class="chartNow"></div></td> <!-- 이번달 그래프 -->
 			</tr>
 		</table>
-		
-
 		
 		<table id="allD">
 			<tr style="border-bottom: 1px solid #444444;">
@@ -278,19 +275,19 @@
 
 	function color1(i){
 	    $(".chartBef").css({
-	        "background":"conic-gradient(#DAA1A1 0% "+i+"%, #ffffff "+i+"% 100%)"
+	        "background":"conic-gradient(#A0D59B 0% "+i+"%, #ffffff "+i+"% 100%)"
 	        });
 	    
 	}
 	function color2(i){
 	    $(".chartBef").css({
-	        "background":"conic-gradient(#DAA1A1 0% 25%, #9BB2D5 25% "+i+"%, #ffffff "+i+"% 100%)"
+	        "background":"conic-gradient(#A0D59B 0% 25%, #A1AEDA 25% "+i+"%, #ffffff "+i+"% 100%)"
 	        });
 	     
 	}
 	function color3(i){
 	    $(".chartBef").css({
-	        "background":"conic-gradient(#DAA1A1 0% 25%, #9BB2D5 25% 70%, #E08585 70% "+i+"%, #ffffff "+i+"% 100%)"
+	        "background":"conic-gradient(#A0D59B 0% 25%, #A1AEDA 25% 70%, #DAA1A1 70% "+i+"%, #ffffff "+i+"% 100%)"
 	        });
 	     
 	}
@@ -323,13 +320,13 @@
 	}
 	function color5(i){
 	    $(".chartNow").css({
-	        "background":"conic-gradient(#A0D59B 0% 10%, #9BB2D5 10% "+i+"%, #ffffff "+i+"% 100%)"
+	        "background":"conic-gradient(#A0D59B 0% 10%, #A1AEDA 10% "+i+"%, #ffffff "+i+"% 100%)"
 	        });
 	     
 	}
 	function color6(i){
 	    $(".chartNow").css({
-	        "background":"conic-gradient(#A0D59B 0% 10%, #9BB2D5 10% 40%, #E08585 40% "+i+"%, #ffffff "+i+"% 100%)"
+	        "background":"conic-gradient(#A0D59B 0% 10%, #A1AEDA 10% 40%, #DAA1A1 40% "+i+"%, #ffffff "+i+"% 100%)"
 	        });
 	     
 	}

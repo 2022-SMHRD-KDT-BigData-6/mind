@@ -289,7 +289,7 @@ public class BoardController {
 		}
 
 		// 지나치게 큰나무
-		if (h > 0.7) {
+		if (h > 0.85) {
 			agganx = +10;
 			Tree_h = "<span class=\"emphasis02\">나무의 크기</span>가 종이의 면적에 비해 다소 큰 편입니다. <span class=\"emphasis\">공격적인 경향</span>을 가지고 있거나 <span class=\"emphasis\">활동이 과잉</span>될 때 나무를 크게 그리는 경향이 있습니다.<br>";
 		}
@@ -305,7 +305,7 @@ public class BoardController {
 		}
 
 		// 큰 수관
-		if (wcrown > 0.8) {
+		if (wcrown > 0.7) {
 			Tree_crown = "<span class=\"emphasis02\">수관의 크기</span>가 꽤 큽니다. 완전한 만족을 추구하느라 마음의 안정이 상실되어 있음을 의미할 수 있습니다.<br>";
 			agganx = +3;
 		}
@@ -318,7 +318,7 @@ public class BoardController {
 		}
 
 		// 두꺼운 기둥
-		if (wtrunk >= 0.7) {
+		if (wtrunk >= 0.5) {
 			Tree_trunk = "<span class=\"emphasis02\">기둥</span>이 두꺼운 편입니다. 심신의 <span class=\"emphasis\">에너지 수준이 높고 자아 강도가 강함</span>을 알 수 있습니다.<br>";
 			agganx = +2;
 		}

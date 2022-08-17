@@ -11,7 +11,6 @@ drop table test_log
 create table test_log(
     testidx int auto_increment not null,
     userid varchar(20) not null,
-    testopen char(1) default 'n' check (testopen in('y','n')),
     resultdate datetime default now(),
     AggAnx int not null,
     SocialAnx int not null,

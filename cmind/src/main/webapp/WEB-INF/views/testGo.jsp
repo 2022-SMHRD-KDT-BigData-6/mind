@@ -131,6 +131,12 @@
 						<h4 id="fileName"></h4>
 					</div>
 				</div>
+				
+				<div style="font-size:25px; text-align:center;">
+					<input type="checkbox" id="open" name="open" value="y"> &nbsp;&nbsp;
+					내 그림을 다른 사람들에게 공개합니다
+				</div>
+				
 				<section class="testGoContent">
 					<div class="confirmBox bg-1">
 						<div class="buttonContainer">

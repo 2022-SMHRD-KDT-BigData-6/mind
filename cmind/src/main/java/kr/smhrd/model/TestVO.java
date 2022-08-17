@@ -9,7 +9,6 @@ public class TestVO {
 	
 	private int testidx;
 	private String userid;
-	private char testopen;
 	private String resultdate;
 	private int agganx;
 	private int socialanx;
