@@ -42,13 +42,16 @@ public class BoardController {
 
 	// 케어페이지
 	@RequestMapping("/care")
-	public String care(HttpSession session) {
+	public String care(HttpSession session, Model model) {
 		MemberVO mvo = (MemberVO) session.getAttribute("mvo");
 		if (mvo != null) {
+			TestVO result1 = mapper.selectResult(mvo.getUserid());
+			model.addAttribute("result", result1);
+			return "care";
 		} else {
 			return "login";
 		}
-		return "care";
+		
 	}
 
 	// 감정일기 페이지
@@ -80,7 +83,6 @@ public class BoardController {
 	public String myPage(HttpSession session, Model model) {
 		MemberVO mvo = (MemberVO) session.getAttribute("mvo");
 		if (mvo != null) {
-			String ma = (String) session.getAttribute("ma");
 			return "diaryStat";
 		} else {
 			return "login";
@@ -96,7 +98,6 @@ public class BoardController {
 			String img = mapper.selectimg(mvo.getUserid());
 			model.addAttribute("result", result1);
 			model.addAttribute("img", img);
-			String ma = (String) session.getAttribute("ma");
 			return "result";
 		} else {
 			return "login";
@@ -233,7 +234,7 @@ public class BoardController {
 				// 옹이
 			} else if (a.get(i)[0].equals("8")) {
 				knot = "<span class=\"emphasis02\">옹이</span>는 성장하면서 경험한 <span class=\"emphasis\">트라우마, 퇴행</span>과 같은 심리적 외상을 상징합니다. 어릴때 생긴 외상일수록 아래쪽에 위치하는 경향이 있습니다.<br>";
-				socialanx +=1;
+				socialanx +=10;
 				sadanx +=4;
 				reganx +=2;
 				complexanx +=6;
@@ -379,13 +380,7 @@ public class BoardController {
 		tvo.setSocialanx(socialanx);
 		tvo.setDiagnosis_result(diagnosis_result);
 		tvo.setUserid(mvo.getUserid());
-		mapper.insertResult(tvo);
 		
-		System.out.println(agganx);
-		System.out.println(complexanx);
-		System.out.println(reganx);
-		System.out.println(sadanx);
-		System.out.println(socialanx);
 
 		int[] arr = { agganx, complexanx, reganx, sadanx, socialanx };
 		int max = 0;
@@ -407,8 +402,9 @@ public class BoardController {
 		} else if (max == socialanx) {
 			ma = "불안";
 		}
-		session.setAttribute("ma", ma);
-		System.out.println(ma);
+		tvo.setMa(ma);
+		
+		mapper.insertResult(tvo);
 		return "result";
 	}
 

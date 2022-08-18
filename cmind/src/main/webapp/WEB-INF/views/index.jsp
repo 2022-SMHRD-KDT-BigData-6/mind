@@ -7,8 +7,8 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>마음체</title>
+   <meta charset="UTF-8">
+   <title>마음체</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -69,8 +69,8 @@
                 </c:if>
                 <c:if test="${!empty mvo}">
                 <p class="nav-item nav-link">${mvo.nickname}님</p>
-				<a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
-				</c:if>
+            <a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
+            </c:if>
             </div>
         </div>
     </nav>
@@ -79,8 +79,7 @@
     <!-- 슬라이드 -->
     <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.2s">
         <div class="owl-carousel header-carousel position-relative">
-        
-        	<!-- 첫번째 슬라이드 -->
+           <!-- 첫번째 슬라이드 -->
             <div class="owl-carousel-item position-relative" style="text-align: right;">
                 <img class="img-fluid" src="${cpath}/resources/img/drawHand.png" alt="">
                 <div class="owl-carousel-inner">
@@ -88,7 +87,7 @@
                         <div class="row justify-content-start">
                             <div class="col-lg-8" id="titleDv">
                                 <!--<p class="text-primary text-uppercase fw-bold mb-2">// The Best Bakery</p>-->
-                                <h1 class="display-1 text-light mb-4 animated slideInDown" id="mainTypo">그림에 담긴 마음을 알아보세요</h1>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown" id="mainTypo">그림에 담긴 마음을 알아보세요1</h1>
                                 <h2 class="display-1 text-light mb-4 animated slideInDown" id="subTypo">마음:체는 딥러닝 기반의 그림분석 서비스입니다.</h1>
                                 <p class="text-light fs-5 mb-4 pb-3" id="indexP">당신이 직접 그린 그림으로 당신의 심리 상태를 분석합니다.<br>
                                     마음:체만의 다채로운 심리 케어 컨텐츠와 함께하면서<br>
@@ -99,6 +98,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     
@@ -120,13 +120,13 @@
     <!-- Copyright Start -->
 
     <!-- JavaScript Libraries -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="${cpath}/resources/lib/wow/wow.min.js"></script>
-	<script src="${cpath}/resources/lib/easing/easing.min.js"></script>
-	<script src="${cpath}/resources/lib/waypoints/waypoints.min.js"></script>
-	<script src="${cpath}/resources/lib/counterup/counterup.min.js"></script>
-	<script src="${cpath}/resources/lib/owlcarousel/owl.carousel.min.js"></script>
-	<script src="${cpath}/resources/js/main.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="${cpath}/resources/lib/wow/wow.min.js"></script>
+   <script src="${cpath}/resources/lib/easing/easing.min.js"></script>
+   <script src="${cpath}/resources/lib/waypoints/waypoints.min.js"></script>
+   <script src="${cpath}/resources/lib/counterup/counterup.min.js"></script>
+   <script src="${cpath}/resources/lib/owlcarousel/owl.carousel.min.js"></script>
+   <script src="${cpath}/resources/js/main.js"></script>
 </body>
 </html>

@@ -389,7 +389,7 @@
 		var fea = document.getElementById("fear");
 		var lov = document.getElementById("loveMe");
 		var thi = document.getElementById("think");
-		var ma = "${ma}";
+		var ma = "${result.ma}";
 		
 		if(ma==="공격성") {
 			mad.style.display='block';

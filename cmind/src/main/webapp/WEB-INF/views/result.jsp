@@ -127,7 +127,7 @@
 		style="text-align: center; transform: translate(0, 100px);">
 		<div style="width: 40%; margin: auto; margin-bottom: 200px;">
 			<canvas id="myChart"></canvas><br>
-			<p class="aboutEx">${ma} 케어가 필요해 보입니다.</p>
+			<p class="aboutEx">${result.ma} 케어가 필요해 보입니다.</p>
 		</div>
 	</div>
 	<!-- 그래프끝 -->
@@ -188,16 +188,16 @@
 
 	<script>
 		//그래프 구현하는 자바스크립트
-		const labels = [ '공격성', '불안', '우울', '자존감', '공상' ];
+		const labels = [ '공격성', '불안', '우울', '낮은 자존감', '공상' ];
 
 		const data = {
 			labels : labels,
-			datasets : [ {
+			datasets : [{
 				label : "그림 해석에 따른 감정 그래프",
 			    backgroundColor: ["#F5D5CD", "#EFD0B8","#C6CCB1","#96ADAF","#B4CDD9"], //그래프 점 색
 				borderColor : 'rgb(255, 99, 132)', //그래프 선 색
-				data : [${result.agganx},${result.socialanx},${result.sadanx},${result.complexanx},${result.reganx}] //라벨 데이터
-			} ]
+				data : [${result.agganx},${result.socialanx},${result.sadanx},${result.complexanx},${result.reganx}]
+			}]
 		};
 
 		const config = {

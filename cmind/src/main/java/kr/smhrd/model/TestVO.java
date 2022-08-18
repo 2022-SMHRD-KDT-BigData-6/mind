@@ -15,5 +15,6 @@ public class TestVO {
 	private int sadanx;
 	private int complexanx;
 	private int reganx;
+	private String ma;
 	private String diagnosis_result;
 }

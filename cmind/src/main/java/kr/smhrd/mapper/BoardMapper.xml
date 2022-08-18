@@ -13,7 +13,7 @@
 	
 	<!-- 결과 입력 -->
     <insert id="insertResult" parameterType="kr.smhrd.model.TestVO">
-		insert into test_log(userid, agganx, socialanx, sadanx, complexanx, reganx, diagnosis_result) values(#{userid}, #{agganx}, #{socialanx}, #{sadanx}, #{complexanx}, #{reganx}, #{diagnosis_result})    
+		insert into test_log(userid, agganx, socialanx, sadanx, complexanx, reganx, ma, diagnosis_result) values(#{userid}, #{agganx}, #{socialanx}, #{sadanx}, #{complexanx}, #{reganx}, #{ma}, #{diagnosis_result})    
 	</insert>
 	
     <select id="selectResult" resultType="kr.smhrd.model.TestVO">

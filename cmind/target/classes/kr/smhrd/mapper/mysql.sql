@@ -17,6 +17,7 @@ create table test_log(
     SadAnx int not null,
     ComplexAnx int not null,
     RegAnx int not null,
+    ma varchar(20) not null,
     diagnosis_result text(60000) not null,
     primary key(testidx)
 );
