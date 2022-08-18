@@ -54,9 +54,9 @@
 	<!-- Spinner End -->
 
 	<!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.do" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="text-primary m-0" id="title">마음:체</h1>
+    <nav style="position:fixed;" class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.do" class="navbar-brand ms-4 ms-lg-0" style="position:absolute; z-index:3;">
+            <img src="${cpath}/resources/img/logo.png" style="width:100px; height:100px; margin-top:20px;">
         </a>
        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
@@ -87,7 +87,7 @@
 	<!-- Page Header Start -->
 	<div class="container-fluid page-header py-6 wow fadeIn"
 		data-wow-delay="0.1s" id="TMheader"
-		style="background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/explainHeader1.jpg) center center no-repeat;
+		style="background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/testheader01.jpg) center center no-repeat;
     background-size:cover;">
 		<div class="container text-center pt-5 pb-3">
 			<h1 class="display-4 animated slideInDown mb-3" id="ATtypo">그림
@@ -105,10 +105,10 @@
 			<form method="post" enctype="multipart/form-data" id="form">
 				<input type="hidden" name="userid" value="${mvo.userid}">
 
-				<div class="button">
+				<div class="button" style="margin-top:40px;">
 					<label for="chooseFile">
 						<h4>
-							나무 그림을 업로드해주세요 <br> <span id="uploadbtn11" class="emphasis"
+							나무 그림을 업로드해주세요 <br><br> <span id="uploadbtn11" class="emphasis"
 								style="font-size: 30px;">[업로드하기]&nbsp;</span>
 						</h4>
 					</label>
@@ -126,9 +126,13 @@
 					</div>
 				</div>
 				
-				<div style="font-size:25px; text-align:center;">
-					<input type="checkbox" id="open" name="open" value="y"> &nbsp;&nbsp;
-					내 그림을 다른 사람들에게 공개합니다
+				<div style="align:center; margin:auto; width:400px; margin-left:500px; margin-bottom:25px;">
+					
+					<div class="toggle" style="float:left;">
+				    	<input type="checkbox" name="open" id="toggle1" value="y">
+				    	<label for="toggle1"></label>
+					</div>
+					<div style="text-align:center; float:left;"> &nbsp; &nbsp; 내 그림을 다른 사람에게 공개합니다</div>
 				</div>
 				
 				<section class="testGoContent">
