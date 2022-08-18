@@ -93,11 +93,8 @@
 	
 	<h2 class="fadeIn" id="statTit">그동안 ${mvo.nickname}님이 <span style="color:#F59F36;">마음:체</span>에 쌓아주신 감정을 모아왔어요.</h2>
 	
-	
 				<!-- 퍼센트를 어떻게 해줘야 할까 고민하는데... 달별 일수 / 감정 카운트로 나눈 수치를 여기 변수에 넣을 수 있었으면 좋겠어요
 		    		예를 들어서 8월 20일이고 기쁨10일 슬픔5일 화남5일이면... 기쁨은 20/10 해서 50퍼센트 이렇게 들어갈 수 있게.... -->
-	
-	
 	
 	<div style="margin:auto; width:800px; text-align:center;">
 		

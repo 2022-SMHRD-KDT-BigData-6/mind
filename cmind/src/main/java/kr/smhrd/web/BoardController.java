@@ -80,10 +80,11 @@ public class BoardController {
 	public String myPage(HttpSession session, Model model) {
 		MemberVO mvo = (MemberVO) session.getAttribute("mvo");
 		if (mvo != null) {
+			String ma = (String) session.getAttribute("ma");
+			return "diaryStat";
 		} else {
 			return "login";
 		}
-		return "diaryStat";
 	}
 
 	// 심리검사 결과 페이지
@@ -95,6 +96,7 @@ public class BoardController {
 			String img = mapper.selectimg(mvo.getUserid());
 			model.addAttribute("result", result1);
 			model.addAttribute("img", img);
+			String ma = (String) session.getAttribute("ma");
 			return "result";
 		} else {
 			return "login";
@@ -165,23 +167,23 @@ public class BoardController {
 		for (int i = 0; i < a.size(); i++) {
 			if (a.get(i)[0].equals("0")) {
 				apple++;
-				if (apple > 5) {
+				if (apple >= 5) {
 					ap = "<span class=\"emphasis02\">사과</span>는 성취, 애정, 또는 인정받고자 하는 욕구를 상징합니다. 사과의 갯수가 많은 것으로 보아 <span class=\"emphasis\">성취에 대한 욕망</span>이 강하다고 볼 수 있습니다.<br>";
-					agganx = +1;
+					agganx = +2;
 					sadanx = +3;
 					complexanx = +2;
 					reganx = +6;
 				} else if (apple > 1) {
 					ap = "<span class=\"emphasis02\">사과</span>는 성취, 애정, 또는 인정받고자 하는 욕구를 상징합니다. 사과의 갯수가 적은 것으로 보아 <span class=\"emphasis\">의존욕구</span>가 강하다고 볼 수 있습니다.<br>";
-					agganx = +1;
+					agganx = +2;
 					sadanx = +4;
 					complexanx = +2;
 					reganx = +6;
-					
+
 				}
 			} else if (a.get(i)[0].equals("1")) {
 				bird = "<span class=\"emphasis02\">새</span>는 세상과 상호작용을 하고자 하는 욕구를 상징합니다. 새가 너무 많을 경우에는 오히려 <span class=\"emphasis\">외로움</span>을 상징합니다..<br>";
-				agganx = +1;
+				agganx = +2;
 				sadanx = +6;
 				complexanx = +3;
 				reganx = +2;
@@ -189,13 +191,13 @@ public class BoardController {
 				// 가지
 			} else if (a.get(i)[0].equals("2")) {
 				branch = "<span class=\"emphasis02\">가지</span>는 세상을 향해 뻗어나가려는 힘을 상징합니다. 가지가 잘려있습니다. 잘린 가지는 <span class=\"emphasis\">좌절과 상처</span>와 같은 심리적 외상을 나타냅니다.<br>";
-				agganx = +1;
+				agganx = +2;
 				socialanx = +6;
 				sadanx = +3;
 				complexanx = +2;
 			} else if (a.get(i)[0].equals("3")) {
 				branch = "<span class=\"emphasis02\">가지</span>는 세상을 향해 뻗어나가려는 힘을 상징합니다. 가지가 끊겨있습니다. 끊긴 가지는 성장이나 목표 추구에 대한 <span class=\"emphasis\">두려움이나 수동적, 소극적인 태도</span>를 나타냅니다.<br>";
-				agganx = +3;
+				agganx = +4;
 				socialanx = +1;
 				sadanx = +6;
 				reganx = +2;
@@ -210,12 +212,12 @@ public class BoardController {
 				h += Double.parseDouble(a.get(i)[4]);
 				wcrown += Double.parseDouble(a.get(i)[3]);
 				crown = "<span class=\"emphasis02\">수관</span>은 내적인 공상과 사고활동을 상징합니다. 구름같은 모양의 수관은 <span class=\"emphasis\">적극적인 공상활동</span>을 나타냅니다. 때로는 공상에 지나치게 몰두할 가능성이 있습니다.<br>";
-				reganx = +7;
+				reganx = +4;
 			} else if (a.get(i)[0].equals("6")) {
 				h += Double.parseDouble(a.get(i)[4]);
 				wcrown += Double.parseDouble(a.get(i)[3]);
 				crown = "<span class=\"emphasis02\">수관</span>은 내적인 공상과 사고활동을 상징합니다. 어지러운 모양의 수관은 <span class=\"emphasis\">정서적인 흥분이나 불안정성</span>을 나타냅니다.<br>";
-				agganx = +3;
+				agganx = +5;
 				socialanx = +6;
 				sadanx = +1;
 				complexanx = +4;
@@ -224,7 +226,7 @@ public class BoardController {
 				h += Double.parseDouble(a.get(i)[4]);
 				wcrown += Double.parseDouble(a.get(i)[3]);
 				crown = "<span class=\"emphasis02\">수관</span>은 내적인 공상과 사고활동을 상징합니다. 버섯같은 모양의 수관은 <span class=\"emphasis\">뜬 구름 같은 심리상태</span>를 나타냅니다. 현재 자신과 미래에 대한 막연한 걱정에 빠져있을 수 있습니다.<br>";
-				agganx = +1;
+				agganx = +2;
 				socialanx = +6;
 				sadanx = +2;
 				reganx = +3;
@@ -246,21 +248,21 @@ public class BoardController {
 			} else if (a.get(i)[0].equals("10")) {
 				h += Double.parseDouble(a.get(i)[4]);
 				root = "<span class=\"emphasis02\">뿌리</span>는 안정감을 의미합니다. 지면없이 뿌리만 그려진 경우 자신에 대해 <span class=\"emphasis\">불안정감</span>을 느끼고 있으며 이를 <span class=\"emphasis\">과잉 보상</span>하려는 시도로 볼 수 있습니다.<br>";
-				agganx = +6;
+				agganx = +7;
 				socialanx = +5;
 				sadanx = +1;
 				complexanx = +2;
 			} else if (a.get(i)[0].equals("11")) {
 				h += Double.parseDouble(a.get(i)[4]);
 				root = "<span class=\"emphasis02\">뿌리</span>는 안정감을 의미합니다. 땅 아래 강조된 뿌리는 <span class=\"emphasis\">현실을 검증하는 능력에 다소 약한 편</span>임을 나타냅니다.<br>";
-				agganx = +1;
+				agganx = +2;
 				socialanx = +2;
 				complexanx = +3;
 				reganx = +6;
 			} else if (a.get(i)[0].equals("12")) {
 				h += Double.parseDouble(a.get(i)[4]);
 				root = "<span class=\"emphasis02\">뿌리</span>는 안정감을 의미합니다. 땅 위에 그려진 뿌리는<span class=\"emphasis\">미성숙</span>하거나 불안정했던 과거에 대한 관심으로 스스로를 확신할 수 없는 사람, <span class=\"emphasis\">과거만을 추구</span>하기 때문에 앞으로 나아가기 힘듬을 나타냅니다.<br>";
-				agganx = +1;
+				agganx = +2;
 				socialanx = +3;
 
 				// 기둥
@@ -268,7 +270,7 @@ public class BoardController {
 				h += Double.parseDouble(a.get(i)[4]);
 				wtrunk += Double.parseDouble(a.get(i)[3]);
 				trunk = "<span class=\"emphasis02\">기둥</span>은 나무를 지탱하는 부분으로서 힘과 견고함을 상징합니다. 그림에 나무껍질을 표현한 경우 환경과의 <span class=\"emphasis\">관계에 강한 관심과 자신을 강박적으로 통제함</span>을 나타냅니다.<br>";
-				agganx = +1;
+				agganx = +2;
 				socialanx = +2;
 				complexanx = +6;
 
@@ -289,7 +291,7 @@ public class BoardController {
 		}
 
 		// 지나치게 큰나무
-		if (h > 0.85) {
+		if (h > 0.9) {
 			agganx = +10;
 			Tree_h = "<span class=\"emphasis02\">나무의 크기</span>가 종이의 면적에 비해 다소 큰 편입니다. <span class=\"emphasis\">공격적인 경향</span>을 가지고 있거나 <span class=\"emphasis\">활동이 과잉</span>될 때 나무를 크게 그리는 경향이 있습니다.<br>";
 		}
@@ -305,26 +307,26 @@ public class BoardController {
 		}
 
 		// 큰 수관
-		if (wcrown > 0.7) {
+		if (wcrown > 0.8) {
 			Tree_crown = "<span class=\"emphasis02\">수관의 크기</span>가 꽤 큽니다. 완전한 만족을 추구하느라 마음의 안정이 상실되어 있음을 의미할 수 있습니다.<br>";
 			agganx = +3;
 		}
 
 		// 작은 수관
-		if (wcrown < 0.4) {
+		if (wcrown < 0.4 && wcrown >= 0.1) {
 			Tree_crown = "<span class=\"emphasis02\">수관의 크기</span>가 꽤 작습니다. <span class=\"emphasis\">결단력이 약하여</span> 어떤 일을 처리할 때 타인의 도움을 바라는 <span class=\"emphasis\">의존성이 강함</span>을 의미할 수 있습니다.<br>";
 			socialanx = +3;
 			reganx = +3;
 		}
 
 		// 두꺼운 기둥
-		if (wtrunk >= 0.5) {
+		if (wtrunk >= 0.6) {
 			Tree_trunk = "<span class=\"emphasis02\">기둥</span>이 두꺼운 편입니다. 심신의 <span class=\"emphasis\">에너지 수준이 높고 자아 강도가 강함</span>을 알 수 있습니다.<br>";
 			agganx = +2;
 		}
 
 		// 얇은 기둥
-		if (wtrunk <= 0.2) {
+		if (wtrunk <= 0.2 && wtrunk >= 0.1) {
 			Tree_trunk = "<span class=\"emphasis02\">기둥</span>이 가는 편입니다. 스스로를 <span class=\"emphasis\">외롭고 나약</span>하다고 여기는 <span class=\"emphasis\">심리적 무력감</span>을 경험하고 있을 수 있습니다.<br>";
 			socialanx = +5;
 			sadanx = +5;
@@ -342,6 +344,27 @@ public class BoardController {
 		tvo.setUserid(mvo.getUserid());
 		mapper.insertResult(tvo);
 
+		int[] arr = { agganx, complexanx, reganx, sadanx, socialanx };
+		int max = 0;
+		String ma = "";
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] > max) {
+				max = arr[i];
+			}
+		}
+
+		if(max == agganx) {
+			ma = "공격성";
+		}else if (max == complexanx) {
+			ma = "애정결핍";
+		}else if (max == reganx) {
+			ma = "공상";
+		}else if (max == sadanx) {
+			ma = "우울";
+		}else if (max == socialanx) {
+			ma = "불안";
+		}
+		session.setAttribute("ma", ma);
 		return "result";
 	}
 

@@ -126,7 +126,8 @@
 	<div
 		style="text-align: center; transform: translate(0, 100px);">
 		<div style="width: 40%; margin: auto; margin-bottom: 200px;">
-			<canvas id="myChart"></canvas>
+			<canvas id="myChart"></canvas><br>
+			<p class="aboutEx">${ma} 케어가 필요해 보입니다.</p>
 		</div>
 	</div>
 	<!-- 그래프끝 -->
@@ -192,22 +193,22 @@
 		const data = {
 			labels : labels,
 			datasets : [ {
-				label : '감정 그래프',
-				backgroundColor : 'rgb(255, 99, 132)', //그래프 점 색
+				label : "그림 해석에 따른 감정 그래프",
+			    backgroundColor: ["#F5D5CD", "#EFD0B8","#C6CCB1","#96ADAF","#B4CDD9"], //그래프 점 색
 				borderColor : 'rgb(255, 99, 132)', //그래프 선 색
 				data : [${result.agganx},${result.socialanx},${result.sadanx},${result.complexanx},${result.reganx}] //라벨 데이터
 			} ]
 		};
 
 		const config = {
-			type : 'line', //그래프 타입 지정
+			type : 'bar', //그래프 타입 지정
 			data : data, //가져올 데이터
 			options : {
 				plugins : {
 					legend : {
 						labels : {
 							usePointStyle : true,
-						},
+							display:false},
 					}
 				}
 			}

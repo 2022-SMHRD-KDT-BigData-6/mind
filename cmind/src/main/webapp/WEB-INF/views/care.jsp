@@ -97,8 +97,6 @@
 					</div>
 		<!-- 심리상태 아이콘과 설명 시작 -->
 		<div id="careTypo">
-			
-		
 			<div>
 				<img src="${cpath}/resources/img/emot01.png">
 			</div>
