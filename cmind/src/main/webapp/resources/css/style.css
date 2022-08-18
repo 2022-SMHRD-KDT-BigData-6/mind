@@ -1322,58 +1322,60 @@ h3{
 
 
    /*케어페이지*/
-   #mindInfo{
+   .mindInfo{
    margin:auto;
+   margin-left:30px;
+   margin-top: 40px;
    }
    
-   #mindInfo >  * {
+   .mindInfo >  * {
    text-align : left;
    }
    
-   #careTypo {
+   .careTypo {
    width:1100px; 
    height:700px; 
    margin:auto; 
-   padding-top:230px;
+   padding-top:80px;
    opacity:0; 
    }
 
-   #careTypo > * {
+   .careTypo > * {
    float:left; text-align:center;
    }
 
-   #CareImgCon {
-   width:350px;
+   .CareImgCon {
+   width:400px;
    float:left; 
    text-align:center;
    }
    
    
-   #mindInfo > h3 {
+   .mindInfo > h3 {
    font-size:50px;
-   color:#444E54;
+   color:#5e6c58;
    }
    
-   #mindInfo > p {
+   .mindInfo > p {
    font-size:30px; 
    color:#698086;
    }
    
-   #careTypo > div > img{
+   .careTypo > div > img{
    margin:auto;
    }
    
    
-   #careTypo > div:nth-child(1) {
+   .careTypo > div:nth-child(1) {
    width:350px;
    }
    
-   #careTypo > div:nth-child(2) {
+   .careTypo > div:nth-child(2) {
    width:740px; 
    height:200px;
    }
    
-   #careMsg {
+   .careMsg {
    width:1200px;
    height:200px;
    margin:auto;
@@ -1381,12 +1383,20 @@ h3{
    text-align : center;
    }
    
-   #careMsg > p {
+   .careMsg > p {
    font-size:30px;
    text-align:center;
    letter-spacing:4px;
    }
    
+   .infoCon {
+   margin-top:60px;
+   }
+   
+   .careImg {
+   width:450px;
+    padding-right:50px;
+   }
    /* 케어페이지 전문가연결버튼 */
    .custom-btn.btn-12 {
    width: 230px;

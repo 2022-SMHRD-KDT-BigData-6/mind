@@ -33,7 +33,7 @@
     <link href="${cpath}/resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="${cpath}/resources/css/style.css?was" rel="stylesheet">
+    <link href="${cpath}/resources/css/style.css?a" rel="stylesheet">
     
     <!-- 슬라이드 기능에 필요한 링크-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
@@ -92,37 +92,155 @@
 	
 	<!-- 배경에 이미지 깔려고 만든 div -->
 	<div style="width:100%; background-image:url('${cpath}/resources/img/bk01.png');">
-		<div>
-			<h1> ${mvo.nickname} 님이 가장 신경써줬으면 하는 ${mvo.nickname}님의 감정 </h1>
-					</div>
-		<!-- 심리상태 아이콘과 설명 시작 -->
-		<div id="careTypo">
-			<div>
-				<img src="${cpath}/resources/img/emot01.png">
-			</div>
-			<div>
-				<div id="mindInfo">
-					<h3>자존감</h3>
-					<br>
-					<p>자신이 사랑받을 만한 가치가 있는 소중한 존재이고 어떤 성과를 이루어낼 만한 유능한 사람이라고 믿는 마음</p>
+	
+		<!-- 자존감 아이콘과 설명 시작 -->
+		<div id="loveMe" style="display:none">
+			<div class="careTypo">
+				<div>
+					<img src="${cpath}/resources/img/loveMe.png" class="careImg">
 				</div>
-					
+				<div class="infoCon">
+					<div class="mindInfo">
+						<h3>자존감</h3>
+						<br><br>
+						<p>자신이 사랑받을 만한 가치가 있는 소중한 존재이고 어떤 성과를 이루어낼 만한 유능한 사람이라고 믿는 마음</p>
+					</div>
+				</div>
 			</div>
-		</div>
-		<!-- 심리상태 아이콘과 설명 끝 -->
-	</div>	
-		<!-- 케어 안내 문구 시작-->
-		<div id="careMsg">
+		
+		<div class="careMsg">
 			<p>
-				부쩍 힘든 일이 생겼을 때 이름이름이름님의 감정을 건강하고 시원하게 해소할 수 있도록 <br>
-				마음:체가 이름이름이름님에게 맞춤 컨텐츠를 추천해 드릴게요
+				나는 나를 얼마나 잘 알고 있을까? ${mvo.nickname}님의 떨어지는 자존감을 회복시키고 건강한 인간관계를 만들어 갈 수 있도록 
+				마음:체가 이름이름이름님에게 맞춤 컨텐츠를 추천해 드릴게요.
 			</p>
 			<button class="custom-btn btn-12">
 			<span>심리상담사 추천받기</span>
 			<span>지금 나와 맞는 상담사를 찾고 있나요?</span>
 			</button>
 		</div>
-		<!-- 케어 안내 문구 끝-->
+		</div>
+		<!-- 자존감 아이콘과 설명 끝 -->
+		
+		<!-- 우울 아이콘과 설명 시작 -->
+		<div id="depress" style="display:none">
+			<div class="careTypo">
+				<div class="infoCon">
+					<img src="${cpath}/resources/img/depress.png" class="careImg">
+				</div>
+				<div>
+					<div class="mindInfo">
+						<h3>우울</h3>
+						<br><br>
+						<p>근심스럽거나 답답해서 활기가 안 드는 것에 대해서  반성이나 공상이 따르는 슬픈 감정</p>
+					</div>
+				</div>
+			</div>
+			
+		<div class="careMsg">
+			<p>
+				가라앉은 마음이 회복되지 않을 때, ${mvo.nickname}님이 충분히 슬퍼하고 다시 시작할 수 있게 <br>
+				마음:체가 이름이름이름님에게 맞춤 컨텐츠를 추천해 드릴게요.
+			</p>
+			<button class="custom-btn btn-12">
+			<span>심리상담사 추천받기</span>
+			<span>지금 나와 맞는 상담사를 찾고 있나요?</span>
+			</button>
+		</div>
+		</div>
+		<!-- 우울 아이콘과 설명 끝 -->
+		
+		<!-- 공격성 아이콘과 설명 시작 -->
+		<div id="mad" style="display:none">
+			<div class="careTypo">
+				<div>
+					<img src="${cpath}/resources/img/mad.png" class="careImg">
+				</div>
+				<div class="infoCon">
+					<div class="mindInfo">
+						<h3>공격성</h3>
+						<br><br>
+						<p>공격적인 행동을 하려는 당당하고 호전적인 마음. 
+							용기와 비례하며 신경성과 반비례하는 경향</p>
+					</div>
+						
+				</div>
+			</div>
+		<div class="careMsg">
+			<p>
+				부쩍 나를 힘들게 하는 일이 있을 때, <br>
+				${mvo.nickname}님이 감정을 건강하고 시원하게 해소하도록 맞춤 추천할게요.
+			</p>
+			<button class="custom-btn btn-12">
+			<span>심리상담사 추천받기</span>
+			<span>지금 나와 맞는 상담사를 찾고 있나요?</span>
+			</button>
+		</div>
+		</div>
+		<!-- 공격성 아이콘과 설명 끝 -->
+		
+		<!-- 불안 아이콘과 설명 시작 -->
+		<div id="fear" style="display:none">
+			<div class="careTypo" >
+				<div>
+					<img src="${cpath}/resources/img/fear.png" class="careImg">
+				</div>
+				<div class="infoCon">
+					<div class="mindInfo">
+						<h3>불안</h3>
+						<br><br>
+						<p>특정한 대상이 없이 막연히 나타나는 불쾌한 마음, 
+						안도감이나 확신이 상실된 상태
+						</p>
+					</div>
+						
+				</div>
+			</div>
+		<div class="careMsg">
+			<p>
+				두근거리는 마음이 좀처럼 안정되지 않을 때, <br>
+				${mvo.nickname}님의 마음에 위안이 될 수 있도록 맞춤 추천할게요.
+			</p>
+			<button class="custom-btn btn-12">
+			<span>심리상담사 추천받기</span>
+			<span>지금 나와 맞는 상담사를 찾고 있나요?</span>
+			</button>
+		</div>
+		</div>
+		<!-- 불안 아이콘과 설명 끝 -->
+		
+		<!-- 공상 아이콘과 설명 시작 -->
+		<div id="think" style="display:none">
+			<div class="careTypo">
+				<div class="infoCon">
+					<img src="${cpath}/resources/img/think.png" class="careImg">
+				</div>
+				<div class="infoCon">
+					<div class="mindInfo">
+						<h3>공상</h3>
+						<br><br>
+						<p>현실감이 떨어지거나 실현될 가능성이 적은 것을
+						막연하게 생각하는 마음</p>			
+					</div>
+				</div>
+			</div>
+		
+		<div class="careMsg">
+			<p>
+				자꾸만 이상한 생각이 마구 떠오를 때, <br>
+				${mvo.nickname}님의 마음과 일상을 들여다볼 수 있도록 맞춤 추천할게요
+
+			</p>
+			<button class="custom-btn btn-12">
+			<span>심리상담사 추천받기</span>
+			<span>지금 나와 맞는 상담사를 찾고 있나요?</span>
+			</button>
+		</div>
+		</div>
+		<!-- 공상 아이콘과 설명 끝 -->
+		
+		
+	</div>
+		
 	
 	
 	<!--  케어콘텐츠 안내 -->
@@ -228,7 +346,7 @@
 	<script>
 	$(document).ready(function() {
 	    $(window).scroll( function(){
-	        $('#careTypo').each( function(i){
+	        $('.careTypo').each( function(i){
 	            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            if( bottom_of_window > bottom_of_element ){
@@ -236,7 +354,7 @@
 	
 	$(document).ready(function() {
 	    $(window).scroll( function(){
-	        $('#careMsg').each( function(i){
+	        $('.careMsg').each( function(i){
 	            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            if( bottom_of_window > bottom_of_element ){
@@ -263,6 +381,30 @@
 		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
 	},
 	});
+	
+	//심리상태에 따른 안내문구 출력
+	window.onload = function() {
+		var mad = document.getElementById("mad");
+		var dep = document.getElementById("depress");
+		var fea = document.getElementById("fear");
+		var lov = document.getElementById("loveMe");
+		var thi = document.getElementById("think");
+		var ma = "${ma}";
+		
+		if(ma==="공격성") {
+			mad.style.display='block';
+		} else if (ma==="우울") {
+			dep.style.display='block';
+		} else if (ma==="불안") {
+			fea.style.display='block';
+		} else if (ma==="자존감") {
+			lov.style.display='block';
+		} else if (ma==="공상") {
+			thi.style.display='block';
+		}
+		
+	}
+	
 	
 	</script>
 	

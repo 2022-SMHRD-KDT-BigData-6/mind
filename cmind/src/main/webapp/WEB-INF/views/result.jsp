@@ -188,7 +188,7 @@
 
 	<script>
 		//그래프 구현하는 자바스크립트
-		const labels = [ '공격성', '불안', '우울', '애정결핍', '공상' ];
+		const labels = [ '공격성', '불안', '우울', '자존감', '공상' ];
 
 		const data = {
 			labels : labels,

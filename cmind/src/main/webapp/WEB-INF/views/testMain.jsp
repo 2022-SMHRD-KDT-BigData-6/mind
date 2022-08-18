@@ -146,8 +146,8 @@
 			<p class="butDiv">
 				<button type="button" class="btn btn-outline-success btn-lg" 
                         style="--bs-btn-padding-y: .30rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .9rem;"><span class="befB" onclick="changeB(4)"><-이전</span></button> 
-                        <button type="button" class="btn btn-outline-primary btn-lg" 
-                        style="--bs-btn-padding-y: .30rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .9rem;"><a href="testGo.do"><span class="nexB">검사하러 가기</span></a></button>
+                        <button type="button" class="btn btn-outline-success btn-lg" 
+                        style="--bs-btn-padding-y: .30rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .9rem;"><a href="testGo.do" style="color:#F5A037"><span class="nexB">검사하러 가기</span></a></button>
 			</p>
 			</p>
 		</div>
