@@ -60,7 +60,7 @@
 	<!-- Navbar Start -->
     <nav style="position:fixed;" class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.do" class="navbar-brand ms-4 ms-lg-0" style="position:absolute; z-index:3;">
-            <img src="${cpath}/resources/img/logo.png" style="width:100px; height:100px; margin-top:20px;">
+            <img src="${cpath}/resources/img/logo.png" style="width:100px; height:100px; margin-top:10px;">
         </a>
        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">

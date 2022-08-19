@@ -50,7 +50,7 @@
 	<!-- Navbar Start -->
     <nav style="position:fixed;" class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.do" class="navbar-brand ms-4 ms-lg-0" style="position:absolute; z-index:3;">
-            <img src="${cpath}/resources/img/logo.png" style="width:100px; height:100px; margin-top:20px;">
+            <img src="${cpath}/resources/img/logo.png" style="width:100px; height:100px; margin-top:10px;">
         </a>
        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
@@ -250,26 +250,26 @@
 			<!-- 슬라이드 항목 하나 시작 -->
 			<div class="swiper-slide">
 				<a href="http://www.naver.com"> <!-- 링크 달 거면 a태그 살려주기! 아니면 그냥 빼면 돼요! 아래 div에는 a태그 없음 -->
-					<img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-					<p class="careCon">크로플</p>
+					<img src="https://i.ytimg.com/an_webp/Kr7eiJz0kvc/mqdefault_6s.webp?du=3000&sqp=CPOd-5cG&rs=AOn4CLBcYXxyDsBBnn-tuTFVRFchTJXZSg">
+					<p class="careCon">공부하는 소리 asmr</p>
 				</a>
 			</div>
 			<!-- 슬라이드 항목 하나 끝 -->
 			
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">개맛있겠지..</p>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/PD90OLzok_8/mqdefault_6s.webp?du=3000&sqp=CMCB-5cG&rs=AOn4CLDHMEyo60PRDlSTzldufgDLsr6Wng">
+				<p class="careCon">화장품 부수기</p>
 			</div>
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">주말에 먹을까</p>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/9Xn79E69Dgw/mqdefault_6s.webp?du=3000&sqp=CICj-5cG&rs=AOn4CLCTKW4xft6Ika8AOXU6UQIS2Q8UgQ">
+				<p class="careCon">팅글 영상 20분 모음</p>
 			</div>
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">플레인으로</p>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/IJCWC6JSTUA/mqdefault_6s.webp?du=3000&sqp=CNCh-5cG&rs=AOn4CLBYsVjX_0nWuvyoUlMvlgBFwSGYSg">
+				<p class="careCon">장작불과 풀벌레 소리</p>
 			</div>
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">먹을까</p>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/HrO74lj5QBs/mqdefault_6s.webp?du=3000&sqp=CMv3-pcG&rs=AOn4CLCuzOZuO5WKoqZwQUUfslmBNrjJLg">
+				<p class="careCon">새벽 공원의 빗소리</p>
 			</div>
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">ㅠㅠㅠ</p>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/JOckUlv4m9I/mqdefault_6s.webp?du=3000&sqp=CMbp-pcG&rs=AOn4CLDXnrWwXSxFoLNEg55K9WZk1FPr4A">
+				<p class="careCon">잠오는 베이킹 사운드</p>
 			</div>
 		</div>
 	
@@ -281,26 +281,26 @@
 	</div>
 
 	<!--  케어콘텐츠 안내 -->
-	<div class="careTit">아로마</div>
+	<div class="careTit">명상</div>
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
-			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/ikD7ZefHP9g/maxresdefault.jpg">
-				<p class="careCon">크로플도</p>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/yiysD0Jl2Wo/mqdefault_6s.webp?du=3000&sqp=CIbx-pcG&rs=AOn4CLA1AzAQpKi0FNJCpaxjikuc_jKUcw">
+				<p class="careCon">삶에 명상 한스푼</p>
 			</div>
-			<div class="swiper-slide"><img src="https://recipe1.ezmember.co.kr/cache/recipe/2021/01/16/bbaec165038fa1fe6a645937ef3fdaa31.jpg">
-				<p class="careCon">좋지만..</p>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/PIoK5ZdYk6E/mqdefault_6s.webp?du=3000&sqp=CICl-5cG&rs=AOn4CLA6xvn3zHoYHneTOUOk4XRMi9c4Rg">
+				<p class="careCon">5분 아침 명상</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/ikD7ZefHP9g/maxresdefault.jpg">
-				<p class="careCon">당근케이크도</p>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/xeul9fEvo-Q/mqdefault_6s.webp?du=3000&sqp=CNyn-5cG&rs=AOn4CLD4wIhUjjqYTK8pWzGtdEl-MOKcNg">
+				<p class="careCon">7분 자신감 채우기</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/ikD7ZefHP9g/maxresdefault.jpg">
-				<p class="careCon">진짜진짜</p>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/y3deSlrQ7qY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLByegqQFfSG-0bbtVFQL4b3PJVjEQ">
+				<p class="careCon">마음이 편해지는 싱잉볼</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/ikD7ZefHP9g/maxresdefault.jpg">
-				<p class="careCon">최고라고</p>
+			<div class="swiper-slide"><img src=https://i.ytimg.com/an_webp/PY2qCvdgP9E/mqdefault_6s.webp?du=3000&sqp=CNCm-5cG&rs=AOn4CLA3xyhLrau433LPl01_C3-bjopI-g>
+				<p class="careCon">정목스님의 아침명상</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/ikD7ZefHP9g/maxresdefault.jpg">
-				<p class="careCon">생각해...</p>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/zAIZpNbYytI/mqdefault_6s.webp?du=3000&sqp=CI6i-5cG&rs=AOn4CLCFd_pk_w2olWS1u2ovDA6JngC4wA">
+				<p class="careCon">명상하면서 잠들어보세요</p>
 			</div>
 		</div>
 	
@@ -310,6 +310,42 @@
 		<!-- 페이징 넘기는거 -->
 		<div class="swiper-pagination"></div>
 	</div>
+	
+	
+	
+	
+	<!--  케어콘텐츠 안내 -->
+	<div class="careTit">상품</div>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/LsmZEPmQChY/mqdefault_6s.webp?du=3000&sqp=CPKa-5cG&rs=AOn4CLA7P76BuEKy0iMmdQ2duq5O8H9o6w">
+				<p class="careCon">러쉬 배쓰밤 16종</p>
+			</div>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/QXH1-NuzJr4/mqdefault_6s.webp?du=3000&sqp=CPaG-5cG&rs=AOn4CLDmg4Vmpl6XAK9A-62d-L-q64TXmA">
+				<p class="careCon">마호가니 칼림바</p>
+			</div>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/RaWdi2xS7J0/mqdefault_6s.webp?du=3000&sqp=CKmK-5cG&rs=AOn4CLC5Rr-_qt_kuq7Y99qPd_XK4CqDfQ">
+				<p class="careCon">[불리]1803</p>
+			</div>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/7vCkiopL9sg/mqdefault_6s.webp?du=3000&sqp=CMCw-5cG&rs=AOn4CLAT9bQh74zoYwCDXzZf-F-v1knZ5w">
+				<p class="careCon">양모펠트  DIY키트</p>
+			</div>
+			<div class="swiper-slide"><img src=https://i.ytimg.com/an_webp/SJOQbwDI_DQ/mqdefault_6s.webp?du=3000&sqp=CNjh-pcG&rs=AOn4CLDBoJFfnC4Lw05mWc_-g69IsQqdtQ>
+				<p class="careCon">가정용 불멍 에탄올 화로</p>
+			</div>
+			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/V0bvhB_ufDo/mqdefault_6s.webp?du=3000&sqp=CKii-5cG&rs=AOn4CLCIhXcSKigtmKlL397IWIsvyzJD_Q">
+				<p class="careCon">[힐링]미니어쳐 쿠킹</p>
+			</div>
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+	
+	
 	
 
   <!-- Copyright Start -->
