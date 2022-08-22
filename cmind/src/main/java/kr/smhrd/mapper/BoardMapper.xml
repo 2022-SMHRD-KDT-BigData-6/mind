@@ -28,6 +28,11 @@
 	    select image from (SELECT row_number()over(order by idx desc) as recent,idx, image FROM testdata where userid =#{userid}) as tmp where recent = 1;
 	</select>
 	
+        <!-- 공개 여부 동의한 사용자 조회 -->
+    <select id="getListPaging" resultType="kr.smhrd.model.ResultInfoVO">
+		select row_number()over(order by idx asc) as idx_num , td.image, (select nickname from memberinfo as mi where td.userid = mi.userid) nickname from testdata as td where testopen = 'y'     
+    </select>
+	
         <!-- 감정일기 쓰기 -->
    <insert id="DiaryInsert" parameterType="kr.smhrd.model.DiaryVO">
        insert into emotion_diary(userid,diarycontents,emotion)

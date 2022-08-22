@@ -7,9 +7,12 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,13 +22,23 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import kr.smhrd.mapper.BoardMapper;
+import kr.smhrd.model.ContentsVO;
+import kr.smhrd.model.Criteria;
 import kr.smhrd.model.DiaryVO;
 import kr.smhrd.model.EmotionstatVO;
 import kr.smhrd.model.MemberVO;
+import kr.smhrd.model.PageDTO;
+import kr.smhrd.model.ResultInfoVO;
 import kr.smhrd.model.TestVO;
+import kr.smhrd.service.TreeListService;
+import kr.smhrd.service.TreeListServiceImpl;
 
 @Controller // front controller
 public class BoardController {
+	private static final Logger log = LoggerFactory.getLogger(BoardController.class);
+
+	@Autowired
+	private TreeListService tlservice;
 
 	@Autowired
 	private BoardMapper mapper;
@@ -107,12 +120,6 @@ public class BoardController {
 		return dvo;
 	}
 
-	// 병원 안내 페이지
-	@RequestMapping("/treeList")
-	public String treeList() {
-		return "treeList";
-	}
-
 	// 홈 페이지
 	@RequestMapping("/index")
 	public String index() {
@@ -125,6 +132,40 @@ public class BoardController {
 		return "login";
 	}
 
+	// 공개 여부 동의한 사용자들의 검사결과 리스트 조회 기능, 페이징 처리 기능
+		@GetMapping("/treeList.do")
+		public String TreeListGET(HttpSession session, Model model, Criteria cri) {
+			MemberVO mvo = (MemberVO) session.getAttribute("mvo");
+
+			if (mvo != null) {
+				// 공개 여부 동의한 사용자들의 검사결과 리스트 조회 기능
+				log.info("boardListGET");
+				List<ResultInfoVO> list = tlservice.getListPaging();
+				List<ResultInfoVO> resultlist = new ArrayList<ResultInfoVO>();
+				if (list != null) {
+					for (int i = cri.getPageNum() * 4; i > cri.getPageNum() * 4 - 4; i--) {
+						if (i <= list.size()) {
+							resultlist.add(list.get(i - 1));
+						}
+					}
+				}
+
+				model.addAttribute("list", resultlist);
+
+				// 페이징 처리 기능
+				int total = tlservice.getTotal();
+				PageDTO pageMake = new PageDTO(cri, total);
+				model.addAttribute("pageMaker", pageMake);
+
+				// 추천 받은 셀프 케어 리스트 조회
+				List<ContentsVO> cvo = mapper.contentsList();
+				model.addAttribute("cvo", cvo);
+
+			} else {
+				return "login";
+			}
+			return "treeList";
+		}
 	// 감정일기 통계 페이지
 	   @RequestMapping("/myPage")
 	   public String myPage(HttpSession session, Model model) {
