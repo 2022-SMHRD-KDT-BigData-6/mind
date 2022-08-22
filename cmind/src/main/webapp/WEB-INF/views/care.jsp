@@ -39,6 +39,33 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 </head>
 
+<style>
+.excIKV {
+	height: auto;
+	background-color: rgb(255, 255, 255);
+	color: rgba(71, 91, 74, 0.6);
+	padding: 10px 20px 8px 18px;
+	margin-right: 8px;
+	margin-top: 10px;
+	border: 2px solid rgba(71, 91, 74, 0.6);
+	border-radius: 18px;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.jxDpdb .button-wrapper {
+	background: rgb(255, 255, 255);
+	box-shadow: rgb(71 91 74/ 15%) 0px 2px 12px;
+	border-radius: 50px;
+	display: flex;
+	padding: 10px 22px;
+}
+
+.container-xxl py-5{
+	padding-top: 0rem;
+}
+</style>
+
 <body>
 	<!-- Spinner Start -->
 	<div id="spinner"
@@ -937,6 +964,249 @@
 	</div>
 <!-- 불안 상품 끝 -->
 
+<!-- 케어콘텐츠 안내 -->
+	
+	<div class="container-xxl py-5">
+	<div class="careTit">루틴 추천</div>
+		<div class="container">
+			<table class="table table-bordered">
+				<div class="sc-gfqkcP lndvLv">
+					<tr>
+						<th colspan="2">
+							<div class="sc-ckRZPU bJRrVd">
+								<div class="sc-ciFQTS bKgLTd">
+									<h3>추천 루틴 👍</h3>
+									<div class="fs-5" align="center">원하는 루틴을 클릭해서 내 피드로 퍼가
+										보세요!</div>
+								</div>
+							</div>
+						</th>
+					</tr>
+				<tr>
+					<td>
+						<div style="display: flex; margin-top: 27px;">
+							<div class="sc-ciFQTS bKgLTd" style="margin: auto;">
+								<h3>종합 베스트</h3>
+								<div class="fs-5" style="margin-bottom: 10px;" align="center">
+									지금 마이루틴에서 가장 인기 있는 루틴은?<span class="sub-title-2"
+										style="color: rgb(71, 91, 74);">👀</span>
+								</div>
+								<div class="sc-kJpAUB vPPzRa">
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">1.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgba(250, 255, 0, 0.4);">
+												<div class="content">눈 뜨자마자 물 한 잔🥛</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">2.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgba(18, 203, 196, 0.2);">
+												<div class="content">매일 영양제 챙겨먹기💊</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">3.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgba(6, 82, 221, 0.2);">
+												<div class="content">매일 밤 일기 쓰기🌙</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">4.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgba(223, 110, 74, 0.2);">
+												<div class="content">하루 10분 독서</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">5.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgba(241, 114, 152, 0.3);">
+												<div class="content">하루 한 명 감사 표현</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">6.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgba(196, 229, 56, 0.4);">
+												<div class="content">하루 5분 방 정리🧹</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">7.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgba(7, 135, 50, 0.2);">
+												<div class="content">업무 시작 전 중요 업무 정리 (최대 3개)</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">8.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgba(7, 135, 50, 0.2);">
+												<div class="content">하루 2번 뽀모도로🍅</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">9.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgba(18, 203, 196, 0.2);">
+												<div class="content">주 2회 이상 운동💪</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">10.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgba(6, 82, 221, 0.2);">
+												<div class="content">하루 5분 명상하기</div>
+											</div>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+
+					<div style="margin: 40px 46px 0px 38px;"></div>
+					<td>
+						<div class="sc-ciFQTS bKgLTd">
+							<h3>테마 베스트</h3>
+							<div class="fs-5" style="margin-bottom: 10px;" align="center">
+								관심 있는 테마의 인기 루틴을 시작해 보세요 <span class="sub-title-2"
+									style="color: rgb(71, 91, 74);">😉</span>
+							</div>
+
+							<div class="sc-kJpAUB vPPzR display-center">
+								<div class="select-category-text">▼테마를 선택해보세요!▼</div>
+							</div>
+							<div class="sc-kJpAUB vPPzRb" id="doo">
+							
+								<div style="margin-top: 10px;">
+									<input font-size="16px" color="rgba(71, 91, 74, 0.6)"
+										type="button" class="btn btn-outline-secondary" value='모닝루틴'
+										id='btn1_1' onclick='toggleBtn1()' /> <input font-size="16px"
+										color="rgba(71, 91, 74, 0.6)" type="button"
+										class="btn btn-outline-secondary" value='저녁루틴' id='btn2_1'
+										onclick='toggleBtn2()' /> <input font-size="16px"
+										color="rgba(71, 91, 74, 0.6)" type="button"
+										class="btn btn-outline-secondary" value='건강' id='btn3_1'
+										onclick='toggleBtn3()' /> <input font-size="16px"
+										color="rgba(71, 91, 74, 0.6)" type="button"
+										class="btn btn-outline-secondary" value='생산성' id='btn4_1'
+										onclick='toggleBtn4()' /> <input font-size="16px"
+										color="rgba(71, 91, 74, 0.6)" type="button"
+										class="btn btn-outline-secondary" value='셀프케어' id='btn5_1'
+										onclick='toggleBtn5()' /> <br> <br> <input
+										font-size="16px" color="rgba(71, 91, 74, 0.6)" type="button"
+										class="btn btn-outline-secondary" value='생활' id='btn6_1'
+										onclick='toggleBtn6()' /> <input font-size="16px"
+										color="rgba(71, 91, 74, 0.6)" type="button"
+										class="btn btn-outline-secondary" value='여유' id='btn7_1'
+										onclick='toggleBtn7()' /> <input font-size="16px"
+										color="rgba(71, 91, 74, 0.6)" type="button"
+										class="btn btn-outline-secondary" value='관계' id='btn8_1'
+										onclick='toggleBtn8()' /> <input font-size="16px"
+										color="rgba(71, 91, 74, 0.6)" type="button"
+										class="btn btn-outline-secondary" value='성장' id='btn9_1'
+										onclick='toggleBtn9()' /> <input font-size="16px"
+										color="rgba(71, 91, 74, 0.6)" type="button"
+										class="btn btn-outline-secondary" value='공부' id='btn10_1'
+										onclick='toggleBtn10()' /> <input font-size="16px"
+										color="rgba(71, 91, 74, 0.6)" type="button"
+										class="btn btn-outline-secondary" value='경제' id='btn11_1'
+										onclick='toggleBtn11()' />
+								</div>
+								<br> <br>
+								<div type='button' id='btn1' class="sc-kJpAUB vPPzR">
+									<button font-size="16px" class="sc-avest kcZwMn">모닝루틴</button>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">1.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);">
+												<div class="content">눈 뜨자마자 물 한 잔🥛</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">2.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);">
+												<div class="content">✏️ 모닝 페이지(15분 이상)</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">3.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);">
+												<div class="content">눈 뜨면 바로 일어나기🌞</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">4.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);">
+												<div class="content">일어나자마자 이불 정리</div>
+											</div>
+										</button>
+									</div>
+									<div style="display: flex; margin-top: 14px;">
+										<span style="margin-right: 12px; margin-top: 14px;">5.</span>
+										<button class="sc-gslxeA jxDpdb">
+											<div class="button-wrapper"
+												style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);">
+												<div class="content">하루를 시작하는 감사일기💚</div>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div style="display: none;" type='button' id='btn2' class="sc-kJpAUB vPPzR"><button font-size="16px" class="sc-avest dkOhsW">저녁루틴</button><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">1.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">12시 전에 침대에 눕기🌙</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">2.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">🚿 집에 도착해서 바로 씻기</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">3.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">잠들기 전 스트레칭🌙</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">4.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">침대에서 휴대폰은 20분만! 💤</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">5.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">잠들기 전 아로마오일 한 방울</div></div></button></div></div>
+								<div style="display: none;" type='button' id='btn3' class="sc-kJpAUB vPPzR"><button font-size="16px" class="sc-avest XHojC">건강</button><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">1.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">매일 영양제 챙겨먹기💊</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">2.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">물 2L 이상 마시기</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">3.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">주 2회 이상 운동💪</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">4.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">하루 한 끼 영양균형 맞는 식사🥗</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">5.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">아침 공복 몸무게 재기🌞</div></div></button></div></div>
+								<div style="display: none;" type='button' id='btn4' class="sc-kJpAUB vPPzR"><button font-size="16px" class="sc-avest jBSBfF">생산성</button><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">1.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">업무 시작 전 중요 업무 정리 (최대 3개)</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">2.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">하루 2번 뽀모도로🍅</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">3.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">퇴근 전 일간 업무 회고</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">4.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">오늘 중요 업무 모두 클리어!🎯</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">5.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">다음 날 플랜 미리 짜두기✍</div></div></button></div></div>
+								<div style="display: none;" type='button' id='btn5' class="sc-kJpAUB vPPzR"><button font-size="16px" class="sc-avest xWFBp">셀프케어</button><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">1.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">매일 밤 일기 쓰기🌙</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">2.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">하루 5분 명상하기</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">3.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">삼시 세 끼 식단 기록🥗</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">4.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">오늘 나를 위한 행동 하나</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">5.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">나에게 미소 짓기🙂</div></div></button></div></div>
+								<div style="display: none;" type='button' id='btn6' class="sc-kJpAUB vPPzR"><button font-size="16px" class="sc-avest jjdbna">생활</button><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">1.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">하루 5분 방 정리🧹</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">2.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">SNS 1시간 이하⏰</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">3.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">전화번호부 번호 삭제 (일 1개)</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">4.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">밥 먹자마자 바로 설거지🍴</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">5.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">하루 세 번 환기</div></div></button></div></div>
+								<div style="display: none;" type='button' id='btn7' class="sc-kJpAUB vPPzR"><button font-size="16px" class="sc-avest bXswKB">여유</button><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">1.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">차 마시기🍵</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">2.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">하루 3번 하늘 보기☀️</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">3.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">좋아하는 영상 하나🎬</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">4.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">주말에는 나를 위한 요리하기</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">5.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">퇴근 후 비행기모드🛫 (일 생각 금지!)</div></div></button></div></div>
+								<div style="display: none;" type='button' id='btn8' class="sc-kJpAUB vPPzR"><button font-size="16px" class="sc-avest gJgTTU">관계</button><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">1.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">하루 한 명 감사 표현</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">2.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">일주일에 한 번 이상 부모님께 전화하기</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">3.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">강아지 산책🐾</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">4.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">반려묘 놀아주기😺</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">5.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">일주일에 한 번 가족과 시간보내기</div></div></button></div></div>
+								<div style="display: none;" type='button' id='btn9' class="sc-kJpAUB vPPzR"><button font-size="16px" class="sc-avest bUgLvc">성장</button><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">1.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">하루 10분 독서📕</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">2.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">하루 1개 아티클 읽고 인사이트 정리</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">3.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">매일 아침 뉴스레터</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">4.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">아침 스터디 30분🌞</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">5.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">하루 30분 사이드 프로젝트</div></div></button></div></div>
+								<div style="display: none;" type='button' id='btn10' class="sc-kJpAUB vPPzR"><button font-size="16px" class="sc-avest iUtwbA">공부</button><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">1.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">매일 영어단어 10개 암기</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">2.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">관심분야 독서(1챕터)</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">3.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">뽀모도로 6번⏰
+								(25분 공부, 5분 휴식 반복)</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">4.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">주 3회 관심 분야 공부 30분</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">5.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">1일 1과목 오답노트⭕❌</div></div></button></div></div>
+								<div style="display: none;" type='button' id='btn11' class="sc-kJpAUB vPPzR"><button font-size="16px" class="sc-avest wlLrY">경제</button><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">1.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">가계부 작성하며 소비습관 돌아보기💰</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">2.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">출근길 머니레터 정독</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">3.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">하루 한 번 주식 확인</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">4.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">집 나서기 전 전기 플러그 뽑기⚡</div></div></button></div><div style="display: flex; margin-top: 14px;"><span style="margin-right: 12px; margin-top: 14px;">5.</span><button class="sc-gslxeA jxDpdb"><div class="button-wrapper" style="transform: scale(1); opacity: 1; background-color: rgb(255, 255, 255);"><div class="content">커피 사먹지 않기</div></div></button></div></div>
+								
+							</div>
+
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	</div>
+
 	
   <!-- Copyright Start -->
     <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s" id="copy">
@@ -1058,6 +1328,211 @@
 		}
 	}
 	
+	// 루틴 버튼 기능
+	function toggleBtn1() {
+			
+			var test = document.getElementsByClassName('sc-kJpAUB vPPzR');
+			for(let i =0; i<test.length; i++){
+				test[i].style.display = 'none';
+			}
+			
+			
+			const btn = document.getElementById('btn1');
+			
+			// 숨기기 (display: none)
+			if (btn.style.display !== 'none') {
+				btn.style.display = 'none';
+			}
+			// 보이기 (display: block)
+			else {
+				btn.style.display = 'block';
+			}
+
+	}
+	function toggleBtn2() {
+		var test = document.getElementsByClassName('sc-kJpAUB vPPzR');
+		for(let i =0; i<test.length; i++){
+			test[i].style.display = 'none';
+		}
+		
+		const btn = document.getElementById('btn2');
+
+		// 숨기기 (display: none)
+		if (btn.style.display !== 'none') {
+			btn.style.display = 'none';
+		}
+		// 보이기 (display: block)
+		else {
+			btn.style.display = 'block';
+		}
+
+	}
+	function toggleBtn3() {
+		var test = document.getElementsByClassName('sc-kJpAUB vPPzR');
+		for(let i =0; i<test.length; i++){
+			test[i].style.display = 'none';
+		}
+		
+		const btn = document.getElementById('btn3');
+
+		
+		// 숨기기 (display: none)
+		if (btn.style.display !== 'none') {
+			btn.style.display = 'none';
+		}
+		// 보이기 (display: block)
+		else {
+			btn.style.display = 'block';
+		}
+
+	}
+	function toggleBtn4() {
+		var test = document.getElementsByClassName('sc-kJpAUB vPPzR');
+		for(let i =0; i<test.length; i++){
+			test[i].style.display = 'none';
+		}
+		
+		const btn = document.getElementById('btn4');
+
+		// 숨기기 (display: none)
+		if (btn.style.display !== 'none') {
+			btn.style.display = 'none';
+		}
+		// 보이기 (display: block)
+		else {
+			btn.style.display = 'block';
+		}
+
+	}
+	function toggleBtn5() {
+		var test = document.getElementsByClassName('sc-kJpAUB vPPzR');
+		for(let i =0; i<test.length; i++){
+			test[i].style.display = 'none';
+		}
+		
+		const btn = document.getElementById('btn5');
+
+		// 숨기기 (display: none)
+		if (btn.style.display !== 'none') {
+			btn.style.display = 'none';
+		}
+		// 보이기 (display: block)
+		else {
+			btn.style.display = 'block';
+		}
+
+	}
+	function toggleBtn6() {
+		var test = document.getElementsByClassName('sc-kJpAUB vPPzR');
+		for(let i =0; i<test.length; i++){
+			test[i].style.display = 'none';
+		}
+		
+		const btn = document.getElementById('btn6');
+
+		// 숨기기 (display: none)
+		if (btn.style.display !== 'none') {
+			btn.style.display = 'none';
+		}
+		// 보이기 (display: block)
+		else {
+			btn.style.display = 'block';
+		}
+
+	}
+	function toggleBtn7() {
+		var test = document.getElementsByClassName('sc-kJpAUB vPPzR');
+		for(let i =0; i<test.length; i++){
+			test[i].style.display = 'none';
+		}
+		
+		const btn = document.getElementById('btn7');
+
+		//숨기기 (display: none)
+		if (btn.style.display !== 'none') {
+			btn.style.display = 'none';
+		}
+		// 보이기 (display: block)
+		else {
+			btn.style.display = 'block';
+		}
+
+	}
+	function toggleBtn8() {
+		var test = document.getElementsByClassName('sc-kJpAUB vPPzR');
+		for(let i =0; i<test.length; i++){
+			test[i].style.display = 'none';
+		}
+		
+		const btn = document.getElementById('btn8');
+
+		// 숨기기 (display: none)
+		if (btn.style.display !== 'none') {
+			btn.style.display = 'none';
+		}
+		// 보이기 (display: block)
+		else {
+			btn.style.display = 'block';
+		}
+
+	}
+	function toggleBtn9() {
+		var test = document.getElementsByClassName('sc-kJpAUB vPPzR');
+		for(let i =0; i<test.length; i++){
+			test[i].style.display = 'none';
+		}
+		
+		const btn = document.getElementById('btn9');
+
+		// 숨기기 (display: none)
+		if (btn.style.display !== 'none') {
+			btn.style.display = 'none';
+		}
+		// 보이기 (display: block)
+		else {
+			btn.style.display = 'block';
+		}
+
+	}
+	function toggleBtn10() {
+		var test = document.getElementsByClassName('sc-kJpAUB vPPzR');
+		for(let i =0; i<test.length; i++){
+			test[i].style.display = 'none';
+		}
+		
+		console.log("제발 좀 되라 ㅡㅡ");
+		const btn = document.getElementById('btn10');
+
+		// 숨기기 (display: none)
+		if (btn.style.display !== 'none') {
+			btn.style.display = 'none';
+		}
+		// 보이기 (display: block)
+		else {
+			btn.style.display = 'block';
+		}
+
+	}
+	function toggleBtn11() {
+		var test = document.getElementsByClassName('sc-kJpAUB vPPzR');
+		for(let i =0; i<test.length; i++){
+			test[i].style.display = 'none';
+		}
+		
+		console.log("제발 좀 되라 ㅡㅡ");
+		
+		const btn = document.getElementById('btn11');
+
+		// 숨기기 (display: none)
+		if (btn.style.display !== 'none') {
+			btn.style.display = 'none';
+		}
+		// 보이기 (display: block)
+		else {
+			btn.style.display = 'block';
+		}
+
+	}
 	
 	
 	
