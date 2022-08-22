@@ -6,13 +6,19 @@
 <!DOCTYPE html>
 <html>
 <style>
-<style>
    #calendar{
-   width: 500px;
-   height: 700px;
+   width: 800px;
+   height: 550px;
    margin-left: auto;
    margin-right: auto;
+   margin-top: 5em;
    }
+   
+   .fc .fc-toolbar{
+    display: flex;
+    justify-content: space-evenly;
+    }
+    
    .event-icon{
    width: 60px;
    height: 60px;
