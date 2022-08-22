@@ -82,7 +82,7 @@
         <div class="owl-carousel header-carousel position-relative">
            <!-- 첫번째 슬라이드 -->
             <div class="owl-carousel-item position-relative" style="text-align: right;">
-                <img class="img-fluid" src="${cpath}/resources/careIMG/index004.jpg" alt="">
+                <img class="img-fluid" src="${cpath}/resources/careIMG/index002.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container" style="padding-bottom: 200px;">
                         <div class="row justify-content-start">

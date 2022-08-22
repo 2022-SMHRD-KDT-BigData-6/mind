@@ -542,7 +542,7 @@
 				<a href="https://www.youtube.com/watch?v=LKFVy2G3JEY">
 					<img src="${cpath}/resources/careIMG/depCon06.webp">
 				</a>
-				<p class="careCon">우울증, 진짜 나를 찾아가ᅟᅳᆫ 과정</p>
+				<p class="careCon">우울증, 진짜 나를 찾아가는 과정</p>
 			</div>
 			<!-- 공통 시작 -->
 			<div class="swiper-slide">
@@ -991,6 +991,8 @@
 	slidesPerView : 3, // 동시에 보여줄 슬라이드 갯수
 	spaceBetween : 30, // 슬라이드간 간격
 	slidesPerGroup : 1,
+	observer: true,
+	observeParents: true,
 
 	// 그룹수가 맞지 않을 경우 빈칸으로 메우는 기능
 	loopFillGroupWithBlank : true,
@@ -1054,6 +1056,7 @@
 			}
 		}
 	}
+	
 	
 	
 	
