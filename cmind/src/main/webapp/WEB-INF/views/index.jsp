@@ -82,24 +82,58 @@
         <div class="owl-carousel header-carousel position-relative">
            <!-- 첫번째 슬라이드 -->
             <div class="owl-carousel-item position-relative" style="text-align: right;">
-                <img class="img-fluid" src="${cpath}/resources/img/drawHand.png" alt="">
+                <img class="img-fluid" src="${cpath}/resources/careIMG/index004.jpg" alt="">
                 <div class="owl-carousel-inner">
-                    <div class="container" id="mainDv">
+                    <div class="container" style="padding-bottom: 200px;">
                         <div class="row justify-content-start">
                             <div class="col-lg-8" id="titleDv">
-                                <!--<p class="text-primary text-uppercase fw-bold mb-2">// The Best Bakery</p>-->
-                                <h1 class="display-1 text-light mb-4 animated slideInDown" id="mainTypo">그림에 담긴 마음을 알아보세요1</h1>
-                                <h2 class="display-1 text-light mb-4 animated slideInDown" id="subTypo">마음:체는 딥러닝 기반의 그림분석 서비스입니다.</h1>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown" id="mainTypo">그림에 담긴 마음을 알아보세요</h1>
+                                <h2 class="display-1 text-light mb-4 animated slideInDown" id="subTypo">마음:체는 딥러닝 기반의 그림분석 서비스입니다.</h2>
                                 <p class="text-light fs-5 mb-4 pb-3" id="indexP">당신이 직접 그린 그림으로 당신의 심리 상태를 분석합니다.<br>
-                                    마음:체만의 다채로운 심리 케어 컨텐츠와 함께하면서<br>
-                                    마음의 나무에 영양제를 주는 시간을 가져보세요!</p>
-                                <!--<a href="" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>-->
+                                    간단한 나무 그림만 있으면<br>
+                                    당신의 심리 상태를 알려드립니다!</p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5">심리검사 하러 가기</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+            <!-- 두번째 슬라이드 -->
+            <div class="owl-carousel-item position-relative" style="text-align: right;">
+                <img class="img-fluid" src="${cpath}/resources/careIMG/index003.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container" style="padding-bottom: 200px;">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8" id="titleDv">
+                                <h1 class="display-1 text-light mb-4 animated slideInDown" id="mainTypo">매일의 감정을 모으면 당신이 됩니다.</h1>
+                                <h2 class="display-1 text-light mb-4 animated slideInDown" id="subTypo">감정을 매일 기록하는 마음:체의 감정일기와 함께하세요</h2>
+                                <p class="text-light fs-5 mb-4 pb-3" id="indexP">감정을 기록하면 감정 통계를 열람할 수 있습니다.<br>
+                                  저번 달의 나와 이번 달의 나를 비교해보세요<br>
+                                   어제보다 더 멋진 내가 되어있을지도 몰라요!</p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5">감정일기 쓰러 가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 세번째 슬라이드 -->
+            <div class="owl-carousel-item position-relative" style="text-align: right;">
+                <img class="img-fluid" src="${cpath}/resources/careIMG/index005.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container" style="padding-bottom: 200px;">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8" id="titleDv">
+                                <h1 class="display-1 text-light mb-4 animated slideInDown" id="mainTypo">나에게 맞는 심리케어는 무엇일까?</h1>
+                                <h2 class="display-1 text-light mb-4 animated slideInDown" id="subTypo">다채로운 케어컨텐츠를 이용해보세요!</h2>
+                                <p class="text-light fs-5 mb-4 pb-3" id="indexP">마음:체는 현재 심리상태 기반의 심리케어 컨텐츠를 제공합니다.<br>
+                ASMR, 명상, 상품 등을 자유롭게 둘러보세요<br>
+                                    더 다채로운 컨텐츠가 추가 예정이에요!</p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5">케어컨텐츠 추천받기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     

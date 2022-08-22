@@ -33,7 +33,7 @@
     <link href="${cpath}/resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="${cpath}/resources/css/style.css?a" rel="stylesheet">
+    <link href="${cpath}/resources/css/style.css?sfa" rel="stylesheet">
     
     <!-- 슬라이드 기능에 필요한 링크-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
@@ -242,35 +242,45 @@
 	</div>
 		
 	
+	<!-- 케어콘텐츠 안내 -->
 	
-	<!--  케어콘텐츠 안내 -->
-	<div class="careTit">ASMR</div>
-	<div class="swiper-container">
+<!-- 자존감 에에쎄말 시작 -->
+	<div class="swiper-container lovCon">
+		<div class="careTit">ASMR</div>
 		<div class="swiper-wrapper">
-			<!-- 슬라이드 항목 하나 시작 -->
-			<div class="swiper-slide">
-				<a href="http://www.naver.com"> <!-- 링크 달 거면 a태그 살려주기! 아니면 그냥 빼면 돼요! 아래 div에는 a태그 없음 -->
-					<img src="https://i.ytimg.com/an_webp/Kr7eiJz0kvc/mqdefault_6s.webp?du=3000&sqp=CPOd-5cG&rs=AOn4CLBcYXxyDsBBnn-tuTFVRFchTJXZSg">
-					<p class="careCon">공부하는 소리 asmr</p>
-				</a>
-			</div>
-			<!-- 슬라이드 항목 하나 끝 -->
 			
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/PD90OLzok_8/mqdefault_6s.webp?du=3000&sqp=CMCB-5cG&rs=AOn4CLDHMEyo60PRDlSTzldufgDLsr6Wng">
-				<p class="careCon">화장품 부수기</p>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=yRnL4ldauL0&t=3s">
+					<img src="${cpath}/resources/careIMG/lovCon01.webp">
+				</a>
+				<p class="careCon">[ASMR]자존감에 대하여</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/9Xn79E69Dgw/mqdefault_6s.webp?du=3000&sqp=CICj-5cG&rs=AOn4CLCTKW4xft6Ika8AOXU6UQIS2Q8UgQ">
-				<p class="careCon">팅글 영상 20분 모음</p>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=6Cg-hqnVHAE">
+					<img src="${cpath}/resources/careIMG/lovCon02.webp">
+				</a>
+				<p class="careCon">인간관계를 긍정멘탈로</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/IJCWC6JSTUA/mqdefault_6s.webp?du=3000&sqp=CNCh-5cG&rs=AOn4CLBYsVjX_0nWuvyoUlMvlgBFwSGYSg">
-				<p class="careCon">장작불과 풀벌레 소리</p>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=6A-XJ4UgJjg">
+					<img src="${cpath}/resources/careIMG/lovCon03.webp">
+				</a>
+				<p class="careCon">자존감이 바닥일때 듣는 asmr</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/HrO74lj5QBs/mqdefault_6s.webp?du=3000&sqp=CMv3-pcG&rs=AOn4CLCuzOZuO5WKoqZwQUUfslmBNrjJLg">
-				<p class="careCon">새벽 공원의 빗소리</p>
+			<!-- 공통 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=HsnnP6kRnTU">
+					<img src="${cpath}/resources/careIMG/allCon01.webp">
+				</a>
+				<p class="careCon">마음이 편해지는 베이킹 사운드</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/JOckUlv4m9I/mqdefault_6s.webp?du=3000&sqp=CMbp-pcG&rs=AOn4CLDXnrWwXSxFoLNEg55K9WZk1FPr4A">
-				<p class="careCon">잠오는 베이킹 사운드</p>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=xv3XNJGLoU8">
+					<img src="${cpath}/resources/careIMG/allCon02.webp">
+				</a>
+				<p class="careCon">[ASMR]천둥번개 + 빗소리</p>
 			</div>
+			<!-- 공통 -->
 		</div>
 	
 		<!-- 이전다음 버튼-->
@@ -279,29 +289,44 @@
 		<!-- 페이징 넘기는거 -->
 		<div class="swiper-pagination"></div>
 	</div>
+<!-- 자존감 에에쎄말 끝 -->
 
-	<!--  케어콘텐츠 안내 -->
-	<div class="careTit">명상</div>
-	<div class="swiper-container">
+<!-- 우울 에에쎄말 시작 -->
+	<div class="swiper-container depCon">
+		<div class="careTit">ASMR</div>
 		<div class="swiper-wrapper">
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/yiysD0Jl2Wo/mqdefault_6s.webp?du=3000&sqp=CIbx-pcG&rs=AOn4CLA1AzAQpKi0FNJCpaxjikuc_jKUcw">
-				<p class="careCon">삶에 명상 한스푼</p>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=GDqJ01EcBRk">
+					<img src="${cpath}/resources/careIMG/depCon01.webp">
+				</a>
+				<p class="careCon">[ASMR]나의 우울에게</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/PIoK5ZdYk6E/mqdefault_6s.webp?du=3000&sqp=CICl-5cG&rs=AOn4CLA6xvn3zHoYHneTOUOk4XRMi9c4Rg">
-				<p class="careCon">5분 아침 명상</p>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=TuNY0cxaPKY">
+					<img src="${cpath}/resources/careIMG/depCon02.webp">
+				</a>
+				<p class="careCon">안녕. 나는 너의 우울이야!</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/xeul9fEvo-Q/mqdefault_6s.webp?du=3000&sqp=CNyn-5cG&rs=AOn4CLD4wIhUjjqYTK8pWzGtdEl-MOKcNg">
-				<p class="careCon">7분 자신감 채우기</p>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=ZNBVsljlohI">
+					<img src="${cpath}/resources/careIMG/depCon03.webp">
+				</a>
+				<p class="careCon">우울에 관하여</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/vi/y3deSlrQ7qY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLByegqQFfSG-0bbtVFQL4b3PJVjEQ">
-				<p class="careCon">마음이 편해지는 싱잉볼</p>
+			<!-- 공통 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=HsnnP6kRnTU">
+					<img src="${cpath}/resources/careIMG/allCon01.webp">
+				</a>
+				<p class="careCon">마음이 편해지는 베이킹 사운드</p>
 			</div>
-			<div class="swiper-slide"><img src=https://i.ytimg.com/an_webp/PY2qCvdgP9E/mqdefault_6s.webp?du=3000&sqp=CNCm-5cG&rs=AOn4CLA3xyhLrau433LPl01_C3-bjopI-g>
-				<p class="careCon">정목스님의 아침명상</p>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=xv3XNJGLoU8">
+					<img src="${cpath}/resources/careIMG/allCon02.webp">
+				</a>
+				<p class="careCon">[ASMR]천둥번개 + 빗소리</p>
 			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/zAIZpNbYytI/mqdefault_6s.webp?du=3000&sqp=CI6i-5cG&rs=AOn4CLCFd_pk_w2olWS1u2ovDA6JngC4wA">
-				<p class="careCon">명상하면서 잠들어보세요</p>
-			</div>
+			<!-- 공통 -->
 		</div>
 	
 		<!-- 이전다음 버튼-->
@@ -310,44 +335,608 @@
 		<!-- 페이징 넘기는거 -->
 		<div class="swiper-pagination"></div>
 	</div>
-	
-	
-	
-	
-	<!--  케어콘텐츠 안내 -->
-	<div class="careTit">상품</div>
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/LsmZEPmQChY/mqdefault_6s.webp?du=3000&sqp=CPKa-5cG&rs=AOn4CLA7P76BuEKy0iMmdQ2duq5O8H9o6w">
-				<p class="careCon">러쉬 배쓰밤 16종</p>
-			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/QXH1-NuzJr4/mqdefault_6s.webp?du=3000&sqp=CPaG-5cG&rs=AOn4CLDmg4Vmpl6XAK9A-62d-L-q64TXmA">
-				<p class="careCon">마호가니 칼림바</p>
-			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/RaWdi2xS7J0/mqdefault_6s.webp?du=3000&sqp=CKmK-5cG&rs=AOn4CLC5Rr-_qt_kuq7Y99qPd_XK4CqDfQ">
-				<p class="careCon">[불리]1803</p>
-			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/7vCkiopL9sg/mqdefault_6s.webp?du=3000&sqp=CMCw-5cG&rs=AOn4CLAT9bQh74zoYwCDXzZf-F-v1knZ5w">
-				<p class="careCon">양모펠트  DIY키트</p>
-			</div>
-			<div class="swiper-slide"><img src=https://i.ytimg.com/an_webp/SJOQbwDI_DQ/mqdefault_6s.webp?du=3000&sqp=CNjh-pcG&rs=AOn4CLDBoJFfnC4Lw05mWc_-g69IsQqdtQ>
-				<p class="careCon">가정용 불멍 에탄올 화로</p>
-			</div>
-			<div class="swiper-slide"><img src="https://i.ytimg.com/an_webp/V0bvhB_ufDo/mqdefault_6s.webp?du=3000&sqp=CKii-5cG&rs=AOn4CLCIhXcSKigtmKlL397IWIsvyzJD_Q">
-				<p class="careCon">[힐링]미니어쳐 쿠킹</p>
-			</div>
-		</div>
-	
-		<!-- 이전다음 버튼-->
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
-		<!-- 페이징 넘기는거 -->
-		<div class="swiper-pagination"></div>
-	</div>
-	
-	
-	
+<!-- 우울 에에쎄말 끝 -->
 
+<!-- 공격성 에에쎄말 시작 -->
+	<div class="swiper-container madCon">
+		<div class="careTit">ASMR</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=YtYIb8Qy8mw">
+					<img src="${cpath}/resources/careIMG/madCon01.webp">
+				</a>
+				<p class="careCon">나의 분노를 극복하는 법</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=z5sSJoTvdOo">
+					<img src="${cpath}/resources/careIMG/madCon02.webp">
+				</a>
+				<p class="careCon">[ASMR]화가 날 때 대처하기</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=ZQWrleq-NhQ">
+					<img src="${cpath}/resources/careIMG/madCon03.webp">
+				</a>
+				<p class="careCon">기분이 잔잔해지는 힐링음악</p>
+			</div>
+			<!-- 공통 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=HsnnP6kRnTU">
+					<img src="${cpath}/resources/careIMG/allCon01.webp">
+				</a>
+				<p class="careCon">마음이 편해지는 베이킹 사운드</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=xv3XNJGLoU8">
+					<img src="${cpath}/resources/careIMG/allCon02.webp">
+				</a>
+				<p class="careCon">[ASMR]천둥번개 + 빗소리</p>
+			</div>
+			<!-- 공통 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 공격성 에에쎄말 끝 -->
+
+<!-- 공상 에에쎄말 시작 -->>
+	<div class="swiper-container thiCon">
+		<div class="careTit">ASMR</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide thiCon">
+				<a href="https://www.youtube.com/watch?v=wIBnaNuhuCQ">
+					<img src="${cpath}/resources/careIMG/thiCon01.webp">
+				</a>
+				<p class="careCon">[ASMR]뉴욕 로스쿨 도서관</p>
+			</div>
+			<div class="swiper-slide thiCon">
+				<a href="https://www.youtube.com/watch?v=E24KXKCMg1o">
+					<img src="${cpath}/resources/careIMG/thiCon02.webp">
+				</a>
+				<p class="careCon">집중할 때 듣는 귀청소 ASMR</p>
+			</div>
+			<div class="swiper-slide thiCon">
+				<a href="https://www.youtube.com/watch?v=Zj7b40Kd8y4">
+					<img src="${cpath}/resources/careIMG/thiCon03.webp">
+				</a>
+				<p class="careCon">공부할 때 듣기 좋은 소리 모음</p>
+			</div>
+			<!-- 공통 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=HsnnP6kRnTU">
+					<img src="${cpath}/resources/careIMG/allCon01.webp">
+				</a>
+				<p class="careCon">마음이 편해지는 베이킹 사운드</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=xv3XNJGLoU8">
+					<img src="${cpath}/resources/careIMG/allCon02.webp">
+				</a>
+				<p class="careCon">[ASMR]천둥번개 + 빗소리</p>
+			</div>
+			<!-- 공통 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 공상 에에쎄말 끝 -->
+<!-- 불안 에에쎄말 시작 -->
+	<div class="swiper-container feaCon">
+	<div class="careTit">ASMR</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=u2k-x6JextA&t=1926s">
+					<img src="${cpath}/resources/careIMG/feaCon01.webp">
+				</a>
+				<p class="careCon">[ASMR]당신의 낮잠과 함께</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=zAIZpNbYytI">
+					<img src="${cpath}/resources/careIMG/feaCon02.webp">
+				</a>
+				<p class="careCon">불안장애를 치유하는 수면영상</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=mGH6RaMX2EE">
+					<img src="${cpath}/resources/careIMG/feaCon03.webp">
+				</a>
+				<p class="careCon">불안을 줄여주는 마술같은 최면</p>
+			</div>
+			<!-- 공통 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=HsnnP6kRnTU">
+					<img src="${cpath}/resources/careIMG/allCon01.webp">
+				</a>
+				<p class="careCon">마음이 편해지는 베이킹 사운드</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=xv3XNJGLoU8">
+					<img src="${cpath}/resources/careIMG/allCon02.webp">
+				</a>
+				<p class="careCon">[ASMR]천둥번개 + 빗소리</p>
+			</div>
+			<!-- 공통 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 불안 에에쎄말 끝 -->
+			
+
+	<!--  케어콘텐츠 안내 -->	
+<!-- 자존감 명상 시작 -->
+	<div class="swiper-container lovCon">
+		<div class="careTit">명상</div>
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=r8Oh6UmblgE">
+					<img src="${cpath}/resources/careIMG/lovCon04.webp">
+				</a>
+				<p class="careCon">사랑스러운 사람이 되는 법</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=92L4xmRPuiA">
+					<img src="${cpath}/resources/careIMG/lovCon05.webp">
+				</a>
+				<p class="careCon">자존감을 기르는 저녁 명상</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=4SrtMIpFwJw">
+					<img src="${cpath}/resources/careIMG/lovCon06.webp">
+				</a>
+				<p class="careCon">자존감 회복을 도와드릴게요</p>
+			</div>
+			<!-- 공통 시작 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=nlX8Bj6VT4o">
+					<img src="${cpath}/resources/careIMG/allCon03.webp">
+				</a>
+				<p class="careCon">머리를 비우는 숲속 명상음악</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=Rl6_OzuG73s">
+					<img src="${cpath}/resources/careIMG/allCon04.webp">
+				</a>
+				<p class="careCon">마음챙김 - 초보자 명상 가이드</p>
+			</div>
+			<!-- 공통 끝 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 자존감 명상 끝 -->
+<!-- 우울 명상 시작 -->
+	<div class="swiper-container depCon">
+		<div class="careTit">명상</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=6eP8DVGxBws">
+					<img src="${cpath}/resources/careIMG/depCon04.webp">
+				</a>
+				<p class="careCon">데일리 마음정화 명상</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=cvPS_25gRPs">
+					<img src="${cpath}/resources/careIMG/depCon05.webp">
+				</a>
+				<p class="careCon">부정적인 생각을 없애는 명상</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=LKFVy2G3JEY">
+					<img src="${cpath}/resources/careIMG/depCon06.webp">
+				</a>
+				<p class="careCon">우울증, 진짜 나를 찾아가ᅟᅳᆫ 과정</p>
+			</div>
+			<!-- 공통 시작 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=nlX8Bj6VT4o">
+					<img src="${cpath}/resources/careIMG/allCon03.webp">
+				</a>
+				<p class="careCon">머리를 비우는 숲속 명상음악</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=Rl6_OzuG73s">
+					<img src="${cpath}/resources/careIMG/allCon04.webp">
+				</a>
+				<p class="careCon">마음챙김 - 초보자 명상 가이드</p>
+			</div>
+			<!-- 공통 끝 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 우울 명상 끝 -->
+<!-- 공격성 명상 시작 -->
+	<div class="swiper-container madCon">
+		<div class="careTit">명상</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=TYGYOAFVIE4">
+					<img src="${cpath}/resources/careIMG/madCon04.webp">
+				</a>
+				<p class="careCon">정목스님- 화가 치밀어오를 때</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=-JwdQQNX90k">
+					<img src="${cpath}/resources/careIMG/madCon05.webp">
+				</a>
+				<p class="careCon">화를 편하게 다스리는 법</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=4H3qPmmCruk">
+					<img src="${cpath}/resources/careIMG/madCon06.webp">
+				</a>
+				<p class="careCon">내가 가지고 있는 분노를  흘려보내세요</p>
+			</div>
+			<!-- 공통 시작 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=nlX8Bj6VT4o">
+					<img src="${cpath}/resources/careIMG/allCon03.webp">
+				</a>
+				<p class="careCon">머리를 비우는 숲속 명상음악</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=Rl6_OzuG73s">
+					<img src="${cpath}/resources/careIMG/allCon04.webp">
+				</a>
+				<p class="careCon">마음챙김 - 초보자 명상 가이드</p>
+			</div>
+			<!-- 공통 끝 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 공격성 명상 끝 -->
+<!-- 공상 명상 시작 -->
+	<div class="swiper-container thiCon">
+		<div class="careTit">명상</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=I64BgPA_1pw">
+					<img src="${cpath}/resources/careIMG/thiCon04.webp">
+				</a>
+				<p class="careCon">성공하는 사람들의 습관! 명상</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=dZewQEbQQM0">
+					<img src="${cpath}/resources/careIMG/thiCon05.webp">
+				</a>
+				<p class="careCon">(5분명상)뇌를 위한 최고의 휴식법</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=rAFZVs0YY5g">
+					<img src="${cpath}/resources/careIMG/thiCon06.webp">
+				</a>
+				<p class="careCon">1분 초집중력 뇌 만들기</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=nlX8Bj6VT4o">
+					<img src="${cpath}/resources/careIMG/allCon03.webp">
+				</a>
+				<p class="careCon">머리를 비우는 숲속 명상음악</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=Rl6_OzuG73s">
+					<img src="${cpath}/resources/careIMG/allCon04.webp">
+				</a>
+				<p class="careCon">마음챙김 - 초보자 명상 가이드</p>
+			</div>
+			<!-- 공통 끝 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 공상 명상 끝 -->
+<!-- 불안 명상 시작 -->
+	<div class="swiper-container feaCon">
+		<div class="careTit">명상</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=iUbqSELh2vs">
+					<img src="${cpath}/resources/careIMG/feaCon04.webp">
+				</a>
+				<p class="careCon">걱정을 해소하는 위로명상 </p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=7BthVsfkoWU">
+					<img src="${cpath}/resources/careIMG/feaCon05.webp">
+				</a>
+				<p class="careCon">불안을 다스리는 법</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=dFfhohEk90s">
+					<img src="${cpath}/resources/careIMG/feaCon06.webp">
+				</a>
+				<p class="careCon">불안한 마음을 위한 8분 명상</p>
+			</div>
+			<!-- 공통 시작 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=nlX8Bj6VT4o">
+					<img src="${cpath}/resources/careIMG/allCon03.webp">
+				</a>
+				<p class="careCon">머리를 비우는 숲속 명상음악</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=Rl6_OzuG73s">
+					<img src="${cpath}/resources/careIMG/allCon04.webp">
+				</a>
+				<p class="careCon">마음챙김 - 초보자 명상 가이드</p>
+			</div>
+			<!-- 공통 끝 -->
+		</div>
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 불안 명상 끝 -->		
+	
+	
+	
+	<!--  케어콘텐츠 안내 상품-->
+
+<!-- 자존감 상품 시작-->
+	<div class="swiper-container lovCon">
+		<div class="careTit">상품</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=_yP28CsACa0">
+					<img src="${cpath}/resources/careIMG/lovCon07.webp">
+				</a>
+				<p class="careCon">폼롤러로 더 건강한 내가 되기</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=HKJcQI5ziIQ">
+					<img src="${cpath}/resources/careIMG/lovCon08.webp">
+				</a>
+				<p class="careCon">나를 사랑하는 다이어리</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=kY9VeVNcxBo">
+					<img src="${cpath}/resources/careIMG/lovCon09.webp">
+				</a>
+				<p class="careCon">찢었다!! 도장</p>
+			</div>
+			<!-- 공통 시작 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=1fOOVU7LxnI">
+					<img src="${cpath}/resources/careIMG/allCon05.webp">
+				</a>
+				<p class="careCon">원데이 수제 비누 만들기 키드</p>
+			</div>
+			<div class="swiper-slide">
+				<a href=https://www.youtube.com/watch?v=CBfHJnkwTZA>
+					<img src="${cpath}/resources/careIMG/allCon06.webp">
+				</a>
+				<p class="careCon">터프팅 원데이 클래스 패키지</p>
+			</div>
+			<!-- 공통 끝 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 자존감 상품 끝-->
+
+
+<!-- 우울 상품 시작 -->
+	<div class="swiper-container depCon">
+		<div class="careTit">상품</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=99lheteDJJs">
+					<img src="${cpath}/resources/careIMG/depCon07.webp">
+				</a>
+				<p class="careCon">우울을 완화하는 책 5종</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=rApn0GbO3Dg">
+					<img src="${cpath}/resources/careIMG/depCon08.webp">
+				</a>
+				<p class="careCon">빛의 효과! 라이트 테라피</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=aLm2KA_ac8s">
+					<img src="${cpath}/resources/careIMG/depCon09.webp">
+				</a>
+				<p class="careCon">()안정+힐링)인센스 스틱</p>
+			</div>
+			<!-- 공통 시작 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=1fOOVU7LxnI">
+					<img src="${cpath}/resources/careIMG/allCon05.webp">
+				</a>
+				<p class="careCon">원데이 수제 비누 만들기 키드</p>
+			</div>
+			<div class="swiper-slide">
+				<a href=https://www.youtube.com/watch?v=CBfHJnkwTZA>
+					<img src="${cpath}/resources/careIMG/allCon06.webp">
+				</a>
+				<p class="careCon">터프팅 원데이 클래스 패키지</p>
+			</div>
+			<!-- 공통 끝 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 우울 상품 끝 -->
+
+<!-- 공격성 상품 시작 -->
+	<div class="swiper-container madCon">
+		<div class="careTit">상품</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=IKz_1FdOphQ">
+					<img src="${cpath}/resources/careIMG/madCon07.webp">
+				</a>
+				<p class="careCon">마음이 편안해지는 소이캔들</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=0Pmxa6-pZlQ">
+					<img src="${cpath}/resources/careIMG/madCon08.webp">
+				</a>
+				<p class="careCon">매일 나의 감정을 기록해보세요</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=0wTpZLbHgEY">
+					<img src="${cpath}/resources/careIMG/madCon09.webp">
+				</a>
+				<p class="careCon">잡생각이 없어지는 자수 스타터</p>
+			</div>
+			<!-- 공통 시작 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=1fOOVU7LxnI">
+					<img src="${cpath}/resources/careIMG/allCon05.webp">
+				</a>
+				<p class="careCon">원데이 수제 비누 만들기 키드</p>
+			</div>
+			<div class="swiper-slide">
+				<a href=https://www.youtube.com/watch?v=CBfHJnkwTZA>
+					<img src="${cpath}/resources/careIMG/allCon06.webp">
+				</a>
+				<p class="careCon">터프팅 원데이 클래스 패키지</p>
+			</div>
+			<!-- 공통 끝 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 공격성 상품 끝 -->
+
+<!-- 공상 상품 시작 -->
+	<div class="swiper-container thiCon">
+		<div class="careTit">상품</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide thiCon">
+				<a href="https://www.youtube.com/watch?v=JHTEmryXnNI">
+					<img src="${cpath}/resources/careIMG/thiCon07.webp">
+				</a>
+				<p class="careCon">나만의 미니어쳐 집 만들기</p>
+			</div>
+			<div class="swiper-slide thiCon">
+				<a href="https://www.youtube.com/watch?v=upYvRu6ubnA">
+					<img src="${cpath}/resources/careIMG/thiCon08.webp">
+				</a>
+				<p class="careCon">효율 업! 집중 타이머<p>
+			</div>
+			<div class="swiper-slide thiCon">
+				<a href="https://www.youtube.com/watch?v=r1gIhiBgPDg">
+					<img src="${cpath}/resources/careIMG/thiCon09.webp">
+				</a>
+				<p class="careCon">요즘 힐링템! 감정 부스팅 오일</p>
+			</div>
+			<!-- 공통 시작 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=1fOOVU7LxnI">
+					<img src="${cpath}/resources/careIMG/allCon05.webp">
+				</a>
+				<p class="careCon">원데이 수제 비누 만들기 키드</p>
+			</div>
+			<div class="swiper-slide">
+				<a href=https://www.youtube.com/watch?v=CBfHJnkwTZA>
+					<img src="${cpath}/resources/careIMG/allCon06.webp">
+				</a>
+				<p class="careCon">터프팅 원데이 클래스 패키지</p>
+			</div>
+			<!-- 공통 끝 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 공상 상품 끝 -->
+
+<!-- 불안 상품 시작 -->
+	<div class="swiper-container feaCon">
+		<div class="careTit">상품</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=9KSLQ6VZ1Pw ">
+					<img src="${cpath}/resources/careIMG/feaCon07.webp">
+				</a>
+				<p class="careCon">불안한 마음에 아로마스톤</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=riC4jsSlJPA">
+					<img src="${cpath}/resources/careIMG/feaCon08.webp">
+				</a>
+				<p class="careCon">마음이 편해지는 인센스 콘</p>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=zIzWMRaINrc">
+					<img src="${cpath}/resources/careIMG/feaCon09.webp">
+				</a>
+				<p class="careCon">폭닥 안겨있기 좋은 인형 3종</p>
+			</div>
+			<!-- 공통 시작 -->
+			<div class="swiper-slide">
+				<a href="https://www.youtube.com/watch?v=1fOOVU7LxnI">
+					<img src="${cpath}/resources/careIMG/allCon05.webp">
+				</a>
+				<p class="careCon">원데이 수제 비누 만들기 키드</p>
+			</div>
+			<div class="swiper-slide">
+				<a href=https://www.youtube.com/watch?v=CBfHJnkwTZA>
+					<img src="${cpath}/resources/careIMG/allCon06.webp">
+				</a>
+				<p class="careCon">터프팅 원데이 클래스 패키지</p>
+			</div>
+			<!-- 공통 끝 -->
+		</div>
+	
+		<!-- 이전다음 버튼-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!-- 페이징 넘기는거 -->
+		<div class="swiper-pagination"></div>
+	</div>
+<!-- 불안 상품 끝 -->
+
+	
   <!-- Copyright Start -->
     <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s" id="copy">
         <div class="container">
@@ -418,28 +1007,54 @@
 	},
 	});
 	
-	//심리상태에 따른 안내문구 출력
+	//심리상태에 따른 안내문구, 컨텐츠  출력
 	window.onload = function() {
+		//심리상태
+		var ma = "${result.ma}";
+		
+		//안내문구
 		var mad = document.getElementById("mad");
 		var dep = document.getElementById("depress");
 		var fea = document.getElementById("fear");
 		var lov = document.getElementById("loveMe");
 		var thi = document.getElementById("think");
-		var ma = "${result.ma}";
+
+		//추천컨텐츠
+		var thiCon = document.getElementsByClassName('thiCon');
+		var madCon = document.getElementsByClassName('madCon');
+		var depCon = document.getElementsByClassName('depCon');
+		var feaCon = document.getElementsByClassName('feaCon');
+		var lovCon = document.getElementsByClassName('lovCon');
+		
 		
 		if(ma==="공격성") {
 			mad.style.display='block';
+			for(var i = 0; i<madCon.length; i++){
+				madCon[i].style.display='block';
+			}
 		} else if (ma==="우울") {
 			dep.style.display='block';
+			for(var i = 0; i<depCon.length; i++){
+				depCon[i].style.display='block';
+			}
 		} else if (ma==="불안") {
 			fea.style.display='block';
+			for(var i = 0; i<feaCon.length; i++){
+				feaCon[i].style.display='block';
+			}
 		} else if (ma==="자존감") {
 			lov.style.display='block';
+			for(var i = 0; i<lovCon.length; i++){
+				lovCon[i].style.display='block';
+			}
 		} else if (ma==="공상") {
 			thi.style.display='block';
+			for(var i = 0; i<thiCon.length; i++){
+				thiCon[i].style.display='block';
+			}
 		}
-		
 	}
+	
 	
 	
 	</script>

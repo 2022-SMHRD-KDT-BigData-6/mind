@@ -1493,12 +1493,13 @@ h3{
    text-align:center;
    align-items:center; /* 위아래 기준 중앙정렬 */
    justify-content:center; /* 좌우 기준 중앙정렬 */
+
   }
   .swiper-slide img {
    box-shadow:0 0 5px #555;
    width:100%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
    /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
-   height: 70%;
+   height: 60%;
    margin-bottom:10px;
   }
   
@@ -1509,7 +1510,7 @@ h3{
   }
   
   .swiper-button-next, .swiper-button-prev {
-   top: 40% !important;
+   top: 60% !important;
   }
   
   .careTit {
@@ -1519,7 +1520,6 @@ h3{
   margin-top:50px;
   font-size:35px;
   font-weight:bolder;
-  margin-left:320px;
   }
   
   
@@ -1649,6 +1649,33 @@ h3{
       left: 24px;
   }
   
+  .thiCon{
+	display:none;
+  }
   
+  .madCon{	
+    display:none;
+  }
   
+  .depCon{
+  	display:none;
+  }
   
+  .feaCon{
+  	display:none;
+  }
+  
+  .lovCon{
+  	display:none;
+  }
+  
+  .swiper-container {
+  height:450px;
+  }
+
+  
+  --#{$prefix}btn-font-family: 'KyoboHand';
+  
+  .swifer-container {
+  width:1300px !important;
+  }

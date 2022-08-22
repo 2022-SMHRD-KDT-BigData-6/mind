@@ -435,5 +435,12 @@ public class BoardController {
 		session.invalidate();
 		return "index";
 	}
+	
+	
+	// 전문가 페이지
+	@RequestMapping("/expert")
+	public String expert() {
+		return "expert";
+	}
 
 }
