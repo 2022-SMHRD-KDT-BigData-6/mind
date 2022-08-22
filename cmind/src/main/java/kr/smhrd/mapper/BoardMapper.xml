@@ -28,4 +28,58 @@
 	    select image from (SELECT row_number()over(order by idx desc) as recent,idx, image FROM testdata where userid =#{userid}) as tmp where recent = 1;
 	</select>
 	
+        <!-- 감정일기 쓰기 -->
+   <insert id="DiaryInsert" parameterType="kr.smhrd.model.DiaryVO">
+       insert into emotion_diary(userid,diarycontents,emotion)
+       values (#{userid},#{diarycontents},#{emotion});
+   </insert>
+   
+   <!-- 감정일기 조회 -->
+   <select id="boardSelect" parameterType="kr.smhrd.model.DiaryVO" resultType="kr.smhrd.model.DiaryVO">
+       select * from emotion_diary where userid=#{userid};
+   </select>
+   
+   <!-- 유저 선택 날짜 일기 조회 -->
+   <select id="boardList" parameterType="kr.smhrd.model.DiaryVO" resultType="kr.smhrd.model.DiaryVO">
+       select * from emotion_diary where userid=#{userid} and date_format(writedate,'%Y-%m-%d') = '2022-08-16';
+   </select>
+   
+   <!-- 이번달 조회 -->
+   <select id="thisMonthEmotionState" resultType="kr.smhrd.model.EmotionstatVO" >
+   select cntcol, count(cntcol) as cnt from(
+      select 
+         case
+            when emotion in ('pleasure', 'happy', 'love') then 1
+              when emotion in ('depress1', 'sad', 'regret') then 2
+            when emotion in ('upset', 'mad1', 'tired') then 3
+            else 0
+             end as cntcol
+      from emotion_diary
+      where userid = #{userid} and writedate between date_add(LAST_DAY(NOW() - interval 1 month) , interval+1 day) and now()
+   ) emotion_stat group by cntcol;
+   </select>
+   
+   
+   <!-- 저번달 기록 -->
+   <select id="pastMonthEmotionState" resultType="kr.smhrd.model.EmotionstatVO" >
+       select cntcol, count(cntcol) as cnt from(
+         select 
+            case
+               when emotion in ('pleasure', 'happy', 'love') then 1
+              when emotion in ('depress1', 'sad', 'regret') then 2
+              when emotion in ('upset', 'mad1', 'tired') then 3
+                else 0
+               end as cntcol
+         from emotion_diary
+         where writedate between date_add(LAST_DAY(NOW() - interval 2 month) , interval+1 day) and LAST_DAY(NOW() - interval 1 month) 
+      ) emotion_stat group by cntcol;
+   </select>
+   
+   <select id="thisMonthEmotuonCntState" resultType="kr.smhrd.model.EmotionstatVO">
+       select emotion, IFNULL(cnt,0) as cnt from emotionset es left outer join
+         (select emotion, count(emotion) as cnt 
+      from emotion_diary as ed 
+      where userid = #{userid} and writedate between date_add(LAST_DAY(NOW() - interval 1 month) , interval+1 day) and now() group by emotion) ed using(emotion);
+   </select>
+	
 </mapper>

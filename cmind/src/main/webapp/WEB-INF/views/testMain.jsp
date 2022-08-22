@@ -56,11 +56,13 @@
                 <a href="${cpath}/testMain.do" class="nav-item nav-link" style = "color: #E48B77 !important;">심리검사</a>
                 <a href="${cpath}/care.do" class="nav-item nav-link">심리케어</a>
                 <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
+                <a href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
                     <div class="dropdown-menu m-0">
                         <a href="${cpath}/myPage.do" class="dropdown-item">감정 일기 통계</a>
                         <a href="${cpath}/result.do" class="dropdown-item">심리검사 결과</a>
+                        <a href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
                     </div>
                 </div>
                 <c:if test="${empty mvo}">

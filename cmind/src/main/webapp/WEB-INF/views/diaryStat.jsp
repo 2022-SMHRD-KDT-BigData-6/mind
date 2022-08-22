@@ -47,7 +47,8 @@
 	</div>
 	<!-- Spinner End -->
 	
-	<!-- Navbar Start -->
+	 <!-- Navbar Start -->
+    
     <nav style="position:fixed;" class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.do" class="navbar-brand ms-4 ms-lg-0" style="position:absolute; z-index:3;">
             <img src="${cpath}/resources/img/logo.png" style="width:100px; height:100px; margin-top:10px;">
@@ -59,6 +60,7 @@
                 <a href="${cpath}/testMain.do" class="nav-item nav-link">심리검사</a>
                 <a href="${cpath}/care.do" class="nav-item nav-link">심리케어</a>
                 <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
+                <a href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style = "color: #E48B77 !important;">마이페이지</a>
                     <div class="dropdown-menu m-0">
@@ -71,8 +73,8 @@
                 </c:if>
                 <c:if test="${!empty mvo}">
                 <p class="nav-item nav-link">${mvo.nickname}님</p>
-				<a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
-				</c:if>
+            <a href="${cpath}/logout.do" class="nav-item nav-link">로그아웃</a>
+            </c:if>
             </div>
         </div>
     </nav>
@@ -80,10 +82,10 @@
 
 	<!-- Page Header Start -->
     <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s" id = "TMheader"
-    style = "background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/statHeader.jpg) center center no-repeat;
+    style = "background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/explainHeader1.jpg) center center no-repeat;
     background-size:cover;">
         <div class="container text-center pt-5 pb-3">
-            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">감정일기 통계페이지</h1>
+            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">감정일기 통계</h1>
             <nav aria-label="breadcrumb animated slideInDown">
             </nav>
         </div>
@@ -123,17 +125,17 @@
 			<tr>
 				<td>
 				<div class="chartI">
-				<div style="border:2px solid #A0D59B; background: rgba(160, 213, 195, 0.4);">20%</div>
-				<div style="border:2px solid #A1AEDA; background: rgba(161, 174, 218, 0.4);">30%</div>
-				<div style="border:2px solid #DAA1A1; background: rgba(218, 161, 161, 0.4);">50%</div>
+				<div style="border:2px solid #A0D59B; background: rgba(160, 213, 155, 0.4);">${emocntpercent[1]}%</div>
+				<div style="border:2px solid #A1AEDA; background: rgba(161, 174, 218, 0.4);">${emocntpercent[2]}%</div>
+				<div style="border:2px solid #DAA1A1; background: rgba(218, 161, 161, 0.4);">${emocntpercent[0]}%</div>
 				</div>
 				</td>
 
 				<td>
 				<div class="chartI">
-				<div style="border:2px solid #A0D59B; background: rgba(160, 213, 195, 0.4);">40%</div>
-				<div style="border:2px solid #A1AEDA; background: rgba(161, 174, 218, 0.4);">30%</div>
-				<div style="border:2px solid #DAA1A1; background: rgba(218, 161, 161, 0.4);">30%</div>
+				<div style="border:2px solid #A0D59B; background: rgba(160, 213, 155, 0.4);">${nowemovo[1]}%</div>
+				<div style="border:2px solid #A1AEDA; background: rgba(161, 174, 218, 0.4);">${nowemovo[2]}%</div>
+				<div style="border:2px solid #DAA1A1; background: rgba(218, 161, 161, 0.4);">${nowemovo[0]}%</div>
 				</div>
 				</td>
 			</tr>
@@ -145,7 +147,7 @@
 		
 		<table id="allD">
 			<tr style="border-bottom: 1px solid #444444;">
-				<td colspan="9" style=" font-weight:bolder; font-size:20px;">상세 통계</td>
+				<td colspan="9" style=" font-weight:bolder; font-size:20px;"> " 이번달 감정 현황 "</td>
 			</tr>
 			<tr>
 				<td>기쁨</td>
@@ -159,26 +161,21 @@
 				<td>피곤</td>
 			</tr>
 			<tr>
-				<td>3</td>
-				<td>5</td>
-				<td>3</td>
-				<td>8</td>
-				<td>2</td>
-				<td>0</td>
-				<td>6</td>
-				<td>2</td>
-				<td>1</td>
+				<td>${nowemocntvo.get(0).getCnt()}</td>
+				<td>${nowemocntvo.get(1).getCnt()}</td>
+				<td>${nowemocntvo.get(2).getCnt()}</td>
+				<td>${nowemocntvo.get(8).getCnt()}</td>
+				<td>${nowemocntvo.get(3).getCnt()}</td>
+				<td>${nowemocntvo.get(4).getCnt()}</td>
+				<td>${nowemocntvo.get(5).getCnt()}</td>
+				<td>${nowemocntvo.get(6).getCnt()}</td>
+				<td>${nowemocntvo.get(7).getCnt()}</td>
 			</tr>
 		</table>
 		<div class="d-grid gap-2 col-6 mx-auto" id="linkB">
-		<button type="button" class="btn btn-outline-info btn-lg" style="margin: 70px 0px;">감정일기 쓰러 가기</button>
+		<button type="button" onclick="location.href='${cpath}/diary.do'" class="btn btn-outline-info btn-lg" style="margin: 70px 0px;">감정일기 쓰러 가기</button>
 		</div>
 	</div>
-	
-
-	
-	
-	
 
   <!-- Copyright Start -->
     <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s" id="copy">
@@ -254,10 +251,10 @@
 	$(window).ready(function(){
 	    var i=1;
 	    var func1 = setInterval(function(){
-	        if(i<26){
+	        if(i<${emocntpercent[1]}){
 	            color1(i);
 	            i++;
-	        } else if(i<70){
+	        } else if(i<${emocntpercent[2]}){
 	            color2(i);
 	            i++;
 	        } else if(i<101){
@@ -272,19 +269,19 @@
 
 	function color1(i){
 	    $(".chartBef").css({
-	        "background":"conic-gradient(#A0D59B 0% "+i+"%, #ffffff "+i+"% 100%)"
+	        "background":"conic-gradient(#A0D59B 0% "+${emocntpercent[1]}+"%, #ffffff "+i+"% 100%)"
 	        });
 	    
 	}
 	function color2(i){
 	    $(".chartBef").css({
-	        "background":"conic-gradient(#A0D59B 0% 25%, #A1AEDA 25% "+i+"%, #ffffff "+i+"% 100%)"
+	        "background":"conic-gradient(#A0D59B 0% "+${emocntpercent[1]}+"%, #A1AEDA "+${emocntpercent[1]}+"% "+${emocntpercent[1]+emocntpercent[2]}+"%, #DAA1A1 "+i+"% 100%)"
 	        });
 	     
 	}
 	function color3(i){
 	    $(".chartBef").css({
-	        "background":"conic-gradient(#A0D59B 0% 25%, #A1AEDA 25% 70%, #DAA1A1 70% "+i+"%, #ffffff "+i+"% 100%)"
+	        "background":"conic-gradient(#A0D59B 0% "+${emocntpercent[1]}+"%, #A1AEDA "+${emocntpercent[1]}+"% "+${emocntpercent[1]+emocntpercent[2]}+"%, #DAA1A1 "+${emocntpercent[1]+emocntpercent[2]}+"% 100%)"
 	        });
 	     
 	}
@@ -293,10 +290,10 @@
 	$(window).ready(function(){
 	    var i=1;
 	    var func1 = setInterval(function(){
-	        if(i<10){
+	        if(i<${nowemovo[1]}){
 	            color4(i);
 	            i++;
-	        } else if(i<40){
+	        } else if(i<${nowemovo[2]}){
 	            color5(i);
 	            i++;
 	        } else if(i<101){
@@ -311,19 +308,19 @@
 
 	function color4(i){
 	    $(".chartNow").css({
-	        "background":"conic-gradient(#A0D59B 0% "+i+"%, #ffffff "+i+"% 100%)"
+	        "background":"conic-gradient(#A0D59B 0% "+${nowemovo[1]}+"%, #ffffff "+i+"% 100%)"
 	        });
 	    
 	}
 	function color5(i){
 	    $(".chartNow").css({
-	        "background":"conic-gradient(#A0D59B 0% 10%, #A1AEDA 10% "+i+"%, #ffffff "+i+"% 100%)"
+	        "background":"conic-gradient(#A0D59B 0% "+${nowemovo[1]}+"%, #A1AEDA "+${nowemovo[1]}+"% "+${nowemovo[1]+nowemovo[2]}+"%, #DAA1A1 "+i+"% 100%)"
 	        });
 	     
 	}
 	function color6(i){
 	    $(".chartNow").css({
-	        "background":"conic-gradient(#A0D59B 0% 10%, #A1AEDA 10% 40%, #DAA1A1 40% "+i+"%, #ffffff "+i+"% 100%)"
+	        "background":"conic-gradient(#A0D59B 0% "+${nowemovo[1]}+"%, #A1AEDA "+${nowemovo[1]}+"% "+${nowemovo[1]+nowemovo[2]}+"%, #DAA1A1 "+${nowemovo[1]+nowemovo[2]}+"% 100%)"
 	        });
 	     
 	}

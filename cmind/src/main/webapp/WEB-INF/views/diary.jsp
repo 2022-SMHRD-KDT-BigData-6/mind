@@ -1,14 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    pageEncoding="UTF-8"%>
+   <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!-- 프로젝트의 contextpath 값을 동적으로 가져오는 방법 -->
-<c:set var="cpath" value="${ pageContext.request.contextPath }" />
+<c:set var="cpath" value="${ pageContext.request.contextPath }"/>
 <!DOCTYPE html>
 <html>
-
 <head>
-	<meta charset="UTF-8">
-	<title>마음체</title>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<title>Maum-title</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -36,18 +37,38 @@
     <link href="${cpath}/resources/css/style.css" rel="stylesheet">
 </head>
 
-<body>
-	<!-- Spinner Start -->
-	<div id="spinner"
-		class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-		<div class="spinner-grow text-primary" role="status"></div>
-	</div>
-	<!-- Spinner End -->
+<style>
+
+.Form{
+	width: 200px;
+}
+
+.imoge{
+	width: 110px;
+	height: 110px;	
+}
+
+.btn-group{
+	width:500px;
+	margin-left: auto;
+	margin-right: auto;
 	
-	<!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.do" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="text-primary m-0" id="title">마음:체</h1>
+}
+
+</style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    
+    <!-- Navbar Start -->
+<nav style="position:fixed;" class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.do" class="navbar-brand ms-4 ms-lg-0" style="position:absolute; z-index:3;">
+            <img src="${cpath}/resources/img/logo.png" style="width:100px; height:100px; margin-top:10px;">
         </a>
        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
@@ -56,6 +77,7 @@
                 <a href="${cpath}/testMain.do" class="nav-item nav-link">심리검사</a>
                 <a href="${cpath}/care.do" class="nav-item nav-link">심리케어</a>
                 <a href="${cpath}/diary.do" class="nav-item nav-link" style = "color: #E48B77 !important;">감정일기</a>
+                <a href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
                     <div class="dropdown-menu m-0">
@@ -75,58 +97,36 @@
     </nav>
     <!-- Navbar End -->
 
-	<!-- Page Header Start -->
-    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s" id = "TMheader"
-    style = "background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/explainHeader1.jpg) center center no-repeat;
+    <!-- Page Header Start -->
+        <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s" id = "TMheader"
+    style = "background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(${cpath}/resources/img/diary.jpg) center center no-repeat;
     background-size:cover;">
         <div class="container text-center pt-5 pb-3">
-            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">감정 일기</h1>
+            <h1 class="display-4 animated slideInDown mb-3" id="ATtypo">감정일기 쓰기</h1>
             <nav aria-label="breadcrumb animated slideInDown">
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 
-<!-- About Start -->
     <div class="container-xxl py-6">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div id="explainPhoto" float:left;>
-                            <img src="${cpath}/resources/img/explainall-1.png" alt="">
-                        </div>
-            </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100" float:left;> 
-                        <h1 class="display-6 mb-4"><br>H(house)-T(tree)-P(person) Test</h1>
-                        <br>
-                        <p class="aboutEx">1948년 벅(Buck)이 개발한 <span class="emphasis">투사적 그림검사</span>로, 1958년 햄머(Hammer)에 의해 크게 발전되었습니다.
-                            집, 나무, 사람은 누구에게나 친밀한 주제이므로 이 그림을 통해 개인의 <span class="emphasis">무의식</span>을 파악할 수 있습니다.</p>
-                        <p class="aboutEx">HTP그림의 해석은, 정신분석에서 밝혀진 상징에 대한 의미, 정신증 환자들이 보이는 방어기제와 강박적 사고, 강박적 행동, 
-                            공포와 불안 등의 <span class="emphasis">여러 병리적 현상에서 나타나는 상징성</span>을 연구하며 얻은 단서들을 해석에 적용해 왔습니다. <br> </p>
-                        <hr style="background-color: #AAAD8F;">
-                            <div class="row g-2 mb-4">
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>간단한 검사 도구
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>짧은 검사 시간
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>언어 능력의 무제약
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>다요인적 해석 가능
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            <form name="Form" id="Form" action="${cpath}/insert.do" method="POST">
+				<!-- 1. img 경로 2.이모티콘이 보여야하는 날짜 -->
+				<table class="table table-bordered">
+					<tr>
+						<th align="center">
+							<div id="insertview"></div>
+						</th>
+					</tr>
+				</table>
+			</form>
+            
         </div>
     </div>
-    <!-- About End -->
 
-  <!-- Copyright Start -->
+   <!-- Copyright Start -->
     <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s" id="copy">
         <div class="container">
             <div class="row">
@@ -142,58 +142,192 @@
         </div>
     </div>
     <!-- Copyright End -->
+
+
+     <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="${cpath}/resources/lib/wow/wow.min.js"></script>
+    <script src="${cpath}/resources/lib/easing/easing.min.js"></script>
+    <script src="${cpath}/resources/lib/waypoints/waypoints.min.js"></script>
+    <script src="${cpath}/resources/lib/counterup/counterup.min.js"></script>
+    <script src="${cpath}/resources/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="${cpath}/resources/js/main.js"></script>
+
+
+<script type="text/javascript">
+	var urlSearch = new URLSearchParams(location.search);
+    var wdate = urlSearch.get('date')
 	
-	<!-- JavaScript Libraries -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="${cpath}/resources/lib/wow/wow.min.js"></script>
-	<script src="${cpath}/resources/lib/easing/easing.min.js"></script>
-	<script src="${cpath}/resources/lib/waypoints/waypoints.min.js"></script>
-	<script src="${cpath}/resources/lib/counterup/counterup.min.js"></script>
-	<script src="${cpath}/resources/lib/owlcarousel/owl.carousel.min.js"></script>
-	<script src="${cpath}/resources/js/main.js"></script>
+	
+	$(document).ready(function() {
+		loadList(); // --> 호출
 
-	<script>
-		var num = 1;
+	})
+	// 2. 서버에 요청하는 ajax 함수를 생성
+	function loadList() {
+		$.ajax({
+			// 서버 url
+			url : '${cpath}/userdaydiary.do',
+			// 요청방식
+			type : 'post',
 
-		//슬라이드 자바스크립트
-		function changeN(idx) {
-			const s1 = document.getElementById('s1');
-			const s2 = document.getElementById('s2');
-			const s3 = document.getElementById('s3');
-			const s4 = document.getElementById('s4');
-			if (idx == 1) {
-				s1.style.display = 'none';
-				s2.style.display = 'block';
-			} else if (idx == 2) {
-				s2.style.display = 'none';
-				s3.style.display = 'block';
-			} else if (idx == 3) {
-				s3.style.display = 'none';
-				s4.style.display = 'block';
+			data : {"userid":"${mvo.userid}",
+					"writedate": wdate
+			},
+			// 받아올 데이터 타입 지정
+			dataType : 'json',
+			// 성공했을 때 실행할 함수
+			success : function(data){
+
+				console.log(wdate);
+				// 내가 화면에 출력해줄 tr 태그들의 모음
+				var blist = "";
+
+				// for-each문을 사용하는 방법
+				// $.each(어떤 데이터를 가지고 반복, 어떤 함수로 처리할건지)
+					// function(인덱스번호, data안에 들어있는 각각의 값들을 어떤 변수로 받아줄건지)
+					blist += "<form name='Form' id='Form' action='${cpath}/boardUpdate.do' method='POST'>";
+					blist += "<div class='btn-group'>";
+					var emotion = ['happy','tired','love','mad1','pleasure','upset','depress1','regret','sad']
+					blist += '<div style="text-align:center"><table>';
+		               blist += "<tr>";
+		               for (var i = 0; i <emotion.length ; i++) {
+		                  blist += "<td style='text-align:center'><img class='imoge' id = 'imoge' src='resources/img/"+emotion[i]+".png'></td>";
+		               }
+		               blist += "</tr>"
+		               blist += "<tr>";
+		               for (var i = 0; i <emotion.length ; i++) {
+		               
+		                  
+		                  if (data.emotion === emotion[i]) {
+		                     blist += "<td style='text-align:center'><input type='radio' name='emotion' id = 'imoge' class='btn btn-primary' value='"+emotion[i]+"' checked ></td>";
+		                  }else{         
+		                     blist += "<td style='text-align:center'><input type='radio' name='emotion' id = 'imoge' class='btn btn-primary' value='"+emotion[i]+"'></td>";
+		                  }
+		               
+		               }
+		               blist += "</tr>"
+		               blist += "</table></div>";
+				
+					blist += '</div>';
+					blist += '<div id="insertview">';
+					blist += '<input type="hidden" class="form-control" name="userid" id="id" value="${mvo.userid}">';
+					blist += '<input type="hidden" class="form-control" name="writedate" id="id" value="'+wdate+'">';
+					blist += '<div class="form-group">';
+					blist += '<label for="contents">내용:</label>';
+					blist += '<textarea rows="10" class="form-control" id="contents" name="diarycontents">'+data.diarycontents+'</textarea>';
+					blist += '</div>';
+					if("${mvo.userid}"==data.userid){
+						blist += "<td><button type = submit class = 'btn-sm btn-danger btn'>수정</button></td>";
+					}else{
+						blist += "<td><button disabled class = 'btn-sm btn-danger btn'>수정</button></td>";				
+					}			
+					blist += '</div>';
+					blist += '</form>';
+			
+				$('#insertview').after(blist);
+			},
+			// 실패했을 때 실행할 함수
+			error : function() {
+				console.log(wdate);
+				// 내가 화면에 출력해줄 tr 태그들의 모음
+				var blist = "";
+				// for-each문을 사용하는 방법
+				// $.each(어떤 데이터를 가지고 반복, 어떤 함수로 처리할건지)
+					// function(인덱스번호, data안에 들어있는 각각의 값들을 어떤 변수로 받아줄건지)
+				blist += "<form name='Form' id='Form' action='${cpath}/insert.do' method='POST'>";
+	               blist += "<div class='btn-group'>";
+	               blist += '<div style="text-align:center"><table>';
+	               blist += "<tr>";
+	               var emotion = ['happy','tired','love','mad1','pleasure','upset','depress1','regret','sad']
+	               for (var i = 0; i <emotion.length ; i++) {
+	                  blist += "<td style='text-align:center'><img class='imoge' id = 'imoge' src='${cpath}/resources/img/"+emotion[i]+".png'></td>";
+	               }
+	               blist += "</tr>";
+	               
+	               blist += "<tr>";
+	               blist += "<td> 행복";
+	               blist += "</td>";
+	               
+	               blist += "<td> 피곤";
+	               blist += "</td>";
+	               
+	               blist += "<td> 설렘";
+	               blist += "</td>";
+	               
+	               blist += "<td> 분노";
+	               blist += "</td>";
+	               
+	               blist += "<td> 기쁨";
+	               blist += "</td>";
+	               
+	               blist += "<td> 짜증";
+	               blist += "</td>";
+	               
+	               blist += "<td> 우울";
+	               blist += "</td>";
+	               
+	               blist += "<td> 후회";
+	               blist += "</td>";
+	               
+	               blist += "<td> 슬픔";
+	               blist += "</td>";
+	               blist += "</tr>";
+	               
+	               
+	               blist += "<tr>";
+	               for (var i = 0; i<emotion.length; i++){
+	                  blist += "<td style='text-align:center'><input type='radio' name='emotion' id = 'imoge' class='btn btn-primary' value='"+emotion[i]+"'></td>";
+	               }
+	               blist += "</tr>";
+	               blist += "</table></div>";
+
+	               
+	               blist += '</div>';
+	               blist += '<div id="insertview">';
+	               blist += '<input type="hidden" class="form-control" name="userid" id="id" value="${mvo.userid}">';
+	               blist += '<input type="hidden" class="form-control" name="writedate" id="id" value="'+wdate+'">';
+	               blist += '<div class="form-group">';
+	               blist += '<label for="contents">내용:</label>';
+	               blist += '<textarea rows="10" class="form-control" id="contents" name="diarycontents"></textarea>';
+	               blist += '</div>';
+	               blist += "<td><button type = submit class = 'btn-sm btn-danger btn'>삽입</button></td>";
+	               blist += '</div>';
+	               blist += '</form>';
+
+	            $('#insertview').after(blist);
 			}
-		}
 
-		function changeB(idx) {
-			const s1 = document.getElementById('s1');
-			const s2 = document.getElementById('s2');
-			const s3 = document.getElementById('s3');
-			const s4 = document.getElementById('s4');
-			if (idx == 2) {
-				s2.style.display = 'none';
-				s1.style.display = 'block';
-			} else if (idx == 2) {
-				s3.style.display = 'none';
-				s2.style.display = 'block';
-			} else if (idx == 3) {
-				s3.style.display = 'none';
-				s2.style.display = 'block';
-			} else if (idx == 4) {
-				s4.style.display = 'none';
-				s3.style.display = 'block';
+		})
+	}
+
+	
+	// 수정하기
+	function boardUpdate(userid) {
+		// 1. textarea안에 들어있는 데이터를 가져오기
+		var contents = $("#vc"+userid+" textarea").val();
+		
+		// 2. ajax를 활용해서 controller에 수정을 요청
+		$.ajax({
+			url : '${cpath}/boardUpdate.do',
+			// data : 보내줄 데이터를 객체형식으로 넘겨줬었음! {'idx':idx}
+			data : {'userid':userid, 'diarycontents':diarycontents},
+			// 요청 방식
+			type : 'get',
+			// 성공했을 때 실행할 함수
+	// 4. 받아올 데이터는 x --> 성공했을때 loadList함수를 다시 한 번 실행
+			success : loadList,
+			// 실패했을 때 실행할 함수
+			error : function() {
+				alert('실패!');
 			}
-		}
+		})
+	}
 	</script>
-</body>
+	
+	</body>
 
 </html>

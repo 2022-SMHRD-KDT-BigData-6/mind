@@ -58,6 +58,7 @@
                 <a href="${cpath}/testMain.do" class="nav-item nav-link">심리검사</a>
                 <a href="${cpath}/care.do" class="nav-item nav-link">심리케어</a>
                 <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
+                <a href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
                     <div class="dropdown-menu m-0">
@@ -92,7 +93,7 @@
                                 <p class="text-light fs-5 mb-4 pb-3" id="indexP">당신이 직접 그린 그림으로 당신의 심리 상태를 분석합니다.<br>
                                     간단한 나무 그림만 있으면<br>
                                     당신의 심리 상태를 알려드립니다!</p>
-                                <a href="" class="btn btn-primary rounded-pill py-3 px-5">심리검사 하러 가기</a>
+                                <a href="${cpath}/testGo.do" class="btn btn-primary rounded-pill py-3 px-5">심리검사 하러 가기</a>
                             </div>
                         </div>
                     </div>
@@ -110,7 +111,7 @@
                                 <p class="text-light fs-5 mb-4 pb-3" id="indexP">감정을 기록하면 감정 통계를 열람할 수 있습니다.<br>
                                   저번 달의 나와 이번 달의 나를 비교해보세요<br>
                                    어제보다 더 멋진 내가 되어있을지도 몰라요!</p>
-                                <a href="" class="btn btn-primary rounded-pill py-3 px-5">감정일기 쓰러 가기</a>
+                                <a href="${cpath}/diary.do" class="btn btn-primary rounded-pill py-3 px-5">감정일기 쓰러 가기</a>
                             </div>
                         </div>
                     </div>
@@ -128,7 +129,7 @@
                                 <p class="text-light fs-5 mb-4 pb-3" id="indexP">마음:체는 현재 심리상태 기반의 심리케어 컨텐츠를 제공합니다.<br>
                 ASMR, 명상, 상품 등을 자유롭게 둘러보세요<br>
                                     더 다채로운 컨텐츠가 추가 예정이에요!</p>
-                                <a href="" class="btn btn-primary rounded-pill py-3 px-5">케어컨텐츠 추천받기</a>
+                                <a href="${cpath}/care.do" class="btn btn-primary rounded-pill py-3 px-5">케어컨텐츠 추천받기</a>
                             </div>
                         </div>
                     </div>

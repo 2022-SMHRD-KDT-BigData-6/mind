@@ -45,22 +45,24 @@
 	<!-- Spinner End -->
 	
 	<!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.do" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="text-primary m-0" id="title">마음:체</h1>
+    <nav style="position:fixed;" class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.do" class="navbar-brand ms-4 ms-lg-0" style="position:absolute; z-index:3;">
+            <img src="${cpath}/resources/img/logo.png" style="width:100px; height:100px; margin-top:10px;">
         </a>
        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
                 <a href="${cpath}/index.do" class="nav-item nav-link">홈</a>
                 <a href="${cpath}/aboutTest.do" class="nav-item nav-link">HTP란?</a>
-                <a href="${cpath}/testMain.do" class="nav-item nav-link" style = "color: #E48B77 !important;">심리검사</a>
+                <a href="${cpath}/testMain.do" class="nav-item nav-link">심리검사</a>
                 <a href="${cpath}/care.do" class="nav-item nav-link">심리케어</a>
                 <a href="${cpath}/diary.do" class="nav-item nav-link">감정일기</a>
+                <a href="${cpath}/treeList.do" class="nav-item nav-link" style = "color: #E48B77 !important;">나무목록</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">마이페이지</a>
                     <div class="dropdown-menu m-0">
                         <a href="${cpath}/myPage.do" class="dropdown-item">감정 일기 통계</a>
                         <a href="${cpath}/result.do" class="dropdown-item">심리검사 결과</a>
+                        <a href="${cpath}/treeList.do" class="nav-item nav-link">나무목록</a>
                     </div>
                 </div>
                 <c:if test="${empty mvo}">

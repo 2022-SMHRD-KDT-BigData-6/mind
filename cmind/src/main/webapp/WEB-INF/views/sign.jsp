@@ -111,7 +111,7 @@
             <p class="JoinOp" onclick="expertShow()">전문가</p>
 
     <!--일반인회원가입-->
-    <form class="formNo" id="normalForm" style="display: block;" action="${cpath}/insert.do">
+    <form class="formNo" id="normalForm" style="display: block;" action="${cpath}/join.do">
         <input name = "userid" class="un" type="text" align="center" placeholder="아이디">
         <input name = "userpw" class="pass" type="password" align="center" placeholder="비밀번호">
         <input class="pass" type="password" align="center" placeholder="비밀번호확인">
@@ -124,7 +124,7 @@
     </form>
 
         <!--전문가회원가입-->
-    <form class="formNo" id="expertForm" style="display: none;" action="${cpath}/insert.do">
+    <form class="formNo" id="expertForm" style="display: none;" action="${cpath}/join.do">
         <input name = "userid" class="un" type="text" align="center" placeholder="아이디">
         <input name = "userpw" class="pass" type="password" align="center" placeholder="비밀번호">
         <input class="pass" type="password" align="center" placeholder="비밀번호확인">
