@@ -6,9 +6,11 @@ import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
+import kr.smhrd.model.ContentsVO;
 import kr.smhrd.model.DiaryVO;
 import kr.smhrd.model.EmotionstatVO;
 import kr.smhrd.model.MemberVO;
+import kr.smhrd.model.ResultInfoVO;
 import kr.smhrd.model.TestVO;
 
 public interface BoardMapper {
@@ -52,12 +54,21 @@ public interface BoardMapper {
 	@Update("update emotion_diary set diarycontents=#{diarycontents},emotion=#{emotion} where userid=#{userid} and date_format(writedate,'%Y-%m-%d')=#{writedate}")
 	public void boardUpdateAjax(DiaryVO vo);
 	
-	   // 감정일기 통계
-	   // 이번달
-	   public List<EmotionstatVO> thisMonthEmotionState(String userid);
-	   // 저번달
-	   public List<EmotionstatVO> pastMonthEmotionState(String userid);
-	   // 이번달 감정  각각 갯수
-	   public List<EmotionstatVO> thisMonthEmotuonCntState(String userid);
+	// 감정일기 통계
+	// 이번달
+	public List<EmotionstatVO> thisMonthEmotionState(String userid);
+	// 저번달
+	public List<EmotionstatVO> pastMonthEmotionState(String userid);
+	// 이번달 감정  각각 갯수
+	public List<EmotionstatVO> thisMonthEmotuonCntState(String userid);
 
+	// 게시판 총 갯수
+	@Select("select count(*) from (select row_number()over(order by idx asc) as idx_num , td.image, (select nickname from memberinfo as mi where td.userid = mi.userid) nickname from testdata as td where testopen = 'y') as tmp")
+	public int getTotal();
+		
+	public List<ResultInfoVO> getListPaging();
+		
+	// 컨텐츠 추천 데이터 조회 
+	@Select("select * from reco_content")
+	public List<ContentsVO> contentsList();
 }
